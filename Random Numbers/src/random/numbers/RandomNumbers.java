@@ -5,10 +5,10 @@
  */
 
 package random.numbers;
-import java.util.*;
+import java.util.Random;
 
 /**
- *
+ * This class prints random numbers and designates which of a pair is greater.
  * @author ccolegrove17
  */
 public class RandomNumbers {
@@ -30,6 +30,5 @@ public class RandomNumbers {
             else//if they are equal
                 System.out.printf("%d=%d\n",(int)j,(int)k);//displays
         }
-        // TODO code application logic here
     }
 }
