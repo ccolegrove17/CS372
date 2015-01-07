@@ -8,7 +8,7 @@ package gerbil.arraylist;
 import java.util.*; //for List and ArrayList
 
 /**
- *
+ * This class puts gerbils into an array and makes them hop
  * @author ccolegrove17
  */
 public class GerbilArraylist {
