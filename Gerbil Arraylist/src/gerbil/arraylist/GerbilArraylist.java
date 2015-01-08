@@ -30,7 +30,5 @@ public class GerbilArraylist {
             ((Gerbil)gerbilList.get(i)).hop();    This was how I did it for problem 1
         }
         */
-    
     }
-    
 }
