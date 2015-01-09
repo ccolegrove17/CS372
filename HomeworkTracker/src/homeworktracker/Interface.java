@@ -116,19 +116,22 @@ public class Interface extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_scoreActionPerformed
 
+    /**
+     * 
+     * @param evt When submit is pressed
+     * Takes the value from the textbox and adds it to a List
+     * calculates the min, max, and average of the list and displays it
+     */
+    
     private void submitActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_submitActionPerformed
         double c = Double.parseDouble(score.getText());//reads from the textfield
-        list.add(c);
-        String f = String.format("Max: %.1f", homework.findMax(list));
-        max.setText(f);
-        String g = String.format("Min: %.1f", homework.findMin(list));
-        min.setText(g);
-        String h = String.format("Average: %.1f", homework.findAverage(list));
-        average.setText(h);
-        
-        
-        //String f = String.format("Calculated Value: %f",pi.Calculate(c)); //prints out the final value of pi
-        //calculatedPi.setText(f);// sets the label to the calculated value
+        list.add(c);//adds the score to the List
+        String f = String.format("Max: %.1f", homework.findMax(list));//calculates the max of the List
+        max.setText(f);//displays the max onto the label
+        String g = String.format("Min: %.1f", homework.findMin(list));//calculates the min of the List
+        min.setText(g);//displays the min on the label
+        String h = String.format("Average: %.1f", homework.findAverage(list));//calculates the average of the List
+        average.setText(h);//displays the average on the label
     }//GEN-LAST:event_submitActionPerformed
 
     private void scoreKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_scoreKeyPressed
