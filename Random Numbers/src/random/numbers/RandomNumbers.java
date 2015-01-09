@@ -20,6 +20,7 @@ public class RandomNumbers {
         int j,k; //make some integers
         for(int i=1;i<=25;i++)//for loop runs 25 times
         {
+            //PT: As we talked about in class, place this line outside the for loop
             Random rand=new Random();//seeds the random number generator
             j = rand.nextInt(100) + 1;//sets integer between 1 and 100
             k = rand.nextInt(100) + 1;//sets integer between 1 and 100
