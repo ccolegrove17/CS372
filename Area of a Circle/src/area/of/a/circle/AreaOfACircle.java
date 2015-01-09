@@ -19,7 +19,7 @@ public class AreaOfACircle {
      */
     
     public static double calculateArea(float radius){
-        final double pi = 3.14;
+        final double pi = 3.14; //PT: better to use java.lang.Math.PI
         double area = pi*radius*radius;
         return area;
     }
