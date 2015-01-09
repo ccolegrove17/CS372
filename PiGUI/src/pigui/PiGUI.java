@@ -3,7 +3,6 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-
 package pigui;
 
 /**
@@ -13,6 +12,7 @@ package pigui;
 public class PiGUI extends javax.swing.JFrame {
 
     CalculatePi pi = new CalculatePi();
+
     /**
      * Creates new form PiGUI
      */
@@ -92,14 +92,14 @@ public class PiGUI extends javax.swing.JFrame {
     }//GEN-LAST:event_termsActionPerformed
 
     /**
-     * 
-     * @param evt When the button is pressed.
-     * It reads in the terms, calculates the final value, and displays it into the label
+     *
+     * @param evt When the button is pressed. It reads in the terms, calculates
+     * the final value, and displays it into the label
      */
-    
+
     private void calculateActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_calculateActionPerformed
         int c = Integer.parseInt(terms.getText());//reads from the textfield
-        String f = String.format("Calculated Value: %f",pi.Calculate(c)); //prints out the final value of pi
+        String f = String.format("Calculated Value: %f", pi.Calculate(c)); //prints out the final value of pi
         calculatedPi.setText(f);// sets the label to the calculated value
     }//GEN-LAST:event_calculateActionPerformed
 

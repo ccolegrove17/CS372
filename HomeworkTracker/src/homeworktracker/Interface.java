@@ -3,8 +3,8 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-
 package homeworktracker;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -16,7 +16,7 @@ public class Interface extends javax.swing.JFrame {
 
     List<Double> list = new ArrayList<Double>();
     HomeworkTracker homework = new HomeworkTracker();
-    
+
     /**
      * Creates new form Interface
      */
@@ -117,12 +117,12 @@ public class Interface extends javax.swing.JFrame {
     }//GEN-LAST:event_scoreActionPerformed
 
     /**
-     * 
-     * @param evt When submit is pressed
-     * Takes the value from the textbox and adds it to a List
-     * calculates the min, max, and average of the list and displays it
+     *
+     * @param evt When submit is pressed Takes the value from the textbox and
+     * adds it to a List calculates the min, max, and average of the list and
+     * displays it
      */
-    
+
     private void submitActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_submitActionPerformed
         double c = Double.parseDouble(score.getText());//reads from the textfield
         list.add(c);//adds the score to the List
@@ -132,10 +132,23 @@ public class Interface extends javax.swing.JFrame {
         min.setText(g);//displays the min on the label
         String h = String.format("Average: %.1f", homework.findAverage(list));//calculates the average of the List
         average.setText(h);//displays the average on the label
+        score.setText("");//resets the textbox
     }//GEN-LAST:event_submitActionPerformed
 
     private void scoreKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_scoreKeyPressed
-        // TODO add your handling code here:
+
+        if (evt.getKeyCode() == java.awt.event.KeyEvent.VK_ENTER) {
+            double c = Double.parseDouble(score.getText());//reads from the textfield
+            list.add(c);//adds the score to the List
+            String f = String.format("Max: %.1f", homework.findMax(list));//calculates the max of the List
+            max.setText(f);//displays the max onto the label
+            String g = String.format("Min: %.1f", homework.findMin(list));//calculates the min of the List
+            min.setText(g);//displays the min on the label
+            String h = String.format("Average: %.1f", homework.findAverage(list));//calculates the average of the List
+            average.setText(h);//displays the average on the label
+            score.setText("");//resets the textbox
+
+        }
     }//GEN-LAST:event_scoreKeyPressed
 
     private void scoreKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_scoreKeyTyped
