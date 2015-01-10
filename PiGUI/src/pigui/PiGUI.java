@@ -40,12 +40,6 @@ public class PiGUI extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Calculating Pi");
 
-        terms.setText("100");
-        terms.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                termsActionPerformed(evt);
-            }
-        });
         terms.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyPressed(java.awt.event.KeyEvent evt) {
                 termsKeyPressed(evt);
@@ -121,10 +115,6 @@ public class PiGUI extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void termsActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_termsActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_termsActionPerformed
-
     /**
      *
      * @param evt When the button is pressed. It reads in the terms, calculates
@@ -132,18 +122,20 @@ public class PiGUI extends javax.swing.JFrame {
      */
 
     private void calculateActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_calculateActionPerformed
-        int c = Integer.parseInt(terms.getText());//reads from the textfield
-        double leibniz = pi.Calculate(c);
-        double nilakantha = pi.Calculate2(c);
-        String f = String.format("Gregory-Leibniz Value: %.15f", leibniz); //prints out the final value of pi
-        calculatedPi.setText(f);// sets the label to the calculated value
-        f = String.format("Percent Error: %.8f%%", (leibniz - java.lang.Math.PI) / java.lang.Math.PI * 100);
-        errorLeibniz.setText(f);
-        f = String.format("Nilakantha Value: %.15f", nilakantha);
-        calculatedPi2.setText(f);
-        f = String.format("Percent Error: %.8f%%", (nilakantha - java.lang.Math.PI) / java.lang.Math.PI * 100);
-        errorNilakantha.setText(f);
-        terms.requestFocus();//moves the focus back to the text field
+        if (!terms.getText().equals("")) {
+            int c = Integer.parseInt(terms.getText());//reads from the textfield
+            double leibniz = pi.Calculate(c);
+            double nilakantha = pi.Calculate2(c);
+            String f = String.format("Gregory-Leibniz Value: %.15f", leibniz); //prints out the final value of pi
+            calculatedPi.setText(f);// sets the label to the calculated value
+            f = String.format("Percent Error: %.8f%%", (leibniz - java.lang.Math.PI) / java.lang.Math.PI * 100);//calculates percent error
+            errorLeibniz.setText(f);//displays percent error
+            f = String.format("Nilakantha Value: %.15f", nilakantha);//text for value
+            calculatedPi2.setText(f);//displays value
+            f = String.format("Percent Error: %.8f%%", (nilakantha - java.lang.Math.PI) / java.lang.Math.PI * 100);//calculates percent error
+            errorNilakantha.setText(f);//displays percent error
+            terms.requestFocus();//moves the focus back to the text field
+        }
     }//GEN-LAST:event_calculateActionPerformed
 
     private void termsKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_termsKeyPressed

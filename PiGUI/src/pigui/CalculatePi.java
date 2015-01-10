@@ -15,6 +15,7 @@ import java.math.*;
 public class CalculatePi {
 
     /**
+     * Calculates the Gregory-Leibniz value of pi
      *
      * @param times the number of times it will go through the loop
      */
@@ -28,6 +29,11 @@ public class CalculatePi {
         return sum;
     }
 
+    /**
+     * Calculates the Nilakantha value of pi
+     *
+     * @param times the number of times it will go through the loop
+     */
     public double Calculate2(int times) {
         double denominator = 2;
         double sum = 3;

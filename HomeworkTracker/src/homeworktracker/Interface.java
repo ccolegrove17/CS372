@@ -47,11 +47,6 @@ public class Interface extends javax.swing.JFrame {
 
         jLabel1.setText("Score:");
 
-        score.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                scoreActionPerformed(evt);
-            }
-        });
         score.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyPressed(java.awt.event.KeyEvent evt) {
                 scoreKeyPressed(evt);
@@ -123,13 +118,9 @@ public class Interface extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void scoreActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_scoreActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_scoreActionPerformed
-
     /**
      *
-     * @param evt When submit is pressed Takes the value from the textbox and
+     * @param evt When submit is pressed Takes the value from the textfield and
      * adds it to a List calculates the min, max, and average of the list and
      * displays it
      */
@@ -145,8 +136,8 @@ public class Interface extends javax.swing.JFrame {
         String h = String.format("Average: %.1f", homework.findAverage(list));//calculates the average of the List
         average.setText(h);//displays the average on the label
         score.setText("");//resets the textbox
-        h = String.format("%.1f\n", c);
-        scoreArea.append(h);
+        h = String.format("%.1f\n", c);//text to add to the textArea
+        scoreArea.append(h);//adds the text to the textArea
         }
     }//GEN-LAST:event_submitActionPerformed
 

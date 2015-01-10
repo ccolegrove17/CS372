@@ -84,11 +84,7 @@
   </Layout>
   <SubComponents>
     <Component class="javax.swing.JTextField" name="terms">
-      <Properties>
-        <Property name="text" type="java.lang.String" value="100"/>
-      </Properties>
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="termsActionPerformed"/>
         <EventHandler event="keyPressed" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="termsKeyPressed"/>
       </Events>
     </Component>
