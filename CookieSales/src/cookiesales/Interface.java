@@ -173,8 +173,8 @@ public class Interface extends javax.swing.JFrame {
 
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        int c; //I can't declare a variable in an if statement, so I put it here
-        String f; //I can't declare a variable in an if statement, so I put it here
+        int c; //I don't want the declaration to be conditional
+        String f; //I don't want the declaration to be conditional
         if (!thinmints.getText().equals("")) { //makes sure there is text in the box
             c = Integer.parseInt(thinmints.getText()); //converts the text to an integer
             cookies.addThinMints(c); //adds a certain number of thin mints
@@ -246,7 +246,7 @@ public class Interface extends javax.swing.JFrame {
         try {
             for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
                 if ("Nimbus".equals(info.getName())) {
-                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
+                    javax.swing.UIManager.setLookAndFeel(javax.swing.UIManager.getSystemLookAndFeelClassName());
                     break;
                 }
             }

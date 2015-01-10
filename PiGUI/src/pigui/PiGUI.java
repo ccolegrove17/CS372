@@ -33,13 +33,22 @@ public class PiGUI extends javax.swing.JFrame {
         jLabel1 = new javax.swing.JLabel();
         calculate = new javax.swing.JButton();
         calculatedPi = new javax.swing.JLabel();
+        calculatedPi2 = new javax.swing.JLabel();
+        errorLeibniz = new javax.swing.JLabel();
+        errorNilakantha = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setTitle("Calculating Pi");
 
         terms.setText("100");
         terms.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 termsActionPerformed(evt);
+            }
+        });
+        terms.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                termsKeyPressed(evt);
             }
         });
 
@@ -52,36 +61,61 @@ public class PiGUI extends javax.swing.JFrame {
             }
         });
 
-        calculatedPi.setText("Calculated Value: ");
+        calculatedPi.setText("Gregory-Leibniz Value: ");
+
+        calculatedPi2.setText("Nilakantha Value: ");
+
+        errorLeibniz.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        errorLeibniz.setText("Percent Error:");
+        errorLeibniz.setHorizontalTextPosition(javax.swing.SwingConstants.LEFT);
+
+        errorNilakantha.setText("Percent Error:");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(calculatedPi, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                        .addGap(36, 36, 36)
+                        .addComponent(calculatedPi2, javax.swing.GroupLayout.DEFAULT_SIZE, 207, Short.MAX_VALUE)))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(errorNilakantha, javax.swing.GroupLayout.DEFAULT_SIZE, 150, Short.MAX_VALUE)
+                    .addComponent(errorLeibniz, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+            .addGroup(layout.createSequentialGroup()
                 .addGap(30, 30, 30)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(calculatedPi)
+                    .addComponent(jLabel1)
                     .addGroup(layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(terms))
+                        .addComponent(terms, javax.swing.GroupLayout.PREFERRED_SIZE, 82, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(18, 18, 18)
-                        .addComponent(calculate)))
-                .addContainerGap(193, Short.MAX_VALUE))
+                        .addComponent(calculate))))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addGap(22, 22, 22)
                 .addComponent(jLabel1)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(terms, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(6, 6, 6)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(1, 1, 1)
+                        .addComponent(terms, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addComponent(calculate))
-                .addGap(30, 30, 30)
-                .addComponent(calculatedPi)
-                .addContainerGap(191, Short.MAX_VALUE))
+                .addGap(15, 15, 15)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(errorLeibniz)
+                    .addComponent(calculatedPi, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addGap(6, 6, 6)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(errorNilakantha)
+                    .addComponent(calculatedPi2))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         pack();
@@ -99,9 +133,24 @@ public class PiGUI extends javax.swing.JFrame {
 
     private void calculateActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_calculateActionPerformed
         int c = Integer.parseInt(terms.getText());//reads from the textfield
-        String f = String.format("Calculated Value: %f", pi.Calculate(c)); //prints out the final value of pi
+        double leibniz = pi.Calculate(c);
+        double nilakantha = pi.Calculate2(c);
+        String f = String.format("Gregory-Leibniz Value: %.15f", leibniz); //prints out the final value of pi
         calculatedPi.setText(f);// sets the label to the calculated value
+        f = String.format("Percent Error: %.8f%%", (leibniz - java.lang.Math.PI) / java.lang.Math.PI * 100);
+        errorLeibniz.setText(f);
+        f = String.format("Nilakantha Value: %.15f", nilakantha);
+        calculatedPi2.setText(f);
+        f = String.format("Percent Error: %.8f%%", (nilakantha - java.lang.Math.PI) / java.lang.Math.PI * 100);
+        errorNilakantha.setText(f);
+        terms.requestFocus();//moves the focus back to the text field
     }//GEN-LAST:event_calculateActionPerformed
+
+    private void termsKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_termsKeyPressed
+        if (evt.getKeyCode() == java.awt.event.KeyEvent.VK_ENTER) { //checks if the user presses enter in the text field
+            calculate.doClick();//clicks the button
+        }
+    }//GEN-LAST:event_termsKeyPressed
 
     /**
      * @param args the command line arguments
@@ -115,7 +164,7 @@ public class PiGUI extends javax.swing.JFrame {
         try {
             for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
                 if ("Nimbus".equals(info.getName())) {
-                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
+                    javax.swing.UIManager.setLookAndFeel(javax.swing.UIManager.getSystemLookAndFeelClassName());
                     break;
                 }
             }
@@ -141,6 +190,9 @@ public class PiGUI extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton calculate;
     private javax.swing.JLabel calculatedPi;
+    private javax.swing.JLabel calculatedPi2;
+    private javax.swing.JLabel errorLeibniz;
+    private javax.swing.JLabel errorNilakantha;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JTextField terms;
     // End of variables declaration//GEN-END:variables
