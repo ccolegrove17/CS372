@@ -18,7 +18,7 @@ public class ShapeClassHierarchy {
         try {
             Shape s1 = new Triangle(2, 1, 2);
             Shape s2 = new Ellipse(1, 2);
-            Shape s3 = new Rectangle(1, 2);
+            Shape s3 = new Rectangle(2, 6);
             System.out.printf("%s: Area: %.2f. Perimeter: %.2f.\n", s1, s1.getArea(), s1.getPerimeter());
             System.out.printf("%s: Area: %.2f. Perimeter: %.2f.\n", s2, s2.getArea(), s2.getPerimeter());
             System.out.printf("%s: Area: %.2f. Perimeter: %.2f.\n", s3, s3.getArea(), s3.getPerimeter());
