@@ -23,6 +23,7 @@ public class CalculatingPi {
 
         //double denominator = BigDecimal(1);//denominator starts at 1
         //int sum=0; //sum starts at 0
+        //PT -- As we discussed in class, look for ways to remove redundancy in your code
         for (int i=0;i<times;i++){//runs as many times as specified by passed in parameter
             if (i%2==0)//takes care of if it's plus or minus
                 sum += (double)4/denominator;//math of the infinite series

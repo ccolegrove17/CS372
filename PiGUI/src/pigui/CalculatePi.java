@@ -12,6 +12,7 @@ import java.math.*;
  *
  * @author ccolegrove17
  */
+//PT -- why not reuse from the calculatingpi package, rather than copy/paste this class. -2
 public class CalculatePi {
 
     /**

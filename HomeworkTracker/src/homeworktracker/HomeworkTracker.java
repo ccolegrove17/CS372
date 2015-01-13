@@ -20,6 +20,7 @@ public class HomeworkTracker {
      * @param list a List of scores
      * @return
      */
+    //PT -- These could all be static, since HomeworkTracker has no member variables
     public double findMax(List<Double> list) {
         double max = list.get(0);
         for (int i = 1; i < list.size(); i++) {

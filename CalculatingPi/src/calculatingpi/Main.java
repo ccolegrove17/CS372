@@ -19,6 +19,7 @@ public class Main {
      */
     public static void main(String[] args) {
         CalculatingPi pi = new CalculatingPi(); //makes an object to calculate
+        //PT -- good that you're checking the array before using it
         if (args.length>0)//checks if there is an argument passed in
         pi.Calculate(Integer.parseInt(args[0]));//converts the arguments into an integer
         else
