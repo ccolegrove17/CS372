@@ -53,10 +53,10 @@ public class User {
     /**
      * Places the bet. Called by all 3 betting buttons.
      * @param bet how much the user bet
-     * @param roll //what the result of the roll was
-     * @param min //what the minimum result could be for a victory
-     * @param max //what the maximum result could be for a victory
-     * @param multiplier //how much more than the bet the user could win
+     * @param roll what the result of the roll was
+     * @param min what the minimum result could be for a victory
+     * @param max what the maximum result could be for a victory
+     * @param multiplier how much more than the bet the user could win
      * @return a string detailing the result of the bet
      * @throws Exception if the user tries to give illegal betting values
      */
