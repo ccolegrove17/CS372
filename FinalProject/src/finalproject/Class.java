@@ -17,13 +17,13 @@ public class Class {
 
     String _ID, _name, _faculty;
     int _credits, _start, _end;
-    String filename = new String("ClassInfo.txt");
+    String filename = new String("ClassInfo2.txt");
 
     public Class() {
 
     }
 
-    public Class(String ID, String name, int credits, int start, int end, String faculty) {
+    public Class(String ID, String name, int start, int end, String faculty, int credits) {
         _ID = ID;
         _name = name;
         _credits = credits;
@@ -33,7 +33,7 @@ public class Class {
     }
 
     public void fillClass() {
-        String[] patterns = {"javascript:webAdvisor.newTab\\(\"(.*?) \\(", "\\) (.*?)\",\"", "</label><input type=\"hidden\" name=\"SEC.MIN.CRED_.*?\" value=\"(.*?)\">", "day (.*?).M - .*?<", " - (..:..).M,.*?<", "</label><input type=\"hidden\" name=\"SEC.FACULTY.INFO_.*?\" value=\"(.*)\">"};
+        String[] patterns = {"javascript:webAdvisor.newTab\\(\"(.*?) \\(", "\\) (.*?)\",\"", "day (.*?).M - .*?<", " - (..:..).M,.*?<", "</label><input type=\"hidden\" name=\"SEC.FACULTY.INFO_.*?\" value=\"(.*)\">", "</label><input type=\"hidden\" name=\"SEC.MIN.CRED_.*?\" value=\"(.*?)\">"};
         try {
             String[] info = {"", "", "", "", "", ""};
             BufferedReader rdr = new BufferedReader(new FileReader(filename));

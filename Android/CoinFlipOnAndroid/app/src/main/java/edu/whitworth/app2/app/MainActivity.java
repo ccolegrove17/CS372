@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import java.util.Random;
@@ -40,9 +41,28 @@ public class MainActivity extends Activity {
         return super.onOptionsItemSelected(item);
     }
 
+    /**
+     * For when they push the button
+     * @param v
+     */
     public void toggleLabel(View v){
-        TextView f = (TextView)this.findViewById(R.id.txtHello);
-        f.setText(coin.flipCoin());
+        TextView f = (TextView)this.findViewById(R.id.txtHello);//gets the label
+        String result = coin.flipCoin();//result of the coin flip
+        f.setText(result);//updates the label with the result
+        if (result=="Heads!"){
+            ImageView g = (ImageView)this.findViewById(R.id.imageView);
+            g.setVisibility(View.VISIBLE);
+            g = (ImageView)this.findViewById(R.id.imageView2);
+            g.setVisibility(View.INVISIBLE);
+        }
+        else{
+            ImageView g = (ImageView)this.findViewById(R.id.imageView2);
+            g.setVisibility(View.VISIBLE);
+            g = (ImageView)this.findViewById(R.id.imageView);
+            g.setVisibility(View.INVISIBLE);
+        }
+
+
     }
 
 }
