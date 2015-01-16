@@ -16,30 +16,33 @@ import java.util.regex.*;
  */
 public class Interface extends javax.swing.JFrame {
 
-    private int months[] = {31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
-    String f = new String("events.txt");
-    ArrayList<Event> events = new ArrayList();
+    private int months[] = {31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};//number of days in the month
+    String f = new String("events.txt");//where the events will be saved
+    ArrayList<Event> events = new ArrayList<>();//an arraylist of all the events
 
+    /**
+     * A function to update how many days are in a month
+     */
     private void dateUpdate() {
-        String s = (String) monthField.getSelectedItem();
-        int m = Integer.parseInt(s);
-        MutableComboBoxModel model = (MutableComboBoxModel) dayField.getModel();
-        int days = months[m - 1];
-        int y = Integer.parseInt(yearField.getText());
-        if (m == 2 && y % 4 == 0) {
-            days++;
+        String s = (String) monthField.getSelectedItem();//reads what month it is
+        int m = Integer.parseInt(s);//turns it into an integer
+        MutableComboBoxModel model = (MutableComboBoxModel) dayField.getModel();//makes the model
+        int days = months[m - 1];//sets the number of days in the month
+        int y = Integer.parseInt(yearField.getText());//reads the year
+        if (m == 2 && y % 4 == 0) {//if the month is february and it is a leap year
+            days++;//adds an extra day to february
         }
-        for (int i = model.getSize() - 1; i >= 0; i--) {
-            model.removeElementAt(i);
+        for (int i = model.getSize() - 1; i >= 0; i--) {//for all the items in the drop-down list
+            model.removeElementAt(i);//removes all the items
         }
-        for (int i = 1; i <= days; i++) {
-            if (i <= 9) {
-                model.addElement("0" + i);
+        for (int i = 1; i <= days; i++) {//for all the days of the month
+            if (i <= 9) {//if the date is below 10
+                model.addElement("0" + i);//adds a 0 to the start of the day
             } else {
-                model.addElement(i);
+                model.addElement(i);//otherwise just adds the day number
             }
         }
-        dayField.setModel(model);
+        dayField.setModel(model);//sets the drop-down items
     }
 
     /**
@@ -233,113 +236,134 @@ public class Interface extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
+    /**
+     * when the user hits the Submit button
+     * @param evt 
+     */
     private void submitButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_submitButtonActionPerformed
-        String year = yearField.getText();
-        int length = year.length();
+        String year = yearField.getText();//reads in what year it is
+        int length = year.length();//length is how many characters were read in
 
-        if (length < 4) {
+        if (length < 4) {//if length is less than 4
             for (int i = 0; i < 4 - length; i++) {
-                year = "0" + year;
+                year = "0" + year;//add zeroes to the beginning of the string until it is 4 long
             }
         }
-        if (length > 4) {
-            infoLabel.setText("Information: That is too far into the future. Stupid time-traveler.");
-            return;
+        if (length > 4) {//if length is greater than 4
+            infoLabel.setText("Information: That is too far into the future. Stupid time-traveler.");//tells the user that they can't do that
+            return;//ends the function
         }
 
-        String date = year + monthField.getSelectedItem() + dayField.getSelectedItem();
-        Event event = new Event(nameField.getText(), locationField.getText(), date);
-        events.add(event);
-        try {
-            BufferedWriter wrtr = new BufferedWriter(new FileWriter(f, true));
-            String line = event.toString();
-            wrtr.write(line);
-            wrtr.newLine();
-            wrtr.close();
-            textArea.append(line + "\n");
-            infoLabel.setText("Information: Added new event!");
+        String date = year + monthField.getSelectedItem() + dayField.getSelectedItem();//makes the date based on what they input
+        Event event = new Event(nameField.getText(), locationField.getText(), date);//makes an event with that name, location, and date
+        events.add(event);//adds the event to the arraylist
+        try {//in case everything breaks
+            BufferedWriter wrtr = new BufferedWriter(new FileWriter(f, true));//makes a new writer
+            String line = event.toString();//calls the function of what to write
+            wrtr.write(line);//writes the line to the file
+            wrtr.newLine();//puts a new line
+            wrtr.close();//closes the file
+            textArea.append(line + "\n");//adds it to the text area
+            infoLabel.setText("Information: Added new event!");//tells the user they added an event
         } catch (Exception ex) {
-            System.out.printf("You fail. blah %s", ex.getMessage());
+            System.out.printf("You fail. %s", ex.getMessage());//hopefully this won't happen
         }
     }//GEN-LAST:event_submitButtonActionPerformed
 
+    /**
+     * For when the program is first opened.
+     * @param evt 
+     */
     private void formWindowOpened(java.awt.event.WindowEvent evt) {//GEN-FIRST:event_formWindowOpened
         try {
-            BufferedReader rdr = new BufferedReader(new FileReader(f));
-            String line;
-            //ArrayList<Event> events = new ArrayList();
-            String[] patterns = {"Name:(.*) Location:", "Location:(.*) Month:", "Month:(.*) Day:", "Day:(.*) Year:", "Year:(.*)"};
-            String[] info = {"", "", "", "", ""};
-            while ((line = rdr.readLine()) != null) {
-                for (int i = 0; i < 5; i++) {
-                    Pattern p = Pattern.compile(patterns[i]);
-                    Matcher m = p.matcher(line);
-                    while (m.find()) {
-                        info[i] = m.group(1);
+            BufferedReader rdr = new BufferedReader(new FileReader(f));//reads in the text file
+            String line;//what's read in
+            String[] patterns = {"Name:(.*) Location:", "Location:(.*) Month:", "Month:(.*) Day:", "Day:(.*) Year:", "Year:(.*)"};//what the regex will search for
+            String[] info = {"", "", "", "", ""};//an array of the information about the event
+            while ((line = rdr.readLine()) != null) {//as long as there are still lines to read in
+                for (int i = 0; i < 5; i++) {//will run 5 times for the different types of information
+                    Pattern p = Pattern.compile(patterns[i]);//makes a pattern
+                    Matcher m = p.matcher(line);//matches the pattern to the line
+                    while (m.find()) {//searches for the pattern
+                        info[i] = m.group(1);//sets what was found to the array
                     }
                 }
-                Event event = new Event(info[0], info[1], info[4] + info[2] + info[3]);
-                events.add(event);
+                Event event = new Event(info[0], info[1], info[4] + info[2] + info[3]);//makes an event based on what was found in the file
+                events.add(event);//adds the event to the arraylist
             }
-            rdr.close();
-            events.sort(Event.dateComparator);
-            textArea.setText(null);
-            for (int i = 0; i < events.size(); i++) {
-                String list = events.get(i).toString();
-                textArea.append(list + "\n");
+            rdr.close();//closes the file
+            events.sort(Event.dateComparator);//sorts the arraylist by date
+            textArea.setText(null);//clears the text area
+            for (int i = 0; i < events.size(); i++) {//as long as there are more objects in the arraylist
+                String list = events.get(i).toString();//sets the event's information
+                textArea.append(list + "\n");//writes the information to the text area
             }
-
-        } catch (Exception ex) {
-            try {
-                BufferedWriter wrtr = new BufferedWriter(new FileWriter(f, true));
-                wrtr.close();
-            } catch (Exception e) {
-                ;
+        } catch (Exception ex) {//if the reading fails
+            try {//in case things break
+                BufferedWriter wrtr = new BufferedWriter(new FileWriter(f, true));//makes an empty file
+                wrtr.close();//closes the empty file
+            } catch (Exception e) {//hopefully we won't get here
+                System.out.println(e.getMessage());//outputs the error message
             }
         }    }//GEN-LAST:event_formWindowOpened
-
+/**
+ * for when they try to sort by date
+ * @param evt 
+ */
     private void dateButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_dateButtonActionPerformed
-        events.sort(Event.dateComparator);
-        textArea.setText(null);
-        for (int i = 0; i < events.size(); i++) {
-            String list = events.get(i).toString();
-            textArea.append(list + "\n");
+        events.sort(Event.dateComparator);//sorts the arraylist by date
+        textArea.setText(null);//clears the text area
+        for (int i = 0; i < events.size(); i++) {//for all the events in the arraylist
+            String list = events.get(i).toString();//sets the string to the event's information
+            textArea.append(list + "\n");//adds the information to the text area
         }
-        infoLabel.setText("Information: Sorted!");
+        infoLabel.setText("Information: Sorted!");//tells the user it was sorted
     }//GEN-LAST:event_dateButtonActionPerformed
-
+/**
+ * for when they try to sort by event name
+ * @param evt 
+ */
     private void nameButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_nameButtonActionPerformed
-        events.sort(Event.nameComparator);
-        textArea.setText(null);
-        for (int i = 0; i < events.size(); i++) {
-            String list = events.get(i).toString();
-            textArea.append(list + "\n");
+        events.sort(Event.nameComparator);//sorts the arraylist by name
+        textArea.setText(null);//clears the text area
+        for (int i = 0; i < events.size(); i++) {//for all the events in the arraylist
+            String list = events.get(i).toString();//sets the string to the event's information
+            textArea.append(list + "\n");//adds the information to the text area
         }
-        infoLabel.setText("Information: Sorted!");
+        infoLabel.setText("Information: Sorted!");//tells the user it was sorted
     }//GEN-LAST:event_nameButtonActionPerformed
-
+/**
+ * for when the user sorts by location
+ * @param evt 
+ */
     private void locationButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_locationButtonActionPerformed
-        events.sort(Event.locationComparator);
-        textArea.setText(null);
-        for (int i = 0; i < events.size(); i++) {
-            String list = events.get(i).toString();
-            textArea.append(list + "\n");
+        events.sort(Event.locationComparator);//sorts the arraylist by location
+        textArea.setText(null);//clears the text area
+        for (int i = 0; i < events.size(); i++) {//for all the events in the arraylist
+            String list = events.get(i).toString();//sets the string to the event's information
+            textArea.append(list + "\n");//adds the information to the text area
         }
-        infoLabel.setText("Information: Sorted!");
+        infoLabel.setText("Information: Sorted!");//tells the user it was sorted
     }//GEN-LAST:event_locationButtonActionPerformed
-
+/**
+ * whenever the user changes the month
+ * @param evt 
+ */
     private void monthFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_monthFieldActionPerformed
-        dateUpdate();
+        dateUpdate();//updates how many days are available
     }//GEN-LAST:event_monthFieldActionPerformed
-
+/**
+ * for when the user finished entering the year
+ * @param evt 
+ */
     private void yearFieldFocusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_yearFieldFocusLost
-        dateUpdate();
+        dateUpdate();//updates how many days are available in case it's a leap year
     }//GEN-LAST:event_yearFieldFocusLost
 
     private void yearFieldKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_yearFieldKeyTyped
-        char character = evt.getKeyChar();
-        if (character < '0' || character > '9') {
-            evt.consume();
+        char character = evt.getKeyChar();//gets the character entered into the textfield
+        if (character < '0' || character > '9') {//if the character is not a number
+            evt.consume();//doesn't allow the character to be added to the text field
         }
     }//GEN-LAST:event_yearFieldKeyTyped
 
