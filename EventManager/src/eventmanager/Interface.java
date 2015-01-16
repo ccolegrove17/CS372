@@ -6,8 +6,9 @@
 package eventmanager;
 
 import java.io.*;
-import java.util.regex.*;
+import javax.swing.*;
 import java.util.*;
+import java.util.regex.*;
 
 /**
  *
@@ -15,8 +16,31 @@ import java.util.*;
  */
 public class Interface extends javax.swing.JFrame {
 
-    File f = new File("c:\\users\\ccolegrove17\\Desktop\\events.txt");
+    private int months[] = {31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
+    String f = new String("events.txt");
     ArrayList<Event> events = new ArrayList();
+
+    private void dateUpdate() {
+        String s = (String) monthField.getSelectedItem();
+        int m = Integer.parseInt(s);
+        MutableComboBoxModel model = (MutableComboBoxModel) dayField.getModel();
+        int days = months[m - 1];
+        int y = Integer.parseInt(yearField.getText());
+        if (m == 2 && y % 4 == 0) {
+            days++;
+        }
+        for (int i = model.getSize() - 1; i >= 0; i--) {
+            model.removeElementAt(i);
+        }
+        for (int i = 1; i <= days; i++) {
+            if (i <= 9) {
+                model.addElement("0" + i);
+            } else {
+                model.addElement(i);
+            }
+        }
+        dayField.setModel(model);
+    }
 
     /**
      * Creates new form Interface
@@ -50,6 +74,7 @@ public class Interface extends javax.swing.JFrame {
         locationButton = new javax.swing.JButton();
         monthField = new javax.swing.JComboBox();
         dayField = new javax.swing.JComboBox();
+        infoLabel = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         addWindowListener(new java.awt.event.WindowAdapter() {
@@ -58,9 +83,21 @@ public class Interface extends javax.swing.JFrame {
             }
         });
 
+        textArea.setEditable(false);
         textArea.setColumns(20);
         textArea.setRows(5);
         jScrollPane1.setViewportView(textArea);
+
+        yearField.addFocusListener(new java.awt.event.FocusAdapter() {
+            public void focusLost(java.awt.event.FocusEvent evt) {
+                yearFieldFocusLost(evt);
+            }
+        });
+        yearField.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                yearFieldKeyTyped(evt);
+            }
+        });
 
         jLabel1.setText("Name");
 
@@ -101,73 +138,93 @@ public class Interface extends javax.swing.JFrame {
         });
 
         monthField.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "01", "02", "03", "04", "05", "06", "07", "08", "09", "10", "11", "12" }));
+        monthField.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                monthFieldActionPerformed(evt);
+            }
+        });
 
         dayField.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "01", "02", "03", "04", "05", "06", "07", "08", "09", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "30", "31" }));
+
+        infoLabel.setText("Information: ");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jScrollPane1)
+            .addComponent(jScrollPane1, javax.swing.GroupLayout.Alignment.TRAILING)
             .addGroup(layout.createSequentialGroup()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(nameField, javax.swing.GroupLayout.PREFERRED_SIZE, 87, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jLabel1))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(locationField, javax.swing.GroupLayout.PREFERRED_SIZE, 81, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jLabel2))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(layout.createSequentialGroup()
-                                .addComponent(jLabel3)
-                                .addGap(27, 27, 27)
-                                .addComponent(jLabel4))
-                            .addGroup(layout.createSequentialGroup()
-                                .addComponent(monthField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(18, 18, 18)
-                                .addComponent(dayField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                        .addGap(20, 20, 20)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel5)
-                            .addComponent(yearField, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(36, 36, 36)
+                .addContainerGap()
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
+                        .addGap(38, 38, 38)
                         .addComponent(dateButton)
-                        .addGap(18, 18, 18)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(nameButton)
-                        .addGap(18, 18, 18)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(locationButton))
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(336, 336, 336)
-                        .addComponent(submitButton)))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                            .addComponent(infoLabel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addGroup(layout.createSequentialGroup()
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(nameField, javax.swing.GroupLayout.PREFERRED_SIZE, 119, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(jLabel1))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(jLabel2)
+                                    .addComponent(locationField, javax.swing.GroupLayout.PREFERRED_SIZE, 137, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(jLabel5)
+                                    .addComponent(yearField, javax.swing.GroupLayout.PREFERRED_SIZE, 51, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                .addGroup(layout.createSequentialGroup()
+                                    .addComponent(jLabel3)
+                                    .addGap(18, 18, 18)
+                                    .addComponent(jLabel4))
+                                .addGroup(layout.createSequentialGroup()
+                                    .addComponent(monthField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                    .addComponent(dayField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                            .addComponent(submitButton, javax.swing.GroupLayout.Alignment.TRAILING))))
+                .addContainerGap(115, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addGap(0, 0, Short.MAX_VALUE)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel1)
-                    .addComponent(jLabel2)
-                    .addComponent(jLabel3)
-                    .addComponent(jLabel4)
-                    .addComponent(jLabel5))
-                .addGap(18, 18, 18)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(nameField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(locationField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(yearField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(monthField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(dayField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(0, 6, Short.MAX_VALUE)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jLabel3)
+                            .addComponent(jLabel5))
+                        .addGap(38, 38, 38))
+                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(layout.createSequentialGroup()
+                                .addGap(2, 2, 2)
+                                .addComponent(jLabel4))
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                .addComponent(jLabel2)
+                                .addComponent(jLabel1)))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(dayField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(monthField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(yearField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(locationField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(nameField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(submitButton)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(submitButton)
+                    .addComponent(infoLabel))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(dateButton)
                     .addComponent(nameButton)
+                    .addComponent(dateButton)
                     .addComponent(locationButton))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 187, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -179,32 +236,34 @@ public class Interface extends javax.swing.JFrame {
     private void submitButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_submitButtonActionPerformed
         String year = yearField.getText();
         int length = year.length();
+
         if (length < 4) {
             for (int i = 0; i < 4 - length; i++) {
                 year = "0" + year;
             }
         }
+        if (length > 4) {
+            infoLabel.setText("Information: That is too far into the future. Stupid time-traveler.");
+            return;
+        }
 
         String date = year + monthField.getSelectedItem() + dayField.getSelectedItem();
         Event event = new Event(nameField.getText(), locationField.getText(), date);
-
         events.add(event);
         try {
             BufferedWriter wrtr = new BufferedWriter(new FileWriter(f, true));
-            String line = "Name:" + event.getName() + " Location:" + event.getLocation() + " Month:" + date.substring(4, 6) + " Day:" + date.substring(6, 8) + " Year:" + date.substring(0, 4) + "\n";
+            String line = event.toString();
             wrtr.write(line);
             wrtr.newLine();
             wrtr.close();
-            textArea.append(line);
+            textArea.append(line + "\n");
+            infoLabel.setText("Information: Added new event!");
         } catch (Exception ex) {
-            System.out.printf("You fail. %s", ex.getMessage());
+            System.out.printf("You fail. blah %s", ex.getMessage());
         }
-
     }//GEN-LAST:event_submitButtonActionPerformed
 
     private void formWindowOpened(java.awt.event.WindowEvent evt) {//GEN-FIRST:event_formWindowOpened
-        File f = new File("c:\\users\\ccolegrove17\\Desktop\\events.txt");
-
         try {
             BufferedReader rdr = new BufferedReader(new FileReader(f));
             String line;
@@ -220,49 +279,69 @@ public class Interface extends javax.swing.JFrame {
                     }
                 }
                 Event event = new Event(info[0], info[1], info[4] + info[2] + info[3]);
-                String list = "Name:" + event.getName() + " Location:" + event.getLocation() + " Month:" + event.getMonth() + " Day:" + event.getDay() + " Year:" + event.getYear();
                 events.add(event);
             }
             rdr.close();
-            textArea.setText(null);
             events.sort(Event.dateComparator);
-
+            textArea.setText(null);
             for (int i = 0; i < events.size(); i++) {
-                String list = "Name:" + events.get(i).getName() + " Location:" + events.get(i).getLocation() + " Month:" + events.get(i).getMonth() + " Day:" + events.get(i).getDay() + " Year:" + events.get(i).getYear();
+                String list = events.get(i).toString();
                 textArea.append(list + "\n");
             }
 
         } catch (Exception ex) {
-            System.out.printf("You failed. %s", ex.getMessage());
-
+            try {
+                BufferedWriter wrtr = new BufferedWriter(new FileWriter(f, true));
+                wrtr.close();
+            } catch (Exception e) {
+                ;
+            }
         }    }//GEN-LAST:event_formWindowOpened
 
     private void dateButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_dateButtonActionPerformed
         events.sort(Event.dateComparator);
         textArea.setText(null);
         for (int i = 0; i < events.size(); i++) {
-            String list = "Name:" + events.get(i).getName() + " Location:" + events.get(i).getLocation() + " Month:" + events.get(i).getMonth() + " Day:" + events.get(i).getDay() + " Year:" + events.get(i).getYear();
+            String list = events.get(i).toString();
             textArea.append(list + "\n");
         }
+        infoLabel.setText("Information: Sorted!");
     }//GEN-LAST:event_dateButtonActionPerformed
 
     private void nameButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_nameButtonActionPerformed
         events.sort(Event.nameComparator);
         textArea.setText(null);
         for (int i = 0; i < events.size(); i++) {
-            String list = "Name:" + events.get(i).getName() + " Location:" + events.get(i).getLocation() + " Month:" + events.get(i).getMonth() + " Day:" + events.get(i).getDay() + " Year:" + events.get(i).getYear();
+            String list = events.get(i).toString();
             textArea.append(list + "\n");
         }
+        infoLabel.setText("Information: Sorted!");
     }//GEN-LAST:event_nameButtonActionPerformed
 
     private void locationButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_locationButtonActionPerformed
         events.sort(Event.locationComparator);
         textArea.setText(null);
         for (int i = 0; i < events.size(); i++) {
-            String list = "Name:" + events.get(i).getName() + " Location:" + events.get(i).getLocation() + " Month:" + events.get(i).getMonth() + " Day:" + events.get(i).getDay() + " Year:" + events.get(i).getYear();
+            String list = events.get(i).toString();
             textArea.append(list + "\n");
         }
+        infoLabel.setText("Information: Sorted!");
     }//GEN-LAST:event_locationButtonActionPerformed
+
+    private void monthFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_monthFieldActionPerformed
+        dateUpdate();
+    }//GEN-LAST:event_monthFieldActionPerformed
+
+    private void yearFieldFocusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_yearFieldFocusLost
+        dateUpdate();
+    }//GEN-LAST:event_yearFieldFocusLost
+
+    private void yearFieldKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_yearFieldKeyTyped
+        char character = evt.getKeyChar();
+        if (character < '0' || character > '9') {
+            evt.consume();
+        }
+    }//GEN-LAST:event_yearFieldKeyTyped
 
     /**
      * @param args the command line arguments
@@ -277,7 +356,7 @@ public class Interface extends javax.swing.JFrame {
         try {
             for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
                 if ("Nimbus".equals(info.getName())) {
-                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
+                    javax.swing.UIManager.setLookAndFeel(javax.swing.UIManager.getSystemLookAndFeelClassName());
                     break;
                 }
             }
@@ -303,6 +382,7 @@ public class Interface extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton dateButton;
     private javax.swing.JComboBox dayField;
+    private javax.swing.JLabel infoLabel;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;

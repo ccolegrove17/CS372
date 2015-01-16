@@ -15,15 +15,17 @@ import java.util.*;
 public class Event {
 
     private String name, location, date;
-    File f = new File("c:\\users\\ccolegrove17\\Desktop\\events.txt");
 
     public Event(String name, String location, String date) {
         this.name = name;
         this.location = location;
         this.date = date;
-
     }
 
+    @Override
+    public String toString(){
+        return "Name:" + getName() + " Location:" + getLocation() + " Month:" + date.substring(4, 6) + " Day:" + date.substring(6, 8) + " Year:" + date.substring(0, 4);
+    }
     public static Comparator<Event> nameComparator = new Comparator<Event>() {
         @Override
         public int compare(Event e1, Event e2) {
@@ -93,5 +95,4 @@ public class Event {
     public void loadList() {
 
     }
-
 }
