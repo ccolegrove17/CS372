@@ -15,15 +15,23 @@ public class Triangle extends Shape {
 
     int s1, s2, s3;
 
+    /**
+     * Constructor for triangles
+     *
+     * @param s1 one side length
+     * @param s2 second side length
+     * @param s3 last side length
+     * @throws IllegalArgumentException
+     */
     public Triangle(int s1, int s2, int s3) throws IllegalArgumentException {
-        int[] ints = {s1, s2, s3};
-        Arrays.sort(ints);//puts the 
+        int[] ints = {s1, s2, s3};//an array of the side lengths
+        Arrays.sort(ints);//puts the side lengths in order
         if (s1 <= 0 || s2 <= 0 || s3 <= 0 || ints[0] + ints[1] <= ints[2]) { //checks triangle validity. Thanks, Cyberchase!!
-            throw new IllegalArgumentException("This is not a valid triangle.");
+            throw new IllegalArgumentException("This is not a valid triangle.");//throws an exception
         }
-        this.s1 = s1;
-        this.s2 = s2;
-        this.s3 = s3;
+        this.s1 = s1;//sets side length
+        this.s2 = s2;//sets side length
+        this.s3 = s3;//sets side length
     }
 
     /**
@@ -37,12 +45,12 @@ public class Triangle extends Shape {
     }
 
     /**
-     * 
+     *
      * @return the name of the shape.
      */
     @Override
     public String toString() {
-        return "Triangle";
+        return "Triangle";//returns class name
     }
 
     /**
@@ -51,7 +59,7 @@ public class Triangle extends Shape {
      */
     @Override
     public double getPerimeter() {
-        return s1 + s2 + s3;
+        return s1 + s2 + s3;//returns perimeter
     }
 
 }

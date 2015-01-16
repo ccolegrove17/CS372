@@ -238,7 +238,8 @@ public class Interface extends javax.swing.JFrame {
 
     /**
      * when the user hits the Submit button
-     * @param evt 
+     *
+     * @param evt
      */
     private void submitButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_submitButtonActionPerformed
         String year = yearField.getText();//reads in what year it is
@@ -272,7 +273,8 @@ public class Interface extends javax.swing.JFrame {
 
     /**
      * For when the program is first opened.
-     * @param evt 
+     *
+     * @param evt
      */
     private void formWindowOpened(java.awt.event.WindowEvent evt) {//GEN-FIRST:event_formWindowOpened
         try {
@@ -306,10 +308,11 @@ public class Interface extends javax.swing.JFrame {
                 System.out.println(e.getMessage());//outputs the error message
             }
         }    }//GEN-LAST:event_formWindowOpened
-/**
- * for when they try to sort by date
- * @param evt 
- */
+    /**
+     * for when they try to sort by date
+     *
+     * @param evt
+     */
     private void dateButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_dateButtonActionPerformed
         events.sort(Event.dateComparator);//sorts the arraylist by date
         textArea.setText(null);//clears the text area
@@ -319,10 +322,11 @@ public class Interface extends javax.swing.JFrame {
         }
         infoLabel.setText("Information: Sorted!");//tells the user it was sorted
     }//GEN-LAST:event_dateButtonActionPerformed
-/**
- * for when they try to sort by event name
- * @param evt 
- */
+    /**
+     * for when they try to sort by event name
+     *
+     * @param evt
+     */
     private void nameButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_nameButtonActionPerformed
         events.sort(Event.nameComparator);//sorts the arraylist by name
         textArea.setText(null);//clears the text area
@@ -332,10 +336,11 @@ public class Interface extends javax.swing.JFrame {
         }
         infoLabel.setText("Information: Sorted!");//tells the user it was sorted
     }//GEN-LAST:event_nameButtonActionPerformed
-/**
- * for when the user sorts by location
- * @param evt 
- */
+    /**
+     * for when the user sorts by location
+     *
+     * @param evt
+     */
     private void locationButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_locationButtonActionPerformed
         events.sort(Event.locationComparator);//sorts the arraylist by location
         textArea.setText(null);//clears the text area
@@ -345,17 +350,19 @@ public class Interface extends javax.swing.JFrame {
         }
         infoLabel.setText("Information: Sorted!");//tells the user it was sorted
     }//GEN-LAST:event_locationButtonActionPerformed
-/**
- * whenever the user changes the month
- * @param evt 
- */
+    /**
+     * whenever the user changes the month
+     *
+     * @param evt
+     */
     private void monthFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_monthFieldActionPerformed
         dateUpdate();//updates how many days are available
     }//GEN-LAST:event_monthFieldActionPerformed
-/**
- * for when the user finished entering the year
- * @param evt 
- */
+    /**
+     * for when the user finished entering the year
+     *
+     * @param evt
+     */
     private void yearFieldFocusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_yearFieldFocusLost
         dateUpdate();//updates how many days are available in case it's a leap year
     }//GEN-LAST:event_yearFieldFocusLost

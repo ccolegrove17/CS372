@@ -31,8 +31,7 @@ public class Event {
 
     /**
      * outputs the correct string of information
-     *
-     * @return
+     * @return the string of information
      */
     @Override
     public String toString() {

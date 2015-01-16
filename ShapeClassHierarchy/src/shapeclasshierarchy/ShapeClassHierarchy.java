@@ -16,15 +16,15 @@ public class ShapeClassHierarchy {
      */
     public static void main(String[] args) {
         try {
-            Shape s1 = new Triangle(2, 1, 2);
-            Shape s2 = new Ellipse(1, 2);
-            Shape s3 = new Rectangle(2, 6);
-            System.out.printf("%s: Area: %.2f. Perimeter: %.2f.\n", s1, s1.getArea(), s1.getPerimeter());
-            System.out.printf("%s: Area: %.2f. Perimeter: %.2f.\n", s2, s2.getArea(), s2.getPerimeter());
-            System.out.printf("%s: Area: %.2f. Perimeter: %.2f.\n", s3, s3.getArea(), s3.getPerimeter());
+            Shape s1 = new Triangle(2, 1, 2);//makes a triangle
+            Shape s2 = new Ellipse(1, 2);//makes an ellipse
+            Shape s3 = new Rectangle(2, 6);//makes a rectangle
+            System.out.printf("%s: Area: %.2f. Perimeter: %.2f.\n", s1, s1.getArea(), s1.getPerimeter());//outputs stuff about the triangle
+            System.out.printf("%s: Area: %.2f. Perimeter: %.2f.\n", s2, s2.getArea(), s2.getPerimeter());//outputs stuff about the ellipse
+            System.out.printf("%s: Area: %.2f. Perimeter: %.2f.\n", s3, s3.getArea(), s3.getPerimeter());//outputs stuff about the rectangle
 
         } catch (IllegalArgumentException ex) {
-            System.out.printf("Error: %s\n", ex.getMessage());
+            System.out.printf("Error: %s\n", ex.getMessage());//gives an error message
         }
     }
 
