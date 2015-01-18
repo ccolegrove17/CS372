@@ -102,6 +102,25 @@ public class Class {
         }
     }
 
+    public void fillClass2() {
+        String pattern = "(Monday|Tuesday|Wednesday|Thursday|Friday).*?<";
+        String[] dayNames = {"Monday", "Tuesday", "Wednesday", "Thursday", "Friday"};
+        boolean[] days = {false, false, false, false, false};
+        try {
+            BufferedReader rdr = new BufferedReader(new FileReader(filename));
+            String line;
+            while ((line = rdr.readLine()) != null) {
+                Pattern p = Pattern.compile(pattern);
+                Matcher m = p.matcher(line);
+                while (m.find()) {
+                    System.out.print(m.group(1) + "\n");
+                }
+            }
+            rdr.close();
+        } catch (Exception ex) {
+            System.out.printf("You fail. blah %s", ex.getMessage());
+        }
+    }
     public static Comparator<Class> IDComparator = new Comparator<Class>() {
         @Override
         public int compare(Class e1, Class e2) {
