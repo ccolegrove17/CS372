@@ -1,0 +1,35 @@
+
+<a class="left" id="SEC_SHORT_TITLE_1" href='javascript:webAdvisor.newTab("AB-196-1 (57753) Elementary Arabic II","?TYPE=P&PID=ST-XWESTS13C&CLONE=Y&CLONE_PROCESS=Y&SPAUKQ=212264750928623&CONSTITUENCY=WBDF&TOKENIDX=2598496565");'>AB-196-1 (57753) Elementary Arabic II</a>
+</div>
+</td><td class=" SEC_LOCATION ms-alignleft dt-row">
+<div id="SEC_LOCATION_1" class="">Whitworth Campus<label class="hidden" for="SEC_LOCATION_1"></label><input type="hidden" name="SEC.LOCATION_1" value="Whitworth Campus">
+</div>
+</td><td class=" SEC_MEETING_INFO ms-alignleft dt-row">
+<div id="SEC_MEETING_INFO_1" class="">02/04/2015-05/15/2015 Regular Course Monday, Wednesday, Friday 07:45AM - 08:55AM, Dixon Hall, Room 102<label class="hidden" for="SEC_MEETING_INFO_1"></label><input type="hidden" name="SEC.MEETING.INFO_1" value="02/04/2015-05/15/2015 Regular Course Monday, Wednesday, Friday 07:45AM - 08:55AM, Dixon Hall, Room 102">
+</div>
+</td><td class=" SEC_FACULTY_INFO ms-alignleft dt-row">
+<div id="SEC_FACULTY_INFO_1" class="">R. Al Abid<label class="hidden" for="SEC_FACULTY_INFO_1"></label><input type="hidden" name="SEC.FACULTY.INFO_1" value="R. Al Abid">
+</div>
+</td><td class=" LIST_VAR5 ms-alignleft dt-row">
+<div id="LIST_VAR5_1" class="">12 / 20 / 0<label class="hidden" for="LIST_VAR5_1"></label><input type="hidden" name="LIST.VAR5_1" value="12 / 20 / 0">
+</div>
+</td><td class=" LIST_VAR8 ms-alignleft dt-row">
+<div id="LIST_VAR8_1" class="">&nbsp;<label class="hidden" for="LIST_VAR8_1"></label><input type="hidden" name="LIST.VAR8_1" value="">
+</div>
+</td><td class=" SEC_MIN_CRED ms-alignright dt-row">
+<div id="SEC_MIN_CRED_1" class="">4.00<label class="hidden" for="SEC_MIN_CRED_1"></label><input type="hidden" name="SEC.MIN.CRED_1" value="4.00">
+</div>
+</td><td class=" SEC_ACAD_LEVEL ms-alignleft dt-row">
+<div id="SEC_ACAD_LEVEL_1" class="">UG<label class="hidden" for="SEC_ACAD_LEVEL_1"></label><input type="hidden" name="SEC.ACAD.LEVEL_1" value="UG">
+</div>
+</td><td class=" LIST_VAR17 ms-alignleft dt-row">
+<div id="LIST_VAR17_1" class="">WORLD LANGUAGES &amp; CULTURE, 
+GLOBAL PERSPECTIVES<label class="hidden" for="LIST_VAR17_1"></label><input type="hidden" name="LIST.VAR17_1" value="WORLD LANGUAGES &amp; CULTURE, 
+GLOBAL PERSPECTIVES">
+</div>
+</td><td class=" LIST_VAR12 ms-alignleft dt-row">
+<div id="LIST_VAR12_1" class="">&nbsp;<label class="hidden" for="LIST_VAR12_1"></label><input type="hidden" name="LIST.VAR12_1" value="">
+</div>
+</td>
+</tr>
+<tr>

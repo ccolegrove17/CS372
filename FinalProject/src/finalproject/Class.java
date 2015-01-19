@@ -20,12 +20,13 @@ public class Class {
     ArrayList<Class> directory = new ArrayList<Class>();
     String _ID, _name, _faculty, _start, _end;
     int _credits, length, convertedStart, convertedEnd;
+    boolean[] _days;
     String filename = new String("ClassInfo2.txt");
 
     public Class() {
     }
 
-    public Class(String ID, String name, String start, String end, String faculty, int credits) {
+    public Class(String ID, String name, boolean[] days, String start, String end, String faculty, int credits) {
         if (name.substring(0, 1).equals(" ")) {
             _name = name.substring(1, name.length());
         } else {
@@ -33,6 +34,7 @@ public class Class {
         }
         _ID = ID;
         _credits = credits;
+        _days = days;
         _start = start;
         _end = end;
         convertedStart = convertTime(start);
@@ -77,23 +79,43 @@ public class Class {
         return _credits;
     }
 
+    public String getDays() {
+        String[] dayNames = {"Monday", "Tuesday", "Wednesday", "Thursday", "Friday"};
+        String result = "";
+        for (int i = 0; i < 5; i++) {
+            if (_days[i] == true) {
+                result += dayNames[i] + " ";
+            }
+        }
+        return result;
+    }
+
     public void fillClass() {
-        String[] patterns = {"javascript:webAdvisor.newTab\\(\"(.*?) \\(", "\\) (.*?)\",\"", "day (..:...)M - .*?<", " - (..:...)M,.*?<", "</label><input type=\"hidden\" name=\"SEC.FACULTY.INFO_.*?\" value=\"(.*)\">", "</label><input type=\"hidden\" name=\"SEC.MIN.CRED_.*?\" value=\"(.*?).00\">"};
+        boolean[] days = {false, false, false, false, false};
+        String[] patterns = {"Monday|Tuesday|Wednesday|Thursday|Friday", "javascript:webAdvisor.newTab\\(\"(.*?) \\(", "\\) (.*?)\",\"", "day (..:...)M - .*?<", " - (..:...)M,.*?<", "</label><input type=\"hidden\" name=\"SEC.FACULTY.INFO_.*?\" value=\"(.*)\">", "</label><input type=\"hidden\" name=\"SEC.MIN.CRED_.*?\" value=\"(.*?).00\">"};
         try {
-            String[] info = {"", "", "", "", "", ""};
+            String[] info = {"", "", "", "", "", "", ""};
             BufferedReader rdr = new BufferedReader(new FileReader(filename));
             String line;
             while ((line = rdr.readLine()) != null) {
-                for (int i = 0; i < 6; i++) {
+                for (int i = 0; i < 7; i++) {
+//                    if (i == 0) {
+//                        days = findDays(line);
+//                    } else {
                     Pattern p = Pattern.compile(patterns[i]);
                     Matcher m = p.matcher(line);
                     while (m.find()) {
-                        info[i] = m.group(1);
-                        if (i == 5) {
-                            Class newClass = new Class(info[0], info[1], info[2], info[3], info[4], Integer.parseInt(info[5]));
-                            directory.add(newClass);
+                        if (i == 0) {
+                            days = findDays(line);
+                        } else {
+                            info[i] = m.group(1);
+                            if (i == 6) {
+                                Class newClass = new Class(info[1], info[2], days, info[3], info[4], info[5], Integer.parseInt(info[6]));
+                                directory.add(newClass);
+                            }
                         }
                     }
+                    //}
                 }
             }
             rdr.close();
@@ -102,25 +124,21 @@ public class Class {
         }
     }
 
-    public void fillClass2() {
-        String pattern = "(Monday|Tuesday|Wednesday|Thursday|Friday).*?<";
-        String[] dayNames = {"Monday", "Tuesday", "Wednesday", "Thursday", "Friday"};
+    public boolean[] findDays(String line) {
+        String[] patterns = {"(Monday)", "(Tuesday)", "(Wednesday)", "(Thursday)", "(Friday)"};
         boolean[] days = {false, false, false, false, false};
-        try {
-            BufferedReader rdr = new BufferedReader(new FileReader(filename));
-            String line;
-            while ((line = rdr.readLine()) != null) {
-                Pattern p = Pattern.compile(pattern);
-                Matcher m = p.matcher(line);
-                while (m.find()) {
-                    System.out.print(m.group(1) + "\n");
-                }
+        for (int i = 0; i < 5; i++) {
+            Pattern p = Pattern.compile(patterns[i]);
+            Matcher m = p.matcher(line);
+            if (m.find()) {
+                //System.out.print(m.group(1) + "\n");
+                days[i] = true;
             }
-            rdr.close();
-        } catch (Exception ex) {
-            System.out.printf("You fail. blah %s", ex.getMessage());
+            //System.out.print(days[0] + " " + days[1] + " " + days[2] + " " + days[3] + " " + days[4] + "\n");
         }
+        return days;
     }
+
     public static Comparator<Class> IDComparator = new Comparator<Class>() {
         @Override
         public int compare(Class e1, Class e2) {
@@ -258,7 +276,8 @@ public class Class {
     }
 
     public String outputInfo(int i) {
-        return "ID: " + directory.get(i).getID() + "\nName: " + directory.get(i).getName() + "\nCredits: " + directory.get(i).getCredits() + "\nFaculty: " + directory.get(i).getFaculty() + "\nStart Time: " + directory.get(i).getStart();
+        return "ID: " + directory.get(i).getID() + "\nName: " + directory.get(i).getName() + "\nCredits: " + directory.get(i).getCredits()
+                + "\nFaculty: " + directory.get(i).getFaculty() + "\nStart Time: " + directory.get(i).getStart() + "\nDays:" + directory.get(i).getDays();
     }
 
 }

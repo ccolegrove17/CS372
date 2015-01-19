@@ -164,7 +164,6 @@ public class Interface extends javax.swing.JFrame {
 
     private void formWindowOpened(java.awt.event.WindowEvent evt) {//GEN-FIRST:event_formWindowOpened
         classes.fillClass();
-        classes.fillClass2();
         //classes.directory.sort(classes.nameComparator);        
         //classes.outputInfo(2);
         //System.out.print(classes.convertTime("04:20P"));
