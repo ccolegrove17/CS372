@@ -40,6 +40,9 @@ public class Interface extends javax.swing.JFrame {
         jButton5 = new javax.swing.JButton();
         findClassField = new javax.swing.JTextField();
         findClassButton = new javax.swing.JButton();
+        conflictField2 = new javax.swing.JTextField();
+        conflictField1 = new javax.swing.JTextField();
+        conflictButton = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         addWindowListener(new java.awt.event.WindowAdapter() {
@@ -108,6 +111,13 @@ public class Interface extends javax.swing.JFrame {
             }
         });
 
+        conflictButton.setText("Check Conflict");
+        conflictButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                conflictButtonActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -128,13 +138,20 @@ public class Interface extends javax.swing.JFrame {
                         .addComponent(jButton5))
                     .addGroup(layout.createSequentialGroup()
                         .addContainerGap()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(classField, javax.swing.GroupLayout.PREFERRED_SIZE, 53, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(findClassField, javax.swing.GroupLayout.PREFERRED_SIZE, 131, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                            .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
+                                .addGap(1, 1, 1)
+                                .addComponent(conflictField1)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(conflictField2))
+                            .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                .addComponent(classField, javax.swing.GroupLayout.PREFERRED_SIZE, 53, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(findClassField, javax.swing.GroupLayout.PREFERRED_SIZE, 131, javax.swing.GroupLayout.PREFERRED_SIZE)))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(submitButton)
-                            .addComponent(findClassButton))))
+                            .addComponent(findClassButton)
+                            .addComponent(conflictButton))))
                 .addContainerGap(49, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
@@ -144,11 +161,16 @@ public class Interface extends javax.swing.JFrame {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(classField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(submitButton))
-                .addGap(18, 18, 18)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(findClassButton)
+                    .addComponent(findClassField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(findClassField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(findClassButton))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 33, Short.MAX_VALUE)
+                    .addComponent(conflictField2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(conflictField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(conflictButton))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 16, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jButton1)
                     .addComponent(jButton2)
@@ -164,18 +186,14 @@ public class Interface extends javax.swing.JFrame {
 
     private void formWindowOpened(java.awt.event.WindowEvent evt) {//GEN-FIRST:event_formWindowOpened
         classes.fillClass();
-        //classes.directory.sort(classes.nameComparator);        
-        //classes.outputInfo(2);
-        //System.out.print(classes.convertTime("04:20P"));
     }//GEN-LAST:event_formWindowOpened
 
     private void submitButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_submitButtonActionPerformed
         textArea.setText(null);
-        try{
-        textArea.append(classes.outputInfo(Integer.parseInt(classField.getText())-1));
-        }
-        catch (Exception ex){
-            System.out.printf("Error: %s",ex.getMessage());
+        try {
+            textArea.append(classes.outputInfo(Integer.parseInt(classField.getText()) - 1));
+        } catch (Exception ex) {
+            System.out.printf("Error: %s", ex.getMessage());
         }
         classField.setText(null);
         classField.requestFocus();
@@ -223,10 +241,16 @@ public class Interface extends javax.swing.JFrame {
                 } else {
                     textArea.append("\n\n" + classes.outputInfo(i));
                 }
-
             }
         }
     }//GEN-LAST:event_findClassButtonActionPerformed
+
+    private void conflictButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_conflictButtonActionPerformed
+        if (classes.dayConflict(classes.directory.get(Integer.parseInt(conflictField1.getText()) - 1), classes.directory.get(Integer.parseInt(conflictField2.getText()) - 1)))
+            System.out.println("Conflict");
+        else
+            System.out.println("No conflict");
+    }//GEN-LAST:event_conflictButtonActionPerformed
 
     /**
      * @param args the command line arguments
@@ -267,6 +291,9 @@ public class Interface extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JTextField classField;
+    private javax.swing.JButton conflictButton;
+    private javax.swing.JTextField conflictField1;
+    private javax.swing.JTextField conflictField2;
     private javax.swing.JButton findClassButton;
     private javax.swing.JTextField findClassField;
     private javax.swing.JButton jButton1;

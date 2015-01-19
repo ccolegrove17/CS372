@@ -276,8 +276,25 @@ public class Class {
     }
 
     public String outputInfo(int i) {
-        return "ID: " + directory.get(i).getID() + "\nName: " + directory.get(i).getName() + "\nCredits: " + directory.get(i).getCredits()
-                + "\nFaculty: " + directory.get(i).getFaculty() + "\nStart Time: " + directory.get(i).getStart() + "\nDays:" + directory.get(i).getDays();
+        return "Entry Number: " + (i + 1) + "\nID: " + directory.get(i).getID() + "\nName: " + directory.get(i).getName() + "\nCredits: " + directory.get(i).getCredits()
+                + "\nFaculty: " + directory.get(i).getFaculty() + "\nStart Time: " + directory.get(i).getStart() + "\nEnd Time: " + directory.get(i).getEnd() + "\nDays:" + directory.get(i).getDays();
+    }
+
+    public boolean dayConflict(Class c1, Class c2) {
+        for (int i = 0; i < 5; i++) {
+            if (c1._days[i] == c2._days[i]) {
+                return timeConflict(c1, c2);
+            }
+        }
+        return false;
+    }
+
+    public boolean timeConflict(Class c1, Class c2) {
+        if ((c2.convertedStart >= c1.convertedStart && c2.convertedStart <= c1.convertedEnd) || (c1.convertedStart >= c2.convertedStart && c1.convertedStart <= c2.convertedEnd)
+                || (c2.convertedEnd >= c1.convertedStart && c2.convertedEnd <= c1.convertedEnd) || (c1.convertedEnd >= c2.convertedStart && c1.convertedEnd <= c2.convertedEnd)) {
+            return true;
+        }
+        return false;
     }
 
 }
