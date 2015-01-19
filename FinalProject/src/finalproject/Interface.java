@@ -171,7 +171,12 @@ public class Interface extends javax.swing.JFrame {
 
     private void submitButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_submitButtonActionPerformed
         textArea.setText(null);
-        textArea.append(classes.outputInfo(Integer.parseInt(classField.getText())));
+        try{
+        textArea.append(classes.outputInfo(Integer.parseInt(classField.getText())-1));
+        }
+        catch (Exception ex){
+            System.out.printf("Error: %s",ex.getMessage());
+        }
         classField.setText(null);
         classField.requestFocus();
     }//GEN-LAST:event_submitButtonActionPerformed
