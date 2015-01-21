@@ -15,13 +15,13 @@ import java.util.regex.Pattern;
  *
  * @author Craig
  */
-public class Class {
+public final class Class {
 
     ArrayList<Class> directory = new ArrayList<Class>();
     String _ID, _name, _faculty, _start, _end;
     int _credits, length, convertedStart, convertedEnd;
     boolean[] _days;
-    String filename = new String("ClassInfo2.txt");
+    String filename = "ClassInfo3.txt";
 
     public Class() {
     }
@@ -35,10 +35,20 @@ public class Class {
         _ID = ID;
         _credits = credits;
         _days = days;
-        _start = start;
-        _end = end;
-        convertedStart = convertTime(start);
-        convertedEnd = convertTime(end);
+        if (!"".equals(start)) {
+            convertedStart = convertTime(start);
+            _start = start + "M";
+        } else {
+            _start = "Unlisted";
+            convertedStart = 0;
+        }
+        if (!"".equals(start)) {
+            convertedEnd = convertTime(end);
+            _end = end + "M";
+        } else {
+            _end = "Unlisted";
+            convertedEnd = 0;
+        }
         _faculty = faculty;
         length = convertedEnd - convertedStart;
     }
@@ -80,17 +90,20 @@ public class Class {
     }
 
     public String getDays() {
-        String[] dayNames = {"Monday", "Tuesday", "Wednesday", "Thursday", "Friday"};
-        String result = "";
-        for (int i = 0; i < 5; i++) {
-            if (_days[i] == true) {
-                result += dayNames[i] + " ";
+        if (_days[0] == false && _days[1] == false && _days[2] == false && _days[3] == false && _days[4] == false) {
+            return "Unlisted";
+        } else {
+            String[] dayNames = {"Monday", "Tuesday", "Wednesday", "Thursday", "Friday"};
+            String result = "";
+            for (int i = 0; i < 5; i++) {
+                if (_days[i] == true) {
+                    result += dayNames[i] + " ";
+                }
             }
+            return result;
         }
-        return result;
     }
 
-    @SuppressWarnings("empty-statement")
     public void fillClass() {
         boolean[] days = {false, false, false, false, false};
         String[] patterns = {"Monday|Tuesday|Wednesday|Thursday|Friday", "javascript:webAdvisor.newTab\\(\"(.*?) \\(", "\\) (.*?)\",\"", "day (..:...)M - .*?<", " - (..:...)M,.*?<", "</label><input type=\"hidden\" name=\"SEC.FACULTY.INFO_.*?\" value=\"(.*)\">", "</label><input type=\"hidden\" name=\"SEC.MIN.CRED_.*?\" value=\"(.*?).00\">"};
@@ -100,26 +113,26 @@ public class Class {
             String line;
             while ((line = rdr.readLine()) != null) {
                 for (int i = 0; i < 7; i++) {
-//                    if (i == 0) {
-//                        days = findDays(line);
-//                    } else {
                     Pattern p = Pattern.compile(patterns[i]);
                     Matcher m = p.matcher(line);
                     while (m.find()) {
                         if (i == 0) {
                             days = findDays(line);
+                            break;
                         } else {
                             info[i] = m.group(1);
                             if (i == 6) {
-                                Class newClass = new Class(info[1], info[2], days, info[3], info[4], info[5], Integer.parseInt(info[6]));
+                                Class newClass = new Class(info[1], info[2], days.clone(), info[3], info[4], info[5], Integer.parseInt(info[6]));
                                 directory.add(newClass);
-//                                for (int k = 0; k < 6; k++) {
-//                                    info[k] = "";
-//                                }
+                                for (int k = 0; k < 5; k++) {
+                                    days[k] = false;
+                                }
+                                for (int k = 0; k < 7; k++) {
+                                    info[k] = "";
+                                }
                             }
                         }
                     }
-                    //}
                 }
             }
             rdr.close();
@@ -135,10 +148,8 @@ public class Class {
             Pattern p = Pattern.compile(patterns[i]);
             Matcher m = p.matcher(line);
             if (m.find()) {
-                //System.out.print(m.group(1) + "\n");
                 days[i] = true;
             }
-            //System.out.print(days[0] + " " + days[1] + " " + days[2] + " " + days[3] + " " + days[4] + "\n");
         }
         return days;
     }
@@ -281,7 +292,7 @@ public class Class {
 
     public String outputInfo(int i) {
         return "Entry Number: " + (i + 1) + "\nID: " + _ID + "\nName: " + getName() + "\nCredits: " + getCredits()
-                + "\nFaculty: " + getFaculty() + "\nStart Time: " + getStart() + "M\nEnd Time: " + getEnd() + "M\nDays:" + getDays();
+                + "\nFaculty: " + getFaculty() + "\nStart Time: " + getStart() + "\nEnd Time: " + getEnd() + "\nDays:" + getDays();
     }
 
     public boolean dayConflict(Class c1, Class c2) {
@@ -294,10 +305,7 @@ public class Class {
     }
 
     public boolean timeConflict(Class c1, Class c2) {
-        if ((c2.convertedStart >= c1.convertedStart && c2.convertedStart <= c1.convertedEnd) || (c1.convertedStart >= c2.convertedStart && c1.convertedStart <= c2.convertedEnd)
-                || (c2.convertedEnd >= c1.convertedStart && c2.convertedEnd <= c1.convertedEnd) || (c1.convertedEnd >= c2.convertedStart && c1.convertedEnd <= c2.convertedEnd)) {
-            return true;
-        }
-        return false;
+        return (c2.convertedStart >= c1.convertedStart && c2.convertedStart <= c1.convertedEnd) || (c1.convertedStart >= c2.convertedStart && c1.convertedStart <= c2.convertedEnd)
+                || (c2.convertedEnd >= c1.convertedStart && c2.convertedEnd <= c1.convertedEnd) || (c1.convertedEnd >= c2.convertedStart && c1.convertedEnd <= c2.convertedEnd);
     }
 }

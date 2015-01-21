@@ -253,8 +253,6 @@ public class Interface extends javax.swing.JFrame {
 
     private void formWindowOpened(java.awt.event.WindowEvent evt) {//GEN-FIRST:event_formWindowOpened
         String name = JOptionPane.showInputDialog("Please enter your full name:");
-        //buttonPane.add(new JSeparator(SwingConstants.VERTICAL));
-
         user.setName(name);
         classes.fillClass();
     }//GEN-LAST:event_formWindowOpened
