@@ -90,6 +90,7 @@ public class Class {
         return result;
     }
 
+    @SuppressWarnings("empty-statement")
     public void fillClass() {
         boolean[] days = {false, false, false, false, false};
         String[] patterns = {"Monday|Tuesday|Wednesday|Thursday|Friday", "javascript:webAdvisor.newTab\\(\"(.*?) \\(", "\\) (.*?)\",\"", "day (..:...)M - .*?<", " - (..:...)M,.*?<", "</label><input type=\"hidden\" name=\"SEC.FACULTY.INFO_.*?\" value=\"(.*)\">", "</label><input type=\"hidden\" name=\"SEC.MIN.CRED_.*?\" value=\"(.*?).00\">"};
@@ -112,6 +113,9 @@ public class Class {
                             if (i == 6) {
                                 Class newClass = new Class(info[1], info[2], days, info[3], info[4], info[5], Integer.parseInt(info[6]));
                                 directory.add(newClass);
+//                                for (int k = 0; k < 6; k++) {
+//                                    info[k] = "";
+//                                }
                             }
                         }
                     }
@@ -276,8 +280,8 @@ public class Class {
     }
 
     public String outputInfo(int i) {
-        return "Entry Number: " + (i + 1) + "\nID: " + directory.get(i).getID() + "\nName: " + directory.get(i).getName() + "\nCredits: " + directory.get(i).getCredits()
-                + "\nFaculty: " + directory.get(i).getFaculty() + "\nStart Time: " + directory.get(i).getStart() + "\nEnd Time: " + directory.get(i).getEnd() + "\nDays:" + directory.get(i).getDays();
+        return "Entry Number: " + (i + 1) + "\nID: " + _ID + "\nName: " + getName() + "\nCredits: " + getCredits()
+                + "\nFaculty: " + getFaculty() + "\nStart Time: " + getStart() + "M\nEnd Time: " + getEnd() + "M\nDays:" + getDays();
     }
 
     public boolean dayConflict(Class c1, Class c2) {
@@ -296,5 +300,4 @@ public class Class {
         }
         return false;
     }
-
 }
