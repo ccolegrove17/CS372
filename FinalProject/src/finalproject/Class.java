@@ -40,14 +40,14 @@ public final class Class {
             _start = start + "M";
         } else {
             _start = "Unlisted";
-            convertedStart = 0;
+            convertedStart = 9999;
         }
         if (!"".equals(start)) {
             convertedEnd = convertTime(end);
             _end = end + "M";
         } else {
             _end = "Unlisted";
-            convertedEnd = 0;
+            convertedEnd = 9999;
         }
         _faculty = faculty;
         length = convertedEnd - convertedStart;
@@ -292,7 +292,12 @@ public final class Class {
 
     public String outputInfo(int i) {
         return "Entry Number: " + (i + 1) + "\nID: " + _ID + "\nName: " + getName() + "\nCredits: " + getCredits()
-                + "\nFaculty: " + getFaculty() + "\nStart Time: " + getStart() + "\nEnd Time: " + getEnd() + "\nDays:" + getDays();
+                + "\nFaculty: " + getFaculty() + "\nStart Time: " + getStart() + "\nEnd Time: " + getEnd() + "\nDays: " + getDays();
+    }
+    
+        public String outputInfoNoNewLine(int i) {
+        return "Entry Number: " + (i + 1) + "ID: " + _ID + "Name: " + getName() + "Credits: " + getCredits()
+                + "Faculty: " + getFaculty() + "Start Time: " + getStart() + "End Time: " + getEnd() + "Days: " + getDays();
     }
 
     public boolean dayConflict(Class c1, Class c2) {

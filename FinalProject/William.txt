@@ -1,0 +1,6 @@
+Entry Number: 1ID: MA-278-2Name: Discrete MathematicsCredits: 3Faculty: Trefry AStart Time: 01:55PMEnd Time: 02:50PMDays:Monday Wednesday Friday 
+Entry Number: 2ID: TA-276-NName: Improvisational ActingCredits: 3Faculty: K. BensonStart Time: 06:30PMEnd Time: 09:30PMDays:Monday 
+Entry Number: 3ID: MA-281-1Name: Differential EquationsCredits: 3Faculty: M. RempeStart Time: 10:25AMEnd Time: 11:20AMDays:Monday Wednesday Friday 
+Entry Number: 4ID: CO-150-05JBName: Western Civ ICredits: 4Faculty: Burns J, Beebe K, K. Finch, R. McKayStart Time: 09:05AMEnd Time: 10:15AMDays:Monday Wednesday Friday 
+Entry Number: 5ID: CS-274-1Name: Ethic, Soc & Leg Issues in CSCredits: 3Faculty: S. MabryStart Time: 09:30AMEnd Time: 10:50AMDays:Tuesday Thursday 
+Entry Number: 6ID: MU-177-1Name: Men's ChorusCredits: 1Faculty: A. BortzStart Time: 04:40PMEnd Time: 06:00PMDays:Tuesday Thursday 
