@@ -6,6 +6,7 @@
 package finalproject;
 
 import javax.swing.JOptionPane;
+import javax.swing.MutableComboBoxModel;
 
 /**
  *
@@ -13,8 +14,39 @@ import javax.swing.JOptionPane;
  */
 public class Interface extends javax.swing.JFrame {
 
+    MutableComboBoxModel model;
     User user = new User("");
     Class classes = new Class();
+
+    private void addCurrentClasses() {
+        model = (MutableComboBoxModel) removeClassComboBox.getModel();
+        clearModel();
+        for (int i = 0; i < user.userClasses.size(); i++) {
+            model.addElement(user.userClasses.get(i));
+        }
+        removeClassComboBox.setModel(model);
+    }
+
+    private void clearModel() {
+        for (int i = model.getSize() - 1; i >= 0; i--) {
+            model.removeElementAt(i);
+        }
+    }
+    
+    private void updateSchedule(){
+                textArea2.setText(null);
+        boolean firstTime = true;
+        for (int i = 0; i < user.userClasses.size(); i++) {
+            if (firstTime == true) {
+                textArea2.append(user.userClasses.get(i).outputInfo(i));
+                firstTime = false;
+            } else {
+                textArea2.append("\n\n" + user.userClasses.get(i).outputInfo(i));
+            }
+        }
+        creditsLabel.setText("Credits: " + user.totalCredits());
+        numberOfClassesLabel.setText("Number of Classes: " + user.numberOfClasses());
+    }
 
     /**
      * Creates new form Interface
@@ -52,8 +84,6 @@ public class Interface extends javax.swing.JFrame {
         addClassButton = new javax.swing.JButton();
         jSeparator1 = new javax.swing.JSeparator();
         jLabel1 = new javax.swing.JLabel();
-        addClassField = new javax.swing.JTextField();
-        viewScheduleButton = new javax.swing.JButton();
         jScrollPane2 = new javax.swing.JScrollPane();
         textArea2 = new javax.swing.JTextArea();
         nameLabel = new javax.swing.JLabel();
@@ -61,6 +91,9 @@ public class Interface extends javax.swing.JFrame {
         creditsLabel = new javax.swing.JLabel();
         clearButton = new javax.swing.JButton();
         tableButton = new javax.swing.JButton();
+        addClassComboBox = new javax.swing.JComboBox();
+        removeClassComboBox = new javax.swing.JComboBox();
+        removeClassButton = new javax.swing.JButton();
 
         jTable1.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -378,21 +411,6 @@ public class Interface extends javax.swing.JFrame {
         jLabel1.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jLabel1.setText("Class Information:");
 
-        addClassField.addKeyListener(new java.awt.event.KeyAdapter() {
-            public void keyPressed(java.awt.event.KeyEvent evt) {
-                addClassFieldKeyPressed(evt);
-            }
-        });
-
-        viewScheduleButton.setText("View Schedule");
-        viewScheduleButton.setOpaque(false);
-        viewScheduleButton.setRolloverEnabled(false);
-        viewScheduleButton.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                viewScheduleButtonActionPerformed(evt);
-            }
-        });
-
         textArea2.setEditable(false);
         textArea2.setColumns(20);
         textArea2.setRows(5);
@@ -417,6 +435,8 @@ public class Interface extends javax.swing.JFrame {
                 tableButtonActionPerformed(evt);
             }
         });
+
+        removeClassButton.setText("Remove Class");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -461,22 +481,25 @@ public class Interface extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addComponent(addClassField, javax.swing.GroupLayout.PREFERRED_SIZE, 53, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(addClassButton)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(tableButton)
-                        .addContainerGap())
-                    .addGroup(layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 306, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(nameLabel)
-                            .addComponent(numberOfClassesLabel)
                             .addComponent(creditsLabel)
                             .addGroup(layout.createSequentialGroup()
-                                .addComponent(viewScheduleButton)
+                                .addComponent(addClassComboBox, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(clearButton)))
+                                .addComponent(addClassButton)))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(tableButton))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(clearButton)
+                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 306, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(nameLabel)
+                                .addComponent(numberOfClassesLabel)
+                                .addGroup(layout.createSequentialGroup()
+                                    .addComponent(removeClassComboBox, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                    .addComponent(removeClassButton))))
                         .addGap(0, 0, Short.MAX_VALUE))))
         );
         layout.setVerticalGroup(
@@ -488,7 +511,7 @@ public class Interface extends javax.swing.JFrame {
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(layout.createSequentialGroup()
                                 .addComponent(jLabel1)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 14, Short.MAX_VALUE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                                     .addComponent(classField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addComponent(viewClassButton))
@@ -514,20 +537,17 @@ public class Interface extends javax.swing.JFrame {
                                 .addComponent(numberOfClassesLabel)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(creditsLabel)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addGroup(layout.createSequentialGroup()
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                            .addComponent(addClassField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                            .addComponent(addClassButton))
-                                        .addGap(18, 18, 18))
-                                    .addGroup(layout.createSequentialGroup()
-                                        .addGap(5, 5, 5)
-                                        .addComponent(tableButton)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                                .addGap(5, 5, 5)
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                    .addComponent(viewScheduleButton)
-                                    .addComponent(clearButton))))
+                                    .addComponent(tableButton)
+                                    .addComponent(addClassComboBox, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(addClassButton))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                    .addComponent(removeClassComboBox, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(removeClassButton))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(clearButton)))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                             .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 163, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -541,20 +561,23 @@ public class Interface extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void formWindowOpened(java.awt.event.WindowEvent evt) {//GEN-FIRST:event_formWindowOpened
-        viewScheduleButton.setVisible(false);
         String name = JOptionPane.showInputDialog("Please enter your full name:");
         user.setName(name);
         nameLabel.setText("Name: " + name);
         user.userIO(user);
-        viewScheduleButton.doClick();
+        updateSchedule();
         classes.fillClass();
+        addCurrentClasses();
     }//GEN-LAST:event_formWindowOpened
 
     private void viewClassButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_viewClassButtonActionPerformed
         textArea.setText(null);
+        model = (MutableComboBoxModel) addClassComboBox.getModel();
         try {
             int number = Integer.parseInt(classField.getText()) - 1;
             textArea.append(classes.directory.get(number).outputInfo(number));
+            clearModel();
+            model.addElement(classes.directory.get(number));
         } catch (Exception ex) {
             System.out.printf("Error: %s", ex.getMessage());
         }
@@ -594,6 +617,8 @@ public class Interface extends javax.swing.JFrame {
 
     private void findClassButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_findClassButtonActionPerformed
         textArea.setText(null);
+        model = (MutableComboBoxModel) addClassComboBox.getModel();
+        clearModel();
         boolean firstTime = true;
         String name = findClassField.getText();
         for (int i = 0; i < classes.directory.size(); i++) {
@@ -604,6 +629,7 @@ public class Interface extends javax.swing.JFrame {
                 } else {
                     textArea.append("\n\n" + classes.directory.get(i).outputInfo(i));
                 }
+                model.addElement(classes.directory.get(i));
             }
         }
     }//GEN-LAST:event_findClassButtonActionPerformed
@@ -617,35 +643,20 @@ public class Interface extends javax.swing.JFrame {
     }//GEN-LAST:event_conflictButtonActionPerformed
 
     private void addClassButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_addClassButtonActionPerformed
-        if (!user.addClass(classes.directory.get(Integer.parseInt(addClassField.getText()) - 1))) {
+        Class userClass = (Class) addClassComboBox.getSelectedItem();
+        if (!user.addClass(userClass)) {
             System.out.println("Conflict in class times.");
         } else {
             System.out.println("Added class!");
         }
-        viewScheduleButton.doClick();
+
+//        if (!user.addClass(classes.directory.get(Integer.parseInt(addClassField.getText()) - 1))) {
+//            System.out.println("Conflict in class times.");
+//        } else {
+//            System.out.println("Added class!");
+//        }
+        updateSchedule();
     }//GEN-LAST:event_addClassButtonActionPerformed
-
-    private void viewScheduleButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_viewScheduleButtonActionPerformed
-        textArea2.setText(null);
-        boolean firstTime = true;
-        for (int i = 0; i < user.userClasses.size(); i++) {
-            if (firstTime == true) {
-                textArea2.append(user.userClasses.get(i).outputInfo(i));
-                firstTime = false;
-            } else {
-                textArea2.append("\n\n" + user.userClasses.get(i).outputInfo(i));
-            }
-        }
-        creditsLabel.setText("Credits: " + user.totalCredits());
-        numberOfClassesLabel.setText("Number of Classes: " + user.numberOfClasses());
-    }//GEN-LAST:event_viewScheduleButtonActionPerformed
-
-    private void addClassFieldKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_addClassFieldKeyPressed
-        if (evt.getKeyCode() == java.awt.event.KeyEvent.VK_ENTER) { //checks if the user presses enter in the text field
-            addClassButton.doClick();//clicks the button
-            addClassField.setText(null);
-        }
-    }//GEN-LAST:event_addClassFieldKeyPressed
 
     private void findClassFieldKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_findClassFieldKeyPressed
         if (evt.getKeyCode() == java.awt.event.KeyEvent.VK_ENTER) { //checks if the user presses enter in the text field
@@ -667,7 +678,8 @@ public class Interface extends javax.swing.JFrame {
 
     private void clearButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_clearButtonActionPerformed
         user.clearClass();
-        viewScheduleButton.doClick();
+        clearModel();
+        updateSchedule();
     }//GEN-LAST:event_clearButtonActionPerformed
 
     private void tableButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tableButtonActionPerformed
@@ -737,7 +749,7 @@ public class Interface extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton addClassButton;
-    private javax.swing.JTextField addClassField;
+    private javax.swing.JComboBox addClassComboBox;
     private javax.swing.JTextField classField;
     private javax.swing.JButton clearButton;
     private javax.swing.JButton conflictButton;
@@ -759,11 +771,12 @@ public class Interface extends javax.swing.JFrame {
     public javax.swing.JLabel nameLabel;
     private javax.swing.JButton nameSort;
     private javax.swing.JLabel numberOfClassesLabel;
+    private javax.swing.JButton removeClassButton;
+    private javax.swing.JComboBox removeClassComboBox;
     private javax.swing.JButton tableButton;
     private javax.swing.JTextArea textArea;
     public javax.swing.JTextArea textArea2;
     private javax.swing.JButton timeSort;
     private javax.swing.JButton viewClassButton;
-    private javax.swing.JButton viewScheduleButton;
     // End of variables declaration//GEN-END:variables
 }

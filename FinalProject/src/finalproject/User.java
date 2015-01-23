@@ -50,6 +50,12 @@ public class User {
         for (int i = 0; i < size; i++) {
             userClasses.remove(0);
         }
+        try{
+            BufferedWriter wrtr = new BufferedWriter(new FileWriter(_name+".txt"));
+        }
+        catch(Exception ex){
+            System.out.printf("You fail. %s", ex.getMessage());
+        }
     }
 
     public boolean addClass(Class c1) {

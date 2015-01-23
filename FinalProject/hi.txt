@@ -1,0 +1,2 @@
+Entry Number: 1ID: CS-171-1Name: Computer Science ICredits: 3Faculty: P. TuckerStart Time: 10:25AMEnd Time: 11:20AMDays: Monday Wednesday Friday 
+Entry Number: 2ID: CS-171-2Name: Computer Science ICredits: 3Faculty: Jones KStart Time: 01:55PMEnd Time: 02:50PMDays: Monday Wednesday Friday 

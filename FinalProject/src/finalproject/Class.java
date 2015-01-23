@@ -26,6 +26,11 @@ public final class Class {
     public Class() {
     }
 
+    @Override
+    public String toString() {
+        return getID();
+    }
+
     public Class(String ID, String name, boolean[] days, String start, String end, String faculty, int credits) {
         if (name.substring(0, 1).equals(" ")) {
             _name = name.substring(1, name.length());
@@ -294,8 +299,8 @@ public final class Class {
         return "Entry Number: " + (i + 1) + "\nID: " + _ID + "\nName: " + getName() + "\nCredits: " + getCredits()
                 + "\nFaculty: " + getFaculty() + "\nStart Time: " + getStart() + "\nEnd Time: " + getEnd() + "\nDays: " + getDays();
     }
-    
-        public String outputInfoNoNewLine(int i) {
+
+    public String outputInfoNoNewLine(int i) {
         return "Entry Number: " + (i + 1) + "ID: " + _ID + "Name: " + getName() + "Credits: " + getCredits()
                 + "Faculty: " + getFaculty() + "Start Time: " + getStart() + "End Time: " + getEnd() + "Days: " + getDays();
     }
