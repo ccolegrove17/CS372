@@ -17,7 +17,7 @@ import java.util.regex.Pattern;
  */
 public final class Class {
 
-    ArrayList<Class> directory = new ArrayList<Class>();
+    ArrayList<Class> directory = new ArrayList<>();
     String _ID, _name, _faculty, _start, _end;
     int _credits, length, convertedStart, convertedEnd;
     boolean[] _days;
@@ -302,7 +302,7 @@ public final class Class {
 
     public boolean dayConflict(Class c1, Class c2) {
         for (int i = 0; i < 5; i++) {
-            if (c1._days[i] == c2._days[i]) {
+            if (c1._days[i] == true && c2._days[i] == true) {
                 return timeConflict(c1, c2);
             }
         }

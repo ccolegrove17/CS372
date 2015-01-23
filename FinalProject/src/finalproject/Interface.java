@@ -32,6 +32,9 @@ public class Interface extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jFrame1 = new javax.swing.JFrame();
+        jScrollPane4 = new javax.swing.JScrollPane();
+        jTable1 = new javax.swing.JTable();
         jScrollPane1 = new javax.swing.JScrollPane();
         textArea = new javax.swing.JTextArea();
         classField = new javax.swing.JTextField();
@@ -56,6 +59,210 @@ public class Interface extends javax.swing.JFrame {
         nameLabel = new javax.swing.JLabel();
         numberOfClassesLabel = new javax.swing.JLabel();
         creditsLabel = new javax.swing.JLabel();
+        clearButton = new javax.swing.JButton();
+        tableButton = new javax.swing.JButton();
+
+        jTable1.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},        {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},        {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},        {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},        {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},        {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},        {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},        {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},        {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},        {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},        {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},        {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},        {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},        {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},        {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null}
+            },
+            new String [] {
+                "", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday"
+            }
+        ));
+        jTable1.setEnabled(false);
+        jTable1.setFocusable(false);
+        jTable1.setRequestFocusEnabled(false);
+        jTable1.getTableHeader().setReorderingAllowed(false);
+        jScrollPane4.setViewportView(jTable1);
+
+        javax.swing.GroupLayout jFrame1Layout = new javax.swing.GroupLayout(jFrame1.getContentPane());
+        jFrame1.getContentPane().setLayout(jFrame1Layout);
+        jFrame1Layout.setHorizontalGroup(
+            jFrame1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jScrollPane4, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 400, Short.MAX_VALUE)
+        );
+        jFrame1Layout.setVerticalGroup(
+            jFrame1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jScrollPane4, javax.swing.GroupLayout.DEFAULT_SIZE, 366, Short.MAX_VALUE)
+        );
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Class Scheduler");
@@ -77,6 +284,7 @@ public class Interface extends javax.swing.JFrame {
         });
 
         viewClassButton.setText("View Class");
+        viewClassButton.setToolTipText("View information about a class.");
         viewClassButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 viewClassButtonActionPerformed(evt);
@@ -84,6 +292,7 @@ public class Interface extends javax.swing.JFrame {
         });
 
         idSort.setText("ID");
+        idSort.setToolTipText("Sorts the classes by ID.");
         idSort.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 idSortActionPerformed(evt);
@@ -91,6 +300,7 @@ public class Interface extends javax.swing.JFrame {
         });
 
         nameSort.setText("Name");
+        nameSort.setToolTipText("Sorts the classes by Name.");
         nameSort.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 nameSortActionPerformed(evt);
@@ -98,6 +308,7 @@ public class Interface extends javax.swing.JFrame {
         });
 
         creditsSort.setText("Credits");
+        creditsSort.setToolTipText("Sorts the classes by Credits.");
         creditsSort.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 creditsSortActionPerformed(evt);
@@ -105,6 +316,7 @@ public class Interface extends javax.swing.JFrame {
         });
 
         facultySort.setText("Faculty");
+        facultySort.setToolTipText("Sorts the classes by Faculty.");
         facultySort.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 facultySortActionPerformed(evt);
@@ -112,6 +324,7 @@ public class Interface extends javax.swing.JFrame {
         });
 
         timeSort.setText("Start");
+        timeSort.setToolTipText("Sorts the classes by Start Time.");
         timeSort.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 timeSortActionPerformed(evt);
@@ -125,13 +338,27 @@ public class Interface extends javax.swing.JFrame {
         });
 
         findClassButton.setText("Find Class");
+        findClassButton.setToolTipText("Search for a class by ID, Name, or Faculty.");
         findClassButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 findClassButtonActionPerformed(evt);
             }
         });
 
+        conflictField2.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                conflictField2KeyPressed(evt);
+            }
+        });
+
+        conflictField1.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                conflictField1KeyPressed(evt);
+            }
+        });
+
         conflictButton.setText("Check Conflict");
+        conflictButton.setToolTipText("Checks if 2 classes have conflicting schedules.");
         conflictButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 conflictButtonActionPerformed(evt);
@@ -139,6 +366,7 @@ public class Interface extends javax.swing.JFrame {
         });
 
         addClassButton.setText("Add Class");
+        addClassButton.setToolTipText("Adds a class to the user's schedule.");
         addClassButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 addClassButtonActionPerformed(evt);
@@ -157,6 +385,8 @@ public class Interface extends javax.swing.JFrame {
         });
 
         viewScheduleButton.setText("View Schedule");
+        viewScheduleButton.setOpaque(false);
+        viewScheduleButton.setRolloverEnabled(false);
         viewScheduleButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 viewScheduleButtonActionPerformed(evt);
@@ -173,6 +403,20 @@ public class Interface extends javax.swing.JFrame {
         numberOfClassesLabel.setText("Number of Classes: ");
 
         creditsLabel.setText("Credits:");
+
+        clearButton.setText("Clear Schedule");
+        clearButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                clearButtonActionPerformed(evt);
+            }
+        });
+
+        tableButton.setText("Table");
+        tableButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                tableButtonActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -214,23 +458,26 @@ public class Interface extends javax.swing.JFrame {
                     .addComponent(jScrollPane1))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jSeparator1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(83, 83, 83)
-                        .addComponent(viewScheduleButton))
-                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(addClassField, javax.swing.GroupLayout.PREFERRED_SIZE, 53, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 306, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(addClassButton)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(tableButton)
+                        .addContainerGap())
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(18, 18, 18)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 306, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(nameLabel)
-                            .addGroup(layout.createSequentialGroup()
-                                .addComponent(addClassField, javax.swing.GroupLayout.PREFERRED_SIZE, 53, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(addClassButton))
                             .addComponent(numberOfClassesLabel)
-                            .addComponent(creditsLabel)))))
+                            .addComponent(creditsLabel)
+                            .addGroup(layout.createSequentialGroup()
+                                .addComponent(viewScheduleButton)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(clearButton)))
+                        .addGap(0, 0, Short.MAX_VALUE))))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -267,12 +514,20 @@ public class Interface extends javax.swing.JFrame {
                                 .addComponent(numberOfClassesLabel)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(creditsLabel)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addGroup(layout.createSequentialGroup()
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                            .addComponent(addClassField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addComponent(addClassButton))
+                                        .addGap(18, 18, 18))
+                                    .addGroup(layout.createSequentialGroup()
+                                        .addGap(5, 5, 5)
+                                        .addComponent(tableButton)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                    .addComponent(addClassField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(addClassButton))
-                                .addGap(18, 18, 18)
-                                .addComponent(viewScheduleButton)))
+                                    .addComponent(viewScheduleButton)
+                                    .addComponent(clearButton))))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                             .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 163, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -286,6 +541,7 @@ public class Interface extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void formWindowOpened(java.awt.event.WindowEvent evt) {//GEN-FIRST:event_formWindowOpened
+        viewScheduleButton.setVisible(false);
         String name = JOptionPane.showInputDialog("Please enter your full name:");
         user.setName(name);
         nameLabel.setText("Name: " + name);
@@ -397,6 +653,51 @@ public class Interface extends javax.swing.JFrame {
         }
     }//GEN-LAST:event_findClassFieldKeyPressed
 
+    private void conflictField2KeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_conflictField2KeyPressed
+        if (evt.getKeyCode() == java.awt.event.KeyEvent.VK_ENTER) { //checks if the user presses enter in the text field
+            conflictButton.doClick();//clicks the button
+        }
+    }//GEN-LAST:event_conflictField2KeyPressed
+
+    private void conflictField1KeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_conflictField1KeyPressed
+        if (evt.getKeyCode() == java.awt.event.KeyEvent.VK_ENTER) { //checks if the user presses enter in the text field
+            conflictButton.doClick();//clicks the button
+        }
+    }//GEN-LAST:event_conflictField1KeyPressed
+
+    private void clearButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_clearButtonActionPerformed
+        user.clearClass();
+        viewScheduleButton.doClick();
+    }//GEN-LAST:event_clearButtonActionPerformed
+
+    private void tableButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tableButtonActionPerformed
+        jFrame1.setVisible(true);
+        jFrame1.setExtendedState(MAXIMIZED_BOTH);
+        int currentHour = 6;
+        String am = "A";
+        String extraZero = "";
+        int row = 0;
+        for (int hours = 0; hours < 16; hours++) {
+            for (int minutes = 0; minutes < 60; minutes += 5) {
+                if (minutes < 10) {
+                    extraZero = "0";
+                } else {
+                    extraZero = "";
+                }
+
+                jTable1.setValueAt("" + currentHour + ":" + extraZero + minutes + am + "M", row, 0);
+                row++;
+            }
+            if (currentHour == 11) {
+                am = "P";
+            }
+            if (currentHour == 12) {
+                currentHour = 0;
+            }
+            currentHour++;
+        }
+    }//GEN-LAST:event_tableButtonActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -411,7 +712,7 @@ public class Interface extends javax.swing.JFrame {
         try {
             for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
                 if ("Nimbus".equals(info.getName())) {
-                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
+                    javax.swing.UIManager.setLookAndFeel(javax.swing.UIManager.getSystemLookAndFeelClassName());
                     break;
                 }
             }
@@ -438,6 +739,7 @@ public class Interface extends javax.swing.JFrame {
     private javax.swing.JButton addClassButton;
     private javax.swing.JTextField addClassField;
     private javax.swing.JTextField classField;
+    private javax.swing.JButton clearButton;
     private javax.swing.JButton conflictButton;
     private javax.swing.JTextField conflictField1;
     private javax.swing.JTextField conflictField2;
@@ -447,13 +749,17 @@ public class Interface extends javax.swing.JFrame {
     private javax.swing.JButton findClassButton;
     private javax.swing.JTextField findClassField;
     private javax.swing.JButton idSort;
+    private javax.swing.JFrame jFrame1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane2;
+    private javax.swing.JScrollPane jScrollPane4;
     private javax.swing.JSeparator jSeparator1;
+    private javax.swing.JTable jTable1;
     public javax.swing.JLabel nameLabel;
     private javax.swing.JButton nameSort;
     private javax.swing.JLabel numberOfClassesLabel;
+    private javax.swing.JButton tableButton;
     private javax.swing.JTextArea textArea;
     public javax.swing.JTextArea textArea2;
     private javax.swing.JButton timeSort;

@@ -1,0 +1,6 @@
+Entry Number: 1ID: EN-110-1Name: Engineering OrientationCredits: 1Faculty: M. OngStart Time: 12:50PMEnd Time: 01:45PMDays: Tuesday 
+Entry Number: 2ID: MA-281-1Name: Differential EquationsCredits: 3Faculty: M. RempeStart Time: 10:25AMEnd Time: 11:20AMDays: Monday Wednesday Friday 
+Entry Number: 3ID: TH-135-1Name: A Biblical Introduction to GodCredits: 3Faculty: J. WynneStart Time: 09:30AMEnd Time: 10:50AMDays: Tuesday Thursday 
+Entry Number: 4ID: MA-330-1Name: Linear AlgebraCredits: 3Faculty: M. RempeStart Time: 09:05AMEnd Time: 10:00AMDays: Monday Wednesday Friday 
+Entry Number: 5ID: EN-356-1Name: Mathematical Methods ICredits: 2Faculty: K. SankaranStart Time: 01:55PMEnd Time: 02:50PMDays: Monday Wednesday 
+Entry Number: 6ID: CS-273-1Name: Data StructuresCredits: 3Faculty: E. WalkerStart Time: 12:50PMEnd Time: 01:45PMDays: Monday Wednesday Friday 

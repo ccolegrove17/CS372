@@ -45,6 +45,13 @@ public class User {
         return true;
     }
 
+    public void clearClass() {
+        int size = userClasses.size();
+        for (int i = 0; i < size; i++) {
+            userClasses.remove(0);
+        }
+    }
+
     public boolean addClass(Class c1) {
         if (checkClasses(c1)) {
             userClasses.add(c1);
@@ -102,14 +109,14 @@ public class User {
             }
         }
     }
-    
-    public int numberOfClasses(){
+
+    public int numberOfClasses() {
         return userClasses.size();
     }
 
-    public int totalCredits(){
+    public int totalCredits() {
         int sum = 0;
-        for (int i=0;i<userClasses.size();i++){
+        for (int i = 0; i < userClasses.size(); i++) {
             sum += userClasses.get(i).getCredits();
         }
         return sum;
