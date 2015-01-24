@@ -52,6 +52,7 @@ public class User {
         }
         try{
             BufferedWriter wrtr = new BufferedWriter(new FileWriter(_name+".txt"));
+            wrtr.close();
         }
         catch(Exception ex){
             System.out.printf("You fail. %s", ex.getMessage());
@@ -110,6 +111,7 @@ public class User {
         } catch (Exception ex) {
             try {
                 BufferedWriter wrtr = new BufferedWriter(new FileWriter(_name + ".txt"));
+                wrtr.close();
             } catch (Exception e) {
 
             }

@@ -5,8 +5,11 @@
  */
 package finalproject;
 
+import java.io.BufferedWriter;
+import java.io.FileWriter;
 import javax.swing.JOptionPane;
 import javax.swing.MutableComboBoxModel;
+import javax.swing.table.DefaultTableModel;
 
 /**
  *
@@ -32,9 +35,9 @@ public class Interface extends javax.swing.JFrame {
             model.removeElementAt(i);
         }
     }
-    
-    private void updateSchedule(){
-                textArea2.setText(null);
+
+    private void updateSchedule() {
+        textArea2.setText(null);
         boolean firstTime = true;
         for (int i = 0; i < user.userClasses.size(); i++) {
             if (firstTime == true) {
@@ -46,6 +49,8 @@ public class Interface extends javax.swing.JFrame {
         }
         creditsLabel.setText("Credits: " + user.totalCredits());
         numberOfClassesLabel.setText("Number of Classes: " + user.numberOfClasses());
+        textArea2.setCaretPosition(0);
+        addCurrentClasses();
     }
 
     /**
@@ -429,7 +434,7 @@ public class Interface extends javax.swing.JFrame {
             }
         });
 
-        tableButton.setText("Table");
+        tableButton.setText("View Schedule");
         tableButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 tableButtonActionPerformed(evt);
@@ -437,6 +442,11 @@ public class Interface extends javax.swing.JFrame {
         });
 
         removeClassButton.setText("Remove Class");
+        removeClassButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                removeClassButtonActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -490,16 +500,17 @@ public class Interface extends javax.swing.JFrame {
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(tableButton))
                     .addGroup(layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(clearButton)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                            .addGroup(layout.createSequentialGroup()
+                                .addComponent(removeClassComboBox, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(removeClassButton)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(clearButton))
                             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                 .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 306, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addComponent(nameLabel)
-                                .addComponent(numberOfClassesLabel)
-                                .addGroup(layout.createSequentialGroup()
-                                    .addComponent(removeClassComboBox, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                    .addComponent(removeClassButton))))
+                                .addComponent(numberOfClassesLabel)))
                         .addGap(0, 0, Short.MAX_VALUE))))
         );
         layout.setVerticalGroup(
@@ -511,7 +522,7 @@ public class Interface extends javax.swing.JFrame {
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(layout.createSequentialGroup()
                                 .addComponent(jLabel1)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 18, Short.MAX_VALUE)
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                                     .addComponent(classField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addComponent(viewClassButton))
@@ -543,11 +554,11 @@ public class Interface extends javax.swing.JFrame {
                                     .addComponent(addClassComboBox, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addComponent(addClassButton))
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                    .addComponent(removeClassComboBox, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(removeClassButton))
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(clearButton)))
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(clearButton)
+                                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                        .addComponent(removeClassComboBox, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addComponent(removeClassButton)))))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                             .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 163, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -582,7 +593,6 @@ public class Interface extends javax.swing.JFrame {
             System.out.printf("Error: %s", ex.getMessage());
         }
         classField.setText(null);
-        //classField.requestFocus();
     }//GEN-LAST:event_viewClassButtonActionPerformed
 
     private void classFieldKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_classFieldKeyPressed
@@ -683,11 +693,13 @@ public class Interface extends javax.swing.JFrame {
     }//GEN-LAST:event_clearButtonActionPerformed
 
     private void tableButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tableButtonActionPerformed
+        //DefaultTableModel model = new DefaultTableModel();
+        //jTable1.setModel(model);
         jFrame1.setVisible(true);
         jFrame1.setExtendedState(MAXIMIZED_BOTH);
         int currentHour = 6;
         String am = "A";
-        String extraZero = "";
+        String extraZero;
         int row = 0;
         for (int hours = 0; hours < 16; hours++) {
             for (int minutes = 0; minutes < 60; minutes += 5) {
@@ -696,7 +708,6 @@ public class Interface extends javax.swing.JFrame {
                 } else {
                     extraZero = "";
                 }
-
                 jTable1.setValueAt("" + currentHour + ":" + extraZero + minutes + am + "M", row, 0);
                 row++;
             }
@@ -708,7 +719,49 @@ public class Interface extends javax.swing.JFrame {
             }
             currentHour++;
         }
+        for (int i = 0; i < user.userClasses.size(); i++) {
+            for (int day = 0; day < 5; day++) {
+                if (user.userClasses.get(i)._days[day] == true) {
+                    for (int j = user.userClasses.get(i).getConvertedStart(); j < user.userClasses.get(i).getConvertedEnd(); j += 5) {
+                        jTable1.setValueAt(user.userClasses.get(i).getID(), (int) (j * .2 - 72), day + 1);
+                    }
+                }
+            }
+        }
+        boolean start = false;
+        row = 0;
+
+        while (!start) {
+            if (jTable1.getValueAt(row, 1).equals(null) && jTable1.getValueAt(row, 2).equals(null) && jTable1.getValueAt(row, 3).equals(null) && jTable1.getValueAt(row, 4).equals(null) && jTable1.getValueAt(row, 5).equals(null)) {
+                ((DefaultTableModel)jTable1.getModel()).removeRow(row);
+                row++;
+            } else {
+                start = true;
+            }
+        }
+
     }//GEN-LAST:event_tableButtonActionPerformed
+
+    private void removeClassButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_removeClassButtonActionPerformed
+        for (int i = 0; i < user.userClasses.size(); i++) {
+            if (removeClassComboBox.getSelectedItem().equals(user.userClasses.get(i))) {
+                user.userClasses.remove(i);
+            }
+        }
+        updateSchedule();
+        try {
+            BufferedWriter wrtr = new BufferedWriter(new FileWriter(user._name + ".txt"));
+            for (int i = 0; i < user.userClasses.size(); i++) {
+                String line = user.userClasses.get(i).outputInfoNoNewLine(i);
+                wrtr.write(line);
+                wrtr.newLine();
+            }
+            wrtr.close();
+
+        } catch (Exception ex) {
+
+        }
+    }//GEN-LAST:event_removeClassButtonActionPerformed
 
     /**
      * @param args the command line arguments

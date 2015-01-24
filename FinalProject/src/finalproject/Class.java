@@ -17,7 +17,7 @@ import java.util.regex.Pattern;
  */
 public final class Class {
 
-    ArrayList<Class> directory = new ArrayList<>();
+    ArrayList<Class> directory = new ArrayList<Class>();
     String _ID, _name, _faculty, _start, _end;
     int _credits, length, convertedStart, convertedEnd;
     boolean[] _days;
