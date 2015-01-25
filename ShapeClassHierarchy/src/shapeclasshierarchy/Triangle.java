@@ -26,6 +26,8 @@ public class Triangle extends Shape {
     public Triangle(int s1, int s2, int s3) throws IllegalArgumentException {
         int[] ints = {s1, s2, s3};//an array of the side lengths
         Arrays.sort(ints);//puts the side lengths in order
+        //PT -- need to check all three combinations of sums (-3):
+        //    3 + 3 <= 7, but 3, 7, 3 is an invalid triangle
         if (s1 <= 0 || s2 <= 0 || s3 <= 0 || ints[0] + ints[1] <= ints[2]) { //checks triangle validity. Thanks, Cyberchase!!
             throw new IllegalArgumentException("This is not a valid triangle.");//throws an exception
         }
