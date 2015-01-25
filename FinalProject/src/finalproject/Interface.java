@@ -5,11 +5,13 @@
  */
 package finalproject;
 
+import java.awt.Color;
 import java.io.BufferedWriter;
 import java.io.FileWriter;
 import javax.swing.JOptionPane;
 import javax.swing.MutableComboBoxModel;
 import javax.swing.table.DefaultTableModel;
+import javax.swing.table.TableCellRenderer;
 
 /**
  *
@@ -71,7 +73,7 @@ public class Interface extends javax.swing.JFrame {
 
         jFrame1 = new javax.swing.JFrame();
         jScrollPane4 = new javax.swing.JScrollPane();
-        jTable1 = new javax.swing.JTable();
+        classTable = new javax.swing.JTable();
         jScrollPane1 = new javax.swing.JScrollPane();
         textArea = new javax.swing.JTextArea();
         classField = new javax.swing.JTextField();
@@ -99,8 +101,9 @@ public class Interface extends javax.swing.JFrame {
         addClassComboBox = new javax.swing.JComboBox();
         removeClassComboBox = new javax.swing.JComboBox();
         removeClassButton = new javax.swing.JButton();
+        infoLabel = new javax.swing.JLabel();
 
-        jTable1.setModel(new javax.swing.table.DefaultTableModel(
+        classTable.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null, null, null, null, null},
                 {null, null, null, null, null, null},
@@ -285,11 +288,11 @@ public class Interface extends javax.swing.JFrame {
                 "", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday"
             }
         ));
-        jTable1.setEnabled(false);
-        jTable1.setFocusable(false);
-        jTable1.setRequestFocusEnabled(false);
-        jTable1.getTableHeader().setReorderingAllowed(false);
-        jScrollPane4.setViewportView(jTable1);
+        classTable.setEnabled(false);
+        classTable.setFocusable(false);
+        classTable.setRequestFocusEnabled(false);
+        classTable.getTableHeader().setReorderingAllowed(false);
+        jScrollPane4.setViewportView(classTable);
 
         javax.swing.GroupLayout jFrame1Layout = new javax.swing.GroupLayout(jFrame1.getContentPane());
         jFrame1.getContentPane().setLayout(jFrame1Layout);
@@ -318,6 +321,9 @@ public class Interface extends javax.swing.JFrame {
         classField.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyPressed(java.awt.event.KeyEvent evt) {
                 classFieldKeyPressed(evt);
+            }
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                classFieldKeyTyped(evt);
             }
         });
 
@@ -387,11 +393,17 @@ public class Interface extends javax.swing.JFrame {
             public void keyPressed(java.awt.event.KeyEvent evt) {
                 conflictField2KeyPressed(evt);
             }
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                conflictField2KeyTyped(evt);
+            }
         });
 
         conflictField1.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyPressed(java.awt.event.KeyEvent evt) {
                 conflictField1KeyPressed(evt);
+            }
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                conflictField1KeyTyped(evt);
             }
         });
 
@@ -448,6 +460,8 @@ public class Interface extends javax.swing.JFrame {
             }
         });
 
+        infoLabel.setText("Information: ");
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -500,17 +514,19 @@ public class Interface extends javax.swing.JFrame {
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(tableButton))
                     .addGroup(layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                            .addGroup(layout.createSequentialGroup()
-                                .addComponent(removeClassComboBox, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(removeClassButton)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(clearButton))
-                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 306, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addComponent(nameLabel)
-                                .addComponent(numberOfClassesLabel)))
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                                .addGroup(layout.createSequentialGroup()
+                                    .addComponent(removeClassComboBox, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                    .addComponent(removeClassButton)
+                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                    .addComponent(clearButton))
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 306, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(nameLabel)
+                                    .addComponent(numberOfClassesLabel)))
+                            .addComponent(infoLabel))
                         .addGap(0, 0, Short.MAX_VALUE))))
         );
         layout.setVerticalGroup(
@@ -522,7 +538,7 @@ public class Interface extends javax.swing.JFrame {
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(layout.createSequentialGroup()
                                 .addComponent(jLabel1)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 18, Short.MAX_VALUE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                                     .addComponent(classField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addComponent(viewClassButton))
@@ -553,6 +569,8 @@ public class Interface extends javax.swing.JFrame {
                                     .addComponent(tableButton)
                                     .addComponent(addClassComboBox, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addComponent(addClassButton))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(infoLabel)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addComponent(clearButton)
@@ -590,9 +608,9 @@ public class Interface extends javax.swing.JFrame {
             clearModel();
             model.addElement(classes.directory.get(number));
         } catch (Exception ex) {
-            System.out.printf("Error: %s", ex.getMessage());
         }
         classField.setText(null);
+        infoLabel.setText("Information: ");
     }//GEN-LAST:event_viewClassButtonActionPerformed
 
     private void classFieldKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_classFieldKeyPressed
@@ -642,29 +660,28 @@ public class Interface extends javax.swing.JFrame {
                 model.addElement(classes.directory.get(i));
             }
         }
+        infoLabel.setText("Information: ");
     }//GEN-LAST:event_findClassButtonActionPerformed
 
     private void conflictButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_conflictButtonActionPerformed
-        if (classes.dayConflict(classes.directory.get(Integer.parseInt(conflictField1.getText()) - 1), classes.directory.get(Integer.parseInt(conflictField2.getText()) - 1))) {
-            System.out.println("Conflict");
-        } else {
-            System.out.println("No conflict");
+        try {
+            if (classes.dayConflict(classes.directory.get(Integer.parseInt(conflictField1.getText()) - 1), classes.directory.get(Integer.parseInt(conflictField2.getText()) - 1))) {
+                textArea.setText("There is a conflict in class times!");
+            } else {
+                textArea.setText("There is no conflict in class times.");
+            }
+        } catch (Exception ex) {
         }
+        infoLabel.setText("Information: ");
     }//GEN-LAST:event_conflictButtonActionPerformed
 
     private void addClassButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_addClassButtonActionPerformed
         Class userClass = (Class) addClassComboBox.getSelectedItem();
         if (!user.addClass(userClass)) {
-            System.out.println("Conflict in class times.");
+            infoLabel.setText("Information: There is a conflict in class times!");
         } else {
-            System.out.println("Added class!");
+            infoLabel.setText("Information: Added class to schedule!");
         }
-
-//        if (!user.addClass(classes.directory.get(Integer.parseInt(addClassField.getText()) - 1))) {
-//            System.out.println("Conflict in class times.");
-//        } else {
-//            System.out.println("Added class!");
-//        }
         updateSchedule();
     }//GEN-LAST:event_addClassButtonActionPerformed
 
@@ -688,13 +705,12 @@ public class Interface extends javax.swing.JFrame {
 
     private void clearButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_clearButtonActionPerformed
         user.clearClass();
+        infoLabel.setText("Information: Schedule cleared!");
         clearModel();
         updateSchedule();
     }//GEN-LAST:event_clearButtonActionPerformed
 
     private void tableButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tableButtonActionPerformed
-        //DefaultTableModel model = new DefaultTableModel();
-        //jTable1.setModel(model);
         jFrame1.setVisible(true);
         jFrame1.setExtendedState(MAXIMIZED_BOTH);
         int currentHour = 6;
@@ -708,7 +724,7 @@ public class Interface extends javax.swing.JFrame {
                 } else {
                     extraZero = "";
                 }
-                jTable1.setValueAt("" + currentHour + ":" + extraZero + minutes + am + "M", row, 0);
+                classTable.setValueAt("" + currentHour + ":" + extraZero + minutes + am + "M", row, 0);
                 row++;
             }
             if (currentHour == 11) {
@@ -723,7 +739,7 @@ public class Interface extends javax.swing.JFrame {
             for (int day = 0; day < 5; day++) {
                 if (user.userClasses.get(i)._days[day] == true) {
                     for (int j = user.userClasses.get(i).getConvertedStart(); j < user.userClasses.get(i).getConvertedEnd(); j += 5) {
-                        jTable1.setValueAt(user.userClasses.get(i).getID(), (int) (j * .2 - 72), day + 1);
+                        classTable.setValueAt(user.userClasses.get(i).getID(), (int) (j * .2 - 72), day + 1);
                     }
                 }
             }
@@ -732,9 +748,8 @@ public class Interface extends javax.swing.JFrame {
         row = 0;
 
         while (!start) {
-            if (jTable1.getValueAt(row, 1).equals(null) && jTable1.getValueAt(row, 2).equals(null) && jTable1.getValueAt(row, 3).equals(null) && jTable1.getValueAt(row, 4).equals(null) && jTable1.getValueAt(row, 5).equals(null)) {
-                ((DefaultTableModel)jTable1.getModel()).removeRow(row);
-                row++;
+            if (classTable.getValueAt(row + 3, 1) == (null) && classTable.getValueAt(row + 3, 2) == (null) && classTable.getValueAt(row + 3, 3) == (null) && classTable.getValueAt(row + 3, 4) == (null) && classTable.getValueAt(row + 3, 5) == (null)) {
+                ((DefaultTableModel) classTable.getModel()).removeRow(row);
             } else {
                 start = true;
             }
@@ -759,9 +774,29 @@ public class Interface extends javax.swing.JFrame {
             wrtr.close();
 
         } catch (Exception ex) {
-
         }
     }//GEN-LAST:event_removeClassButtonActionPerformed
+
+    private void classFieldKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_classFieldKeyTyped
+        char character = evt.getKeyChar();//gets the character entered into the textfield
+        if (character < '0' || character > '9') {//if the character is not a number
+            evt.consume();//doesn't allow the character to be added to the text field
+        }
+    }//GEN-LAST:event_classFieldKeyTyped
+
+    private void conflictField1KeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_conflictField1KeyTyped
+        char character = evt.getKeyChar();//gets the character entered into the textfield
+        if (character < '0' || character > '9') {//if the character is not a number
+            evt.consume();//doesn't allow the character to be added to the text field
+        }
+    }//GEN-LAST:event_conflictField1KeyTyped
+
+    private void conflictField2KeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_conflictField2KeyTyped
+        char character = evt.getKeyChar();//gets the character entered into the textfield
+        if (character < '0' || character > '9') {//if the character is not a number
+            evt.consume();//doesn't allow the character to be added to the text field
+        }
+    }//GEN-LAST:event_conflictField2KeyTyped
 
     /**
      * @param args the command line arguments
@@ -804,6 +839,7 @@ public class Interface extends javax.swing.JFrame {
     private javax.swing.JButton addClassButton;
     private javax.swing.JComboBox addClassComboBox;
     private javax.swing.JTextField classField;
+    private javax.swing.JTable classTable;
     private javax.swing.JButton clearButton;
     private javax.swing.JButton conflictButton;
     private javax.swing.JTextField conflictField1;
@@ -814,13 +850,13 @@ public class Interface extends javax.swing.JFrame {
     private javax.swing.JButton findClassButton;
     private javax.swing.JTextField findClassField;
     private javax.swing.JButton idSort;
+    private javax.swing.JLabel infoLabel;
     private javax.swing.JFrame jFrame1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JScrollPane jScrollPane4;
     private javax.swing.JSeparator jSeparator1;
-    private javax.swing.JTable jTable1;
     public javax.swing.JLabel nameLabel;
     private javax.swing.JButton nameSort;
     private javax.swing.JLabel numberOfClassesLabel;

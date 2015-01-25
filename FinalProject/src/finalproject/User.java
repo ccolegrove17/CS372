@@ -19,7 +19,6 @@ import java.util.regex.Pattern;
  */
 public class User {
 
-    //Interface gui = new Interface();
     String _name;
     Class classes = new Class();
     ArrayList<Class> userClasses = new ArrayList<Class>();
@@ -50,12 +49,10 @@ public class User {
         for (int i = 0; i < size; i++) {
             userClasses.remove(0);
         }
-        try{
-            BufferedWriter wrtr = new BufferedWriter(new FileWriter(_name+".txt"));
+        try {
+            BufferedWriter wrtr = new BufferedWriter(new FileWriter(_name + ".txt"));
             wrtr.close();
-        }
-        catch(Exception ex){
-            System.out.printf("You fail. %s", ex.getMessage());
+        } catch (Exception ex) {
         }
     }
 
@@ -106,7 +103,6 @@ public class User {
                     }
                 }
             } catch (Exception e) {
-                System.out.print(e.getMessage());
             }
         } catch (Exception ex) {
             try {

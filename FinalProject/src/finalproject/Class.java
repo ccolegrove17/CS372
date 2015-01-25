@@ -142,7 +142,6 @@ public final class Class {
             }
             rdr.close();
         } catch (Exception ex) {
-            System.out.printf("You fail. %s", ex.getMessage());
         }
     }
 
@@ -283,7 +282,6 @@ public final class Class {
         int hours = Integer.parseInt(time.substring(0, 2));
         int minutes = Integer.parseInt(time.substring(3, 5));
         String meridiem = time.substring(5, 6);
-        //System.out.printf("%d %d %s", hours, minutes, meridiem);
         int actualtime = 0;
         if (hours == 12) {
             hours = 0;
