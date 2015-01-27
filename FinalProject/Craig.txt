@@ -1,0 +1,2 @@
+Entry Number: 1ID: PS-153-1Name: General Physics IICredits: 3Faculty: T. BachaStart Time: 08:00AMEnd Time: 08:55AMDays: Monday Wednesday Friday 
+Entry Number: 2ID: PS-153L-1Name: General Physics II LabCredits: 1Faculty: T. BachaStart Time: 08:00AMEnd Time: 10:50AMDays: Tuesday 

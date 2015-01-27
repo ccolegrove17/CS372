@@ -5,13 +5,11 @@
  */
 package finalproject;
 
-import java.awt.Color;
 import java.io.BufferedWriter;
 import java.io.FileWriter;
 import javax.swing.JOptionPane;
 import javax.swing.MutableComboBoxModel;
 import javax.swing.table.DefaultTableModel;
-import javax.swing.table.TableCellRenderer;
 
 /**
  *
@@ -23,6 +21,9 @@ public class Interface extends javax.swing.JFrame {
     User user = new User("");
     Class classes = new Class();
 
+    /**
+     * sets the combo box with the user's class schedule
+     */
     private void addCurrentClasses() {
         model = (MutableComboBoxModel) removeClassComboBox.getModel();
         clearModel();
@@ -32,12 +33,19 @@ public class Interface extends javax.swing.JFrame {
         removeClassComboBox.setModel(model);
     }
 
+    /**
+     * clears the combo box
+     */
     private void clearModel() {
         for (int i = model.getSize() - 1; i >= 0; i--) {
             model.removeElementAt(i);
         }
     }
 
+    /**
+     * updates the textArea with the user's updated schedule calls
+     * addCurrentClasses to update the combo box
+     */
     private void updateSchedule() {
         textArea2.setText(null);
         boolean firstTime = true;
@@ -589,6 +597,11 @@ public class Interface extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
+    /**
+     * when the program is first run
+     *
+     * @param evt
+     */
     private void formWindowOpened(java.awt.event.WindowEvent evt) {//GEN-FIRST:event_formWindowOpened
         String name = JOptionPane.showInputDialog("Please enter your full name:");
         user.setName(name);
@@ -599,6 +612,11 @@ public class Interface extends javax.swing.JFrame {
         addCurrentClasses();
     }//GEN-LAST:event_formWindowOpened
 
+    /**
+     * when the user wants to see information about a class number
+     *
+     * @param evt
+     */
     private void viewClassButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_viewClassButtonActionPerformed
         textArea.setText(null);
         model = (MutableComboBoxModel) addClassComboBox.getModel();
@@ -613,36 +631,67 @@ public class Interface extends javax.swing.JFrame {
         infoLabel.setText("Information: ");
     }//GEN-LAST:event_viewClassButtonActionPerformed
 
+    /**
+     * when the user presses enter, clicks the button
+     *
+     * @param evt
+     */
     private void classFieldKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_classFieldKeyPressed
         if (evt.getKeyCode() == java.awt.event.KeyEvent.VK_ENTER) { //checks if the user presses enter in the text field
             viewClassButton.doClick();//clicks the button
         }    }//GEN-LAST:event_classFieldKeyPressed
 
+    /**
+     * sorts the arraylist by ID
+     *
+     * @param evt
+     */
     private void idSortActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_idSortActionPerformed
         classes.directory.sort(classes.IDComparator);
         classField.requestFocus();
     }//GEN-LAST:event_idSortActionPerformed
-
+    /**
+     * sorts the arraylist by name
+     *
+     * @param evt
+     */
     private void nameSortActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_nameSortActionPerformed
         classes.directory.sort(classes.nameComparator);
         classField.requestFocus();
     }//GEN-LAST:event_nameSortActionPerformed
-
+    /**
+     * sorts the arraylist by credits
+     *
+     * @param evt
+     */
     private void creditsSortActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_creditsSortActionPerformed
         classes.directory.sort(classes.creditsComparator);
         classField.requestFocus();
     }//GEN-LAST:event_creditsSortActionPerformed
-
+    /**
+     * sorts the arraylist by faculty
+     *
+     * @param evt
+     */
     private void facultySortActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_facultySortActionPerformed
         classes.directory.sort(classes.facultyComparator);
         classField.requestFocus();
     }//GEN-LAST:event_facultySortActionPerformed
-
+    /**
+     * sorts the arraylist by start time
+     *
+     * @param evt
+     */
     private void timeSortActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_timeSortActionPerformed
         classes.directory.sort(classes.startComparator);
         classField.requestFocus();
     }//GEN-LAST:event_timeSortActionPerformed
 
+    /**
+     * looks for a class name, ID, or faculty in the class arraylist
+     *
+     * @param evt
+     */
     private void findClassButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_findClassButtonActionPerformed
         textArea.setText(null);
         model = (MutableComboBoxModel) addClassComboBox.getModel();
@@ -663,6 +712,11 @@ public class Interface extends javax.swing.JFrame {
         infoLabel.setText("Information: ");
     }//GEN-LAST:event_findClassButtonActionPerformed
 
+    /**
+     * checks if there is a conflict in two class times
+     *
+     * @param evt
+     */
     private void conflictButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_conflictButtonActionPerformed
         try {
             if (classes.dayConflict(classes.directory.get(Integer.parseInt(conflictField1.getText()) - 1), classes.directory.get(Integer.parseInt(conflictField2.getText()) - 1))) {
@@ -675,6 +729,11 @@ public class Interface extends javax.swing.JFrame {
         infoLabel.setText("Information: ");
     }//GEN-LAST:event_conflictButtonActionPerformed
 
+    /**
+     * adds a class if there is no conflict in times
+     *
+     * @param evt
+     */
     private void addClassButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_addClassButtonActionPerformed
         Class userClass = (Class) addClassComboBox.getSelectedItem();
         if (!user.addClass(userClass)) {
@@ -685,24 +744,42 @@ public class Interface extends javax.swing.JFrame {
         updateSchedule();
     }//GEN-LAST:event_addClassButtonActionPerformed
 
+    /**
+     * when the user presses enter, clicks the button
+     *
+     * @param evt
+     */
     private void findClassFieldKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_findClassFieldKeyPressed
         if (evt.getKeyCode() == java.awt.event.KeyEvent.VK_ENTER) { //checks if the user presses enter in the text field
             findClassButton.doClick();//clicks the button
         }
     }//GEN-LAST:event_findClassFieldKeyPressed
-
+    /**
+     * when the user presses enter, clicks the button
+     *
+     * @param evt
+     */
     private void conflictField2KeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_conflictField2KeyPressed
         if (evt.getKeyCode() == java.awt.event.KeyEvent.VK_ENTER) { //checks if the user presses enter in the text field
             conflictButton.doClick();//clicks the button
         }
     }//GEN-LAST:event_conflictField2KeyPressed
-
+    /**
+     * when the user presses enter, clicks the button
+     *
+     * @param evt
+     */
     private void conflictField1KeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_conflictField1KeyPressed
         if (evt.getKeyCode() == java.awt.event.KeyEvent.VK_ENTER) { //checks if the user presses enter in the text field
             conflictButton.doClick();//clicks the button
         }
     }//GEN-LAST:event_conflictField1KeyPressed
 
+    /**
+     * clears the user's schedule
+     *
+     * @param evt
+     */
     private void clearButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_clearButtonActionPerformed
         user.clearClass();
         infoLabel.setText("Information: Schedule cleared!");
@@ -710,6 +787,11 @@ public class Interface extends javax.swing.JFrame {
         updateSchedule();
     }//GEN-LAST:event_clearButtonActionPerformed
 
+    /**
+     * displays the scheduling table
+     *
+     * @param evt
+     */
     private void tableButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tableButtonActionPerformed
         jFrame1.setVisible(true);
         jFrame1.setExtendedState(MAXIMIZED_BOTH);
@@ -757,6 +839,11 @@ public class Interface extends javax.swing.JFrame {
 
     }//GEN-LAST:event_tableButtonActionPerformed
 
+    /**
+     * removes a class from the user's schedule
+     *
+     * @param evt
+     */
     private void removeClassButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_removeClassButtonActionPerformed
         for (int i = 0; i < user.userClasses.size(); i++) {
             if (removeClassComboBox.getSelectedItem().equals(user.userClasses.get(i))) {
@@ -777,6 +864,11 @@ public class Interface extends javax.swing.JFrame {
         }
     }//GEN-LAST:event_removeClassButtonActionPerformed
 
+    /**
+     * only numbers are allowed
+     *
+     * @param evt
+     */
     private void classFieldKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_classFieldKeyTyped
         char character = evt.getKeyChar();//gets the character entered into the textfield
         if (character < '0' || character > '9') {//if the character is not a number
@@ -784,6 +876,11 @@ public class Interface extends javax.swing.JFrame {
         }
     }//GEN-LAST:event_classFieldKeyTyped
 
+    /**
+     * only numbers are allowed
+     *
+     * @param evt
+     */
     private void conflictField1KeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_conflictField1KeyTyped
         char character = evt.getKeyChar();//gets the character entered into the textfield
         if (character < '0' || character > '9') {//if the character is not a number
@@ -791,6 +888,11 @@ public class Interface extends javax.swing.JFrame {
         }
     }//GEN-LAST:event_conflictField1KeyTyped
 
+    /**
+     * only numbers are allowed
+     *
+     * @param evt
+     */
     private void conflictField2KeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_conflictField2KeyTyped
         char character = evt.getKeyChar();//gets the character entered into the textfield
         if (character < '0' || character > '9') {//if the character is not a number

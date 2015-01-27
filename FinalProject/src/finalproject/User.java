@@ -19,22 +19,43 @@ import java.util.regex.Pattern;
  */
 public class User {
 
-    String _name;
-    Class classes = new Class();
-    ArrayList<Class> userClasses = new ArrayList<Class>();
+    String _name;//user's name
+    Class classes = new Class();//for class methods
+    ArrayList<Class> userClasses = new ArrayList<Class>();//all the user's classes
 
+    /**
+     * default constructor that sets the user's name
+     *
+     * @param name the user's name
+     */
     public User(String name) {
         _name = name;
     }
 
+    /**
+     * sets the user's name
+     *
+     * @param name the user's name
+     */
     public void setName(String name) {
         _name = name;
     }
 
+    /**
+     * gets the user's name
+     *
+     * @return the user's name
+     */
     public String getName() {
         return _name;
     }
 
+    /**
+     * checks validity of adding a new class to the user's schedule
+     *
+     * @param c1 the class they want to add
+     * @return false if there is a conflict; true if there is no conflict
+     */
     public boolean checkClasses(Class c1) {
         for (int i = 0; i < userClasses.size(); i++) {
             if (classes.dayConflict(c1, userClasses.get(i))) {
@@ -44,6 +65,9 @@ public class User {
         return true;
     }
 
+    /**
+     * removes all the classes from the user's schedule
+     */
     public void clearClass() {
         int size = userClasses.size();
         for (int i = 0; i < size; i++) {
@@ -56,6 +80,12 @@ public class User {
         }
     }
 
+    /**
+     * adds a class to the user's schedule and writes it the user's file
+     *
+     * @param c1 the class to add
+     * @return true if it worked; false if it failed
+     */
     public boolean addClass(Class c1) {
         if (checkClasses(c1)) {
             userClasses.add(c1);
@@ -76,6 +106,12 @@ public class User {
         }
     }
 
+    /**
+     * reads the user's text file and creates the arraylist of the user's
+     * classes if there is no text file for the user, it will create one.
+     *
+     * @param u1
+     */
     public void userIO(User u1) {
         try {
             BufferedReader rdr = new BufferedReader(new FileReader(_name + ".txt"));
@@ -114,10 +150,20 @@ public class User {
         }
     }
 
+    /**
+     * returns how many classes the user is taking
+     *
+     * @return how many classes the user is taking
+     */
     public int numberOfClasses() {
         return userClasses.size();
     }
 
+    /**
+     * returns how many credits the user is taking
+     *
+     * @return how many credits the user is taking
+     */
     public int totalCredits() {
         int sum = 0;
         for (int i = 0; i < userClasses.size(); i++) {
