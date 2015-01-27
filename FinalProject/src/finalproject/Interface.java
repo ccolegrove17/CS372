@@ -296,7 +296,6 @@ public class Interface extends javax.swing.JFrame {
                 "", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday"
             }
         ));
-        classTable.setEnabled(false);
         classTable.setFocusable(false);
         classTable.setRequestFocusEnabled(false);
         classTable.getTableHeader().setReorderingAllowed(false);
@@ -628,6 +627,7 @@ public class Interface extends javax.swing.JFrame {
         } catch (Exception ex) {
         }
         classField.setText(null);
+        textArea.setCaretPosition(0);
         infoLabel.setText("Information: ");
     }//GEN-LAST:event_viewClassButtonActionPerformed
 
@@ -710,6 +710,7 @@ public class Interface extends javax.swing.JFrame {
             }
         }
         infoLabel.setText("Information: ");
+        textArea.setCaretPosition(0);
     }//GEN-LAST:event_findClassButtonActionPerformed
 
     /**

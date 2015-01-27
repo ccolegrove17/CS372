@@ -1,2 +1,0 @@
-Entry Number: 1ID: CS-273-1Name: Data StructuresCredits: 3Faculty: E. WalkerStart Time: 12:50PMEnd Time: 01:45PMDays: Monday Wednesday Friday 
-Entry Number: 2ID: PS-153-1Name: General Physics IICredits: 3Faculty: T. BachaStart Time: 08:00AMEnd Time: 08:55AMDays: Monday Wednesday Friday 

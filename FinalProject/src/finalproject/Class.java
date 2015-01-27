@@ -22,7 +22,7 @@ public final class Class {
     String _ID, _name, _faculty, _start, _end;//details of the classes
     int _credits, length, convertedStart, convertedEnd;//details of the classes
     boolean[] _days;//what days the classes are
-    String filename = "ClassInfo3.txt";//the filename of the class info
+    String filename = "ClassInfo.txt";//the filename of the class info
 
     /**
      * default constructor that does nothing

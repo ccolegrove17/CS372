@@ -1,2 +1,0 @@
-Entry Number: 1ID: AB-196-1Name: Elementary Arabic IICredits: 4Faculty: R. Al AbidStart Time: 07:45AMEnd Time: 08:55AMDays: Monday Wednesday Friday 
-Entry Number: 2ID: CS-273-1Name: Data StructuresCredits: 3Faculty: E. WalkerStart Time: 12:50PMEnd Time: 01:45PMDays: Monday Wednesday Friday 

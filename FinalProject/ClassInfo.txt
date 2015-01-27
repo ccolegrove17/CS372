@@ -4598,7 +4598,7 @@ BI-141-5">
 </div>
 </td><td class=" SEC_SHORT_TITLE ms-alignleft dt-rowAlt">
 <div>
-<a class="left" id="SEC_SHORT_TITLE_106" href="javascript:webAdvisor.newTab(&quot;BU-305-N (57563) Dean's Exec Speakers&quot;,&quot;?TYPE=P&PID=ST-XWESTS13C&CLONE=Y&CLONE_PROCESS=Y&SPAUKQ=311960858823724&CONSTITUENCY=WBDF&TOKENIDX=2598496565&quot;);">BU-305-N (57563) Dean's Exec Speakers</a>
+<a class="left" id="SEC_SHORT_TITLE_106" href="javascript:webAdvisor.newTab("BU-305-N (57563) Dean's Exec Speakers","?TYPE=P&PID=ST-XWESTS13C&CLONE=Y&CLONE_PROCESS=Y&SPAUKQ=311960858823724&CONSTITUENCY=WBDF&TOKENIDX=2598496565");">BU-305-N (57563) Dean's Exec Speakers</a>
 </div>
 </td><td class=" SEC_LOCATION ms-alignleft dt-rowAlt">
 <div id="SEC_LOCATION_106" class="">Whitworth Campus<label class="hidden" for="SEC_LOCATION_106"></label><input type="hidden" name="SEC.LOCATION_106" value="Whitworth Campus">
@@ -7728,7 +7728,7 @@ WORLD LANGUAGES &amp; CULTURE">
 <div id="SEC_LOCATION_184" class="">Whitworth Campus<label class="hidden" for="SEC_LOCATION_184"></label><input type="hidden" name="SEC.LOCATION_184" value="Whitworth Campus">
 </div>
 </td><td class=" SEC_MEETING_INFO ms-alignleft dt-rowAlt">
-<div id="SEC_MEETING_INFO_184" class="">02/03/2015-05/15/2015 Discussion Section Wednesday 12:50PM - 01:45PM, Weyerhaeuser Hall, Room 103 (more)...<label class="hidden" for="SEC_MEETING_INFO_184"></label><input type="hidden" name="SEC.MEETING.INFO_184" value="02/03/2015-05/15/2015 Discussion Section Wednesday 12:50PM - 01:45PM, Weyerhaeuser Hall, Room 103 (more)...">
+<div id="SEC_MEETING_INFO_184" class="">02/03/2015-05/15/2015 Regular Course Monday, Wednesday, Friday 09:05AM - 10:15AM, Weyerhaeuser Hall, Room 107<label class="hidden" for="SEC_MEETING_INFO_184"></label><input type="hidden" name="SEC.MEETING.INFO_184" value="02/03/2015-05/15/2015 Regular Course Monday, Wednesday, Friday 09:05AM - 10:15AM, Weyerhaeuser Hall, Room 107">
 </div>
 </td><td class=" SEC_FACULTY_INFO ms-alignleft dt-rowAlt">
 <div id="SEC_FACULTY_INFO_184" class="">C. Tietsort, Beebe K, Burns J, K. Finc (more)<label class="hidden" for="SEC_FACULTY_INFO_184"></label><input type="hidden" name="SEC.FACULTY.INFO_184" value="C. Tietsort, Beebe K, Burns J, K. Finc (more)">
@@ -7768,7 +7768,7 @@ WORLD LANGUAGES &amp; CULTURE">
 <div id="SEC_LOCATION_185" class="">Whitworth Campus<label class="hidden" for="SEC_LOCATION_185"></label><input type="hidden" name="SEC.LOCATION_185" value="Whitworth Campus">
 </div>
 </td><td class=" SEC_MEETING_INFO ms-alignleft dt-row">
-<div id="SEC_MEETING_INFO_185" class="">02/03/2015-05/15/2015 Discussion Section Wednesday 01:55PM - 02:50PM, Weyerhaeuser Hall, Room 103 (more)...<label class="hidden" for="SEC_MEETING_INFO_185"></label><input type="hidden" name="SEC.MEETING.INFO_185" value="02/03/2015-05/15/2015 Discussion Section Wednesday 01:55PM - 02:50PM, Weyerhaeuser Hall, Room 103 (more)...">
+<div id="SEC_MEETING_INFO_184" class="">02/03/2015-05/15/2015 Regular Course Monday, Wednesday, Friday 09:05AM - 10:15AM, Weyerhaeuser Hall, Room 107<label class="hidden" for="SEC_MEETING_INFO_184"></label><input type="hidden" name="SEC.MEETING.INFO_184" value="02/03/2015-05/15/2015 Regular Course Monday, Wednesday, Friday 09:05AM - 10:15AM, Weyerhaeuser Hall, Room 107">
 </div>
 </td><td class=" SEC_FACULTY_INFO ms-alignleft dt-row">
 <div id="SEC_FACULTY_INFO_185" class="">C. Tietsort, Beebe K, Burns J, K. Finc (more)<label class="hidden" for="SEC_FACULTY_INFO_185"></label><input type="hidden" name="SEC.FACULTY.INFO_185" value="C. Tietsort, Beebe K, Burns J, K. Finc (more)">
@@ -7808,7 +7808,7 @@ WORLD LANGUAGES &amp; CULTURE">
 <div id="SEC_LOCATION_186" class="">Whitworth Campus<label class="hidden" for="SEC_LOCATION_186"></label><input type="hidden" name="SEC.LOCATION_186" value="Whitworth Campus">
 </div>
 </td><td class=" SEC_MEETING_INFO ms-alignleft dt-rowAlt">
-<div id="SEC_MEETING_INFO_186" class="">02/03/2015-05/15/2015 Discussion Section Thursday 02:20PM - 03:15PM, Dixon Hall, Room 106 (more)...<label class="hidden" for="SEC_MEETING_INFO_186"></label><input type="hidden" name="SEC.MEETING.INFO_186" value="02/03/2015-05/15/2015 Discussion Section Thursday 02:20PM - 03:15PM, Dixon Hall, Room 106 (more)...">
+<div id="SEC_MEETING_INFO_184" class="">02/03/2015-05/15/2015 Regular Course Monday, Wednesday, Friday 09:05AM - 10:15AM, Weyerhaeuser Hall, Room 107<label class="hidden" for="SEC_MEETING_INFO_184"></label><input type="hidden" name="SEC.MEETING.INFO_184" value="02/03/2015-05/15/2015 Regular Course Monday, Wednesday, Friday 09:05AM - 10:15AM, Weyerhaeuser Hall, Room 107">
 </div>
 </td><td class=" SEC_FACULTY_INFO ms-alignleft dt-rowAlt">
 <div id="SEC_FACULTY_INFO_186" class="">L. Crecelius, Beebe K, Burns J, K. Fin (more)<label class="hidden" for="SEC_FACULTY_INFO_186"></label><input type="hidden" name="SEC.FACULTY.INFO_186" value="L. Crecelius, Beebe K, Burns J, K. Fin (more)">
@@ -7848,7 +7848,7 @@ WORLD LANGUAGES &amp; CULTURE">
 <div id="SEC_LOCATION_187" class="">Whitworth Campus<label class="hidden" for="SEC_LOCATION_187"></label><input type="hidden" name="SEC.LOCATION_187" value="Whitworth Campus">
 </div>
 </td><td class=" SEC_MEETING_INFO ms-alignleft dt-row">
-<div id="SEC_MEETING_INFO_187" class="">02/03/2015-05/15/2015 Discussion Section Thursday 03:25PM - 04:20PM, Dixon Hall, Room 106 (more)...<label class="hidden" for="SEC_MEETING_INFO_187"></label><input type="hidden" name="SEC.MEETING.INFO_187" value="02/03/2015-05/15/2015 Discussion Section Thursday 03:25PM - 04:20PM, Dixon Hall, Room 106 (more)...">
+<div id="SEC_MEETING_INFO_184" class="">02/03/2015-05/15/2015 Regular Course Monday, Wednesday, Friday 09:05AM - 10:15AM, Weyerhaeuser Hall, Room 107<label class="hidden" for="SEC_MEETING_INFO_184"></label><input type="hidden" name="SEC.MEETING.INFO_184" value="02/03/2015-05/15/2015 Regular Course Monday, Wednesday, Friday 09:05AM - 10:15AM, Weyerhaeuser Hall, Room 107">
 </div>
 </td><td class=" SEC_FACULTY_INFO ms-alignleft dt-row">
 <div id="SEC_FACULTY_INFO_187" class="">L. Crecelius, Beebe K, Burns J, K. Fin (more)<label class="hidden" for="SEC_FACULTY_INFO_187"></label><input type="hidden" name="SEC.FACULTY.INFO_187" value="L. Crecelius, Beebe K, Burns J, K. Fin (more)">
@@ -7888,7 +7888,7 @@ WORLD LANGUAGES &amp; CULTURE">
 <div id="SEC_LOCATION_188" class="">Whitworth Campus<label class="hidden" for="SEC_LOCATION_188"></label><input type="hidden" name="SEC.LOCATION_188" value="Whitworth Campus">
 </div>
 </td><td class=" SEC_MEETING_INFO ms-alignleft dt-rowAlt">
-<div id="SEC_MEETING_INFO_188" class="">02/03/2015-05/15/2015 Discussion Section Wednesday 03:00PM - 03:55PM, Weyerhaeuser Hall, Room 103 (more)...<label class="hidden" for="SEC_MEETING_INFO_188"></label><input type="hidden" name="SEC.MEETING.INFO_188" value="02/03/2015-05/15/2015 Discussion Section Wednesday 03:00PM - 03:55PM, Weyerhaeuser Hall, Room 103 (more)...">
+<div id="SEC_MEETING_INFO_184" class="">02/03/2015-05/15/2015 Regular Course Monday, Wednesday, Friday 09:05AM - 10:15AM, Weyerhaeuser Hall, Room 107<label class="hidden" for="SEC_MEETING_INFO_184"></label><input type="hidden" name="SEC.MEETING.INFO_184" value="02/03/2015-05/15/2015 Regular Course Monday, Wednesday, Friday 09:05AM - 10:15AM, Weyerhaeuser Hall, Room 107">
 </div>
 </td><td class=" SEC_FACULTY_INFO ms-alignleft dt-rowAlt">
 <div id="SEC_FACULTY_INFO_188" class="">Burns J, Beebe K, K. Finch, R. McKay<label class="hidden" for="SEC_FACULTY_INFO_188"></label><input type="hidden" name="SEC.FACULTY.INFO_188" value="Burns J, Beebe K, K. Finch, R. McKay">
@@ -7928,7 +7928,7 @@ WORLD LANGUAGES &amp; CULTURE">
 <div id="SEC_LOCATION_189" class="">Whitworth Campus<label class="hidden" for="SEC_LOCATION_189"></label><input type="hidden" name="SEC.LOCATION_189" value="Whitworth Campus">
 </div>
 </td><td class=" SEC_MEETING_INFO ms-alignleft dt-row">
-<div id="SEC_MEETING_INFO_189" class="">02/03/2015-05/15/2015 Discussion Section Thursday 09:00AM - 09:55AM, Weyerhaeuser Hall, Room 103 (more)...<label class="hidden" for="SEC_MEETING_INFO_189"></label><input type="hidden" name="SEC.MEETING.INFO_189" value="02/03/2015-05/15/2015 Discussion Section Thursday 09:00AM - 09:55AM, Weyerhaeuser Hall, Room 103 (more)...">
+<div id="SEC_MEETING_INFO_184" class="">02/03/2015-05/15/2015 Regular Course Monday, Wednesday, Friday 09:05AM - 10:15AM, Weyerhaeuser Hall, Room 107<label class="hidden" for="SEC_MEETING_INFO_184"></label><input type="hidden" name="SEC.MEETING.INFO_184" value="02/03/2015-05/15/2015 Regular Course Monday, Wednesday, Friday 09:05AM - 10:15AM, Weyerhaeuser Hall, Room 107">
 </div>
 </td><td class=" SEC_FACULTY_INFO ms-alignleft dt-row">
 <div id="SEC_FACULTY_INFO_189" class="">K. Finch, Beebe K, Burns J, R. McKay<label class="hidden" for="SEC_FACULTY_INFO_189"></label><input type="hidden" name="SEC.FACULTY.INFO_189" value="K. Finch, Beebe K, Burns J, R. McKay">
@@ -7968,7 +7968,7 @@ WORLD LANGUAGES &amp; CULTURE">
 <div id="SEC_LOCATION_190" class="">Whitworth Campus<label class="hidden" for="SEC_LOCATION_190"></label><input type="hidden" name="SEC.LOCATION_190" value="Whitworth Campus">
 </div>
 </td><td class=" SEC_MEETING_INFO ms-alignleft dt-rowAlt">
-<div id="SEC_MEETING_INFO_190" class="">02/03/2015-05/15/2015 Discussion Section Wednesday 01:55PM - 02:50PM, Dixon Hall, Room 102 (more)...<label class="hidden" for="SEC_MEETING_INFO_190"></label><input type="hidden" name="SEC.MEETING.INFO_190" value="02/03/2015-05/15/2015 Discussion Section Wednesday 01:55PM - 02:50PM, Dixon Hall, Room 102 (more)...">
+<div id="SEC_MEETING_INFO_184" class="">02/03/2015-05/15/2015 Regular Course Monday, Wednesday, Friday 09:05AM - 10:15AM, Weyerhaeuser Hall, Room 107<label class="hidden" for="SEC_MEETING_INFO_184"></label><input type="hidden" name="SEC.MEETING.INFO_184" value="02/03/2015-05/15/2015 Regular Course Monday, Wednesday, Friday 09:05AM - 10:15AM, Weyerhaeuser Hall, Room 107">
 </div>
 </td><td class=" SEC_FACULTY_INFO ms-alignleft dt-rowAlt">
 <div id="SEC_FACULTY_INFO_190" class="">A. Allen, Beebe K, Burns J, K. Finch,  (more)<label class="hidden" for="SEC_FACULTY_INFO_190"></label><input type="hidden" name="SEC.FACULTY.INFO_190" value="A. Allen, Beebe K, Burns J, K. Finch,  (more)">
@@ -8008,7 +8008,7 @@ WORLD LANGUAGES &amp; CULTURE">
 <div id="SEC_LOCATION_191" class="">Whitworth Campus<label class="hidden" for="SEC_LOCATION_191"></label><input type="hidden" name="SEC.LOCATION_191" value="Whitworth Campus">
 </div>
 </td><td class=" SEC_MEETING_INFO ms-alignleft dt-row">
-<div id="SEC_MEETING_INFO_191" class="">02/03/2015-05/15/2015 Discussion Section Wednesday 03:00PM - 03:55PM, Dixon Hall, Room 102 (more)...<label class="hidden" for="SEC_MEETING_INFO_191"></label><input type="hidden" name="SEC.MEETING.INFO_191" value="02/03/2015-05/15/2015 Discussion Section Wednesday 03:00PM - 03:55PM, Dixon Hall, Room 102 (more)...">
+<div id="SEC_MEETING_INFO_184" class="">02/03/2015-05/15/2015 Regular Course Monday, Wednesday, Friday 09:05AM - 10:15AM, Weyerhaeuser Hall, Room 107<label class="hidden" for="SEC_MEETING_INFO_184"></label><input type="hidden" name="SEC.MEETING.INFO_184" value="02/03/2015-05/15/2015 Regular Course Monday, Wednesday, Friday 09:05AM - 10:15AM, Weyerhaeuser Hall, Room 107">
 </div>
 </td><td class=" SEC_FACULTY_INFO ms-alignleft dt-row">
 <div id="SEC_FACULTY_INFO_191" class="">A. Allen, Beebe K, Burns J, K. Finch,  (more)<label class="hidden" for="SEC_FACULTY_INFO_191"></label><input type="hidden" name="SEC.FACULTY.INFO_191" value="A. Allen, Beebe K, Burns J, K. Finch,  (more)">
@@ -8048,7 +8048,7 @@ WORLD LANGUAGES &amp; CULTURE">
 <div id="SEC_LOCATION_192" class="">Whitworth Campus<label class="hidden" for="SEC_LOCATION_192"></label><input type="hidden" name="SEC.LOCATION_192" value="Whitworth Campus">
 </div>
 </td><td class=" SEC_MEETING_INFO ms-alignleft dt-rowAlt">
-<div id="SEC_MEETING_INFO_192" class="">02/03/2015-05/15/2015 Discussion Section Wednesday 11:45AM - 12:40PM, Weyerhaeuser Hall, Room 102 (more)...<label class="hidden" for="SEC_MEETING_INFO_192"></label><input type="hidden" name="SEC.MEETING.INFO_192" value="02/03/2015-05/15/2015 Discussion Section Wednesday 11:45AM - 12:40PM, Weyerhaeuser Hall, Room 102 (more)...">
+<div id="SEC_MEETING_INFO_184" class="">02/03/2015-05/15/2015 Regular Course Monday, Wednesday, Friday 09:05AM - 10:15AM, Weyerhaeuser Hall, Room 107<label class="hidden" for="SEC_MEETING_INFO_184"></label><input type="hidden" name="SEC.MEETING.INFO_184" value="02/03/2015-05/15/2015 Regular Course Monday, Wednesday, Friday 09:05AM - 10:15AM, Weyerhaeuser Hall, Room 107">
 </div>
 </td><td class=" SEC_FACULTY_INFO ms-alignleft dt-rowAlt">
 <div id="SEC_FACULTY_INFO_192" class="">S. Dilworth, Beebe K, Burns J, K. Finc (more)<label class="hidden" for="SEC_FACULTY_INFO_192"></label><input type="hidden" name="SEC.FACULTY.INFO_192" value="S. Dilworth, Beebe K, Burns J, K. Finc (more)">
@@ -8088,7 +8088,7 @@ WORLD LANGUAGES &amp; CULTURE">
 <div id="SEC_LOCATION_193" class="">Whitworth Campus<label class="hidden" for="SEC_LOCATION_193"></label><input type="hidden" name="SEC.LOCATION_193" value="Whitworth Campus">
 </div>
 </td><td class=" SEC_MEETING_INFO ms-alignleft dt-row">
-<div id="SEC_MEETING_INFO_193" class="">02/03/2015-05/15/2015 Discussion Section Wednesday 01:55PM - 02:50PM, Weyerhaeuser Hall, Room 102 (more)...<label class="hidden" for="SEC_MEETING_INFO_193"></label><input type="hidden" name="SEC.MEETING.INFO_193" value="02/03/2015-05/15/2015 Discussion Section Wednesday 01:55PM - 02:50PM, Weyerhaeuser Hall, Room 102 (more)...">
+<div id="SEC_MEETING_INFO_184" class="">02/03/2015-05/15/2015 Regular Course Monday, Wednesday, Friday 09:05AM - 10:15AM, Weyerhaeuser Hall, Room 107<label class="hidden" for="SEC_MEETING_INFO_184"></label><input type="hidden" name="SEC.MEETING.INFO_184" value="02/03/2015-05/15/2015 Regular Course Monday, Wednesday, Friday 09:05AM - 10:15AM, Weyerhaeuser Hall, Room 107">
 </div>
 </td><td class=" SEC_FACULTY_INFO ms-alignleft dt-row">
 <div id="SEC_FACULTY_INFO_193" class="">S. Dilworth, Beebe K, Burns J, K. Finc (more)<label class="hidden" for="SEC_FACULTY_INFO_193"></label><input type="hidden" name="SEC.FACULTY.INFO_193" value="S. Dilworth, Beebe K, Burns J, K. Finc (more)">
@@ -8128,7 +8128,7 @@ WORLD LANGUAGES &amp; CULTURE">
 <div id="SEC_LOCATION_194" class="">Whitworth Campus<label class="hidden" for="SEC_LOCATION_194"></label><input type="hidden" name="SEC.LOCATION_194" value="Whitworth Campus">
 </div>
 </td><td class=" SEC_MEETING_INFO ms-alignleft dt-rowAlt">
-<div id="SEC_MEETING_INFO_194" class="">02/03/2015-05/15/2015 Discussion Section Thursday 11:45AM - 12:40PM, Dixon Hall, Room 105A (more)...<label class="hidden" for="SEC_MEETING_INFO_194"></label><input type="hidden" name="SEC.MEETING.INFO_194" value="02/03/2015-05/15/2015 Discussion Section Thursday 11:45AM - 12:40PM, Dixon Hall, Room 105A (more)...">
+<div id="SEC_MEETING_INFO_184" class="">02/03/2015-05/15/2015 Regular Course Monday, Wednesday, Friday 09:05AM - 10:15AM, Weyerhaeuser Hall, Room 107<label class="hidden" for="SEC_MEETING_INFO_184"></label><input type="hidden" name="SEC.MEETING.INFO_184" value="02/03/2015-05/15/2015 Regular Course Monday, Wednesday, Friday 09:05AM - 10:15AM, Weyerhaeuser Hall, Room 107">
 </div>
 </td><td class=" SEC_FACULTY_INFO ms-alignleft dt-rowAlt">
 <div id="SEC_FACULTY_INFO_194" class="">A. Grow, Beebe K, Burns J, K. Finch, R. McKay<label class="hidden" for="SEC_FACULTY_INFO_194"></label><input type="hidden" name="SEC.FACULTY.INFO_194" value="A. Grow, Beebe K, Burns J, K. Finch, R. McKay">
@@ -8168,7 +8168,7 @@ WORLD LANGUAGES &amp; CULTURE">
 <div id="SEC_LOCATION_195" class="">Whitworth Campus<label class="hidden" for="SEC_LOCATION_195"></label><input type="hidden" name="SEC.LOCATION_195" value="Whitworth Campus">
 </div>
 </td><td class=" SEC_MEETING_INFO ms-alignleft dt-row">
-<div id="SEC_MEETING_INFO_195" class="">02/03/2015-05/15/2015 Discussion Section Thursday 12:50PM - 01:45PM, Dixon Hall, Room 105A (more)...<label class="hidden" for="SEC_MEETING_INFO_195"></label><input type="hidden" name="SEC.MEETING.INFO_195" value="02/03/2015-05/15/2015 Discussion Section Thursday 12:50PM - 01:45PM, Dixon Hall, Room 105A (more)...">
+<div id="SEC_MEETING_INFO_184" class="">02/03/2015-05/15/2015 Regular Course Monday, Wednesday, Friday 09:05AM - 10:15AM, Weyerhaeuser Hall, Room 107<label class="hidden" for="SEC_MEETING_INFO_184"></label><input type="hidden" name="SEC.MEETING.INFO_184" value="02/03/2015-05/15/2015 Regular Course Monday, Wednesday, Friday 09:05AM - 10:15AM, Weyerhaeuser Hall, Room 107">
 </div>
 </td><td class=" SEC_FACULTY_INFO ms-alignleft dt-row">
 <div id="SEC_FACULTY_INFO_195" class="">A. Grow, Beebe K, Burns J, K. Finch, R. McKay<label class="hidden" for="SEC_FACULTY_INFO_195"></label><input type="hidden" name="SEC.FACULTY.INFO_195" value="A. Grow, Beebe K, Burns J, K. Finch, R. McKay">
@@ -8208,7 +8208,7 @@ WORLD LANGUAGES &amp; CULTURE">
 <div id="SEC_LOCATION_196" class="">Whitworth Campus<label class="hidden" for="SEC_LOCATION_196"></label><input type="hidden" name="SEC.LOCATION_196" value="Whitworth Campus">
 </div>
 </td><td class=" SEC_MEETING_INFO ms-alignleft dt-rowAlt">
-<div id="SEC_MEETING_INFO_196" class="">02/03/2015-05/15/2015 Discussion Section Wednesday 11:45AM - 12:40PM, Dixon Hall, Room 107 (more)...<label class="hidden" for="SEC_MEETING_INFO_196"></label><input type="hidden" name="SEC.MEETING.INFO_196" value="02/03/2015-05/15/2015 Discussion Section Wednesday 11:45AM - 12:40PM, Dixon Hall, Room 107 (more)...">
+<div id="SEC_MEETING_INFO_184" class="">02/03/2015-05/15/2015 Regular Course Monday, Wednesday, Friday 09:05AM - 10:15AM, Weyerhaeuser Hall, Room 107<label class="hidden" for="SEC_MEETING_INFO_184"></label><input type="hidden" name="SEC.MEETING.INFO_184" value="02/03/2015-05/15/2015 Regular Course Monday, Wednesday, Friday 09:05AM - 10:15AM, Weyerhaeuser Hall, Room 107">
 </div>
 </td><td class=" SEC_FACULTY_INFO ms-alignleft dt-rowAlt">
 <div id="SEC_FACULTY_INFO_196" class="">M. Prior, Beebe K, Burns J, K. Finch,  (more)<label class="hidden" for="SEC_FACULTY_INFO_196"></label><input type="hidden" name="SEC.FACULTY.INFO_196" value="M. Prior, Beebe K, Burns J, K. Finch,  (more)">
@@ -8248,7 +8248,7 @@ WORLD LANGUAGES &amp; CULTURE">
 <div id="SEC_LOCATION_197" class="">Whitworth Campus<label class="hidden" for="SEC_LOCATION_197"></label><input type="hidden" name="SEC.LOCATION_197" value="Whitworth Campus">
 </div>
 </td><td class=" SEC_MEETING_INFO ms-alignleft dt-row">
-<div id="SEC_MEETING_INFO_197" class="">02/03/2015-05/15/2015 Discussion Section Wednesday 12:50PM - 01:45PM, Dixon Hall, Room 107 (more)...<label class="hidden" for="SEC_MEETING_INFO_197"></label><input type="hidden" name="SEC.MEETING.INFO_197" value="02/03/2015-05/15/2015 Discussion Section Wednesday 12:50PM - 01:45PM, Dixon Hall, Room 107 (more)...">
+<div id="SEC_MEETING_INFO_184" class="">02/03/2015-05/15/2015 Regular Course Monday, Wednesday, Friday 09:05AM - 10:15AM, Weyerhaeuser Hall, Room 107<label class="hidden" for="SEC_MEETING_INFO_184"></label><input type="hidden" name="SEC.MEETING.INFO_184" value="02/03/2015-05/15/2015 Regular Course Monday, Wednesday, Friday 09:05AM - 10:15AM, Weyerhaeuser Hall, Room 107">
 </div>
 </td><td class=" SEC_FACULTY_INFO ms-alignleft dt-row">
 <div id="SEC_FACULTY_INFO_197" class="">M. Prior, Beebe K, Burns J, K. Finch,  (more)<label class="hidden" for="SEC_FACULTY_INFO_197"></label><input type="hidden" name="SEC.FACULTY.INFO_197" value="M. Prior, Beebe K, Burns J, K. Finch,  (more)">
@@ -8288,7 +8288,7 @@ WORLD LANGUAGES &amp; CULTURE">
 <div id="SEC_LOCATION_198" class="">Whitworth Campus<label class="hidden" for="SEC_LOCATION_198"></label><input type="hidden" name="SEC.LOCATION_198" value="Whitworth Campus">
 </div>
 </td><td class=" SEC_MEETING_INFO ms-alignleft dt-rowAlt">
-<div id="SEC_MEETING_INFO_198" class="">02/03/2015-05/15/2015 Discussion Section Thursday 12:50PM - 01:45PM, Dixon Hall, Room 105B (more)...<label class="hidden" for="SEC_MEETING_INFO_198"></label><input type="hidden" name="SEC.MEETING.INFO_198" value="02/03/2015-05/15/2015 Discussion Section Thursday 12:50PM - 01:45PM, Dixon Hall, Room 105B (more)...">
+<div id="SEC_MEETING_INFO_184" class="">02/03/2015-05/15/2015 Regular Course Monday, Wednesday, Friday 09:05AM - 10:15AM, Weyerhaeuser Hall, Room 107<label class="hidden" for="SEC_MEETING_INFO_184"></label><input type="hidden" name="SEC.MEETING.INFO_184" value="02/03/2015-05/15/2015 Regular Course Monday, Wednesday, Friday 09:05AM - 10:15AM, Weyerhaeuser Hall, Room 107">
 </div>
 </td><td class=" SEC_FACULTY_INFO ms-alignleft dt-rowAlt">
 <div id="SEC_FACULTY_INFO_198" class="">J. Hauck, Beebe K, Burns J, K. Finch,  (more)<label class="hidden" for="SEC_FACULTY_INFO_198"></label><input type="hidden" name="SEC.FACULTY.INFO_198" value="J. Hauck, Beebe K, Burns J, K. Finch,  (more)">
@@ -8328,7 +8328,7 @@ WORLD LANGUAGES &amp; CULTURE">
 <div id="SEC_LOCATION_199" class="">Whitworth Campus<label class="hidden" for="SEC_LOCATION_199"></label><input type="hidden" name="SEC.LOCATION_199" value="Whitworth Campus">
 </div>
 </td><td class=" SEC_MEETING_INFO ms-alignleft dt-row">
-<div id="SEC_MEETING_INFO_199" class="">02/03/2015-05/15/2015 Discussion Section Thursday 01:55PM - 02:50PM, Dixon Hall, Room 105B (more)...<label class="hidden" for="SEC_MEETING_INFO_199"></label><input type="hidden" name="SEC.MEETING.INFO_199" value="02/03/2015-05/15/2015 Discussion Section Thursday 01:55PM - 02:50PM, Dixon Hall, Room 105B (more)...">
+<div id="SEC_MEETING_INFO_184" class="">02/03/2015-05/15/2015 Regular Course Monday, Wednesday, Friday 09:05AM - 10:15AM, Weyerhaeuser Hall, Room 107<label class="hidden" for="SEC_MEETING_INFO_184"></label><input type="hidden" name="SEC.MEETING.INFO_184" value="02/03/2015-05/15/2015 Regular Course Monday, Wednesday, Friday 09:05AM - 10:15AM, Weyerhaeuser Hall, Room 107">
 </div>
 </td><td class=" SEC_FACULTY_INFO ms-alignleft dt-row">
 <div id="SEC_FACULTY_INFO_199" class="">J. Hauck, Beebe K, Burns J, K. Finch,  (more)<label class="hidden" for="SEC_FACULTY_INFO_199"></label><input type="hidden" name="SEC.FACULTY.INFO_199" value="J. Hauck, Beebe K, Burns J, K. Finch,  (more)">
@@ -8368,7 +8368,7 @@ WORLD LANGUAGES &amp; CULTURE">
 <div id="SEC_LOCATION_200" class="">Whitworth Campus<label class="hidden" for="SEC_LOCATION_200"></label><input type="hidden" name="SEC.LOCATION_200" value="Whitworth Campus">
 </div>
 </td><td class=" SEC_MEETING_INFO ms-alignleft dt-rowAlt">
-<div id="SEC_MEETING_INFO_200" class="">02/03/2015-05/15/2015 Discussion Section Thursday 02:20PM - 03:15PM, Robinson Science Hall, Room 240 (more)...<label class="hidden" for="SEC_MEETING_INFO_200"></label><input type="hidden" name="SEC.MEETING.INFO_200" value="02/03/2015-05/15/2015 Discussion Section Thursday 02:20PM - 03:15PM, Robinson Science Hall, Room 240 (more)...">
+<div id="SEC_MEETING_INFO_184" class="">02/03/2015-05/15/2015 Regular Course Monday, Wednesday, Friday 09:05AM - 10:15AM, Weyerhaeuser Hall, Room 107<label class="hidden" for="SEC_MEETING_INFO_184"></label><input type="hidden" name="SEC.MEETING.INFO_184" value="02/03/2015-05/15/2015 Regular Course Monday, Wednesday, Friday 09:05AM - 10:15AM, Weyerhaeuser Hall, Room 107">
 </div>
 </td><td class=" SEC_FACULTY_INFO ms-alignleft dt-rowAlt">
 <div id="SEC_FACULTY_INFO_200" class="">M. Devey, Beebe K, Burns J, K. Finch,  (more)<label class="hidden" for="SEC_FACULTY_INFO_200"></label><input type="hidden" name="SEC.FACULTY.INFO_200" value="M. Devey, Beebe K, Burns J, K. Finch,  (more)">
@@ -8408,7 +8408,7 @@ WORLD LANGUAGES &amp; CULTURE">
 <div id="SEC_LOCATION_201" class="">Whitworth Campus<label class="hidden" for="SEC_LOCATION_201"></label><input type="hidden" name="SEC.LOCATION_201" value="Whitworth Campus">
 </div>
 </td><td class=" SEC_MEETING_INFO ms-alignleft dt-row">
-<div id="SEC_MEETING_INFO_201" class="">02/03/2015-05/15/2015 Discussion Section Thursday 03:20PM - 04:15PM, Robinson Science Hall, Room 240 (more)...<label class="hidden" for="SEC_MEETING_INFO_201"></label><input type="hidden" name="SEC.MEETING.INFO_201" value="02/03/2015-05/15/2015 Discussion Section Thursday 03:20PM - 04:15PM, Robinson Science Hall, Room 240 (more)...">
+<div id="SEC_MEETING_INFO_184" class="">02/03/2015-05/15/2015 Regular Course Monday, Wednesday, Friday 09:05AM - 10:15AM, Weyerhaeuser Hall, Room 107<label class="hidden" for="SEC_MEETING_INFO_184"></label><input type="hidden" name="SEC.MEETING.INFO_184" value="02/03/2015-05/15/2015 Regular Course Monday, Wednesday, Friday 09:05AM - 10:15AM, Weyerhaeuser Hall, Room 107">
 </div>
 </td><td class=" SEC_FACULTY_INFO ms-alignleft dt-row">
 <div id="SEC_FACULTY_INFO_201" class="">M. Devey, Beebe K, Burns J, K. Finch,  (more)<label class="hidden" for="SEC_FACULTY_INFO_201"></label><input type="hidden" name="SEC.FACULTY.INFO_201" value="M. Devey, Beebe K, Burns J, K. Finch,  (more)">
@@ -8448,7 +8448,7 @@ WORLD LANGUAGES &amp; CULTURE">
 <div id="SEC_LOCATION_202" class="">Whitworth Campus<label class="hidden" for="SEC_LOCATION_202"></label><input type="hidden" name="SEC.LOCATION_202" value="Whitworth Campus">
 </div>
 </td><td class=" SEC_MEETING_INFO ms-alignleft dt-rowAlt">
-<div id="SEC_MEETING_INFO_202" class="">02/03/2015-05/15/2015 Discussion Section Wednesday 03:10PM - 04:05PM, Weyerhaeuser Hall, Room 304 (more)...<label class="hidden" for="SEC_MEETING_INFO_202"></label><input type="hidden" name="SEC.MEETING.INFO_202" value="02/03/2015-05/15/2015 Discussion Section Wednesday 03:10PM - 04:05PM, Weyerhaeuser Hall, Room 304 (more)...">
+<div id="SEC_MEETING_INFO_184" class="">02/03/2015-05/15/2015 Regular Course Monday, Wednesday, Friday 09:05AM - 10:15AM, Weyerhaeuser Hall, Room 107<label class="hidden" for="SEC_MEETING_INFO_184"></label><input type="hidden" name="SEC.MEETING.INFO_184" value="02/03/2015-05/15/2015 Regular Course Monday, Wednesday, Friday 09:05AM - 10:15AM, Weyerhaeuser Hall, Room 107">
 </div>
 </td><td class=" SEC_FACULTY_INFO ms-alignleft dt-rowAlt">
 <div id="SEC_FACULTY_INFO_202" class="">Migliazzo A, Beebe K, Burns J, K. Finc (more)<label class="hidden" for="SEC_FACULTY_INFO_202"></label><input type="hidden" name="SEC.FACULTY.INFO_202" value="Migliazzo A, Beebe K, Burns J, K. Finc (more)">
@@ -8488,7 +8488,7 @@ WORLD LANGUAGES &amp; CULTURE">
 <div id="SEC_LOCATION_203" class="">Whitworth Campus<label class="hidden" for="SEC_LOCATION_203"></label><input type="hidden" name="SEC.LOCATION_203" value="Whitworth Campus">
 </div>
 </td><td class=" SEC_MEETING_INFO ms-alignleft dt-row">
-<div id="SEC_MEETING_INFO_203" class="">02/03/2015-05/15/2015 Discussion Section Wednesday 04:10PM - 05:05PM, Weyerhaeuser Hall, Room 304 (more)...<label class="hidden" for="SEC_MEETING_INFO_203"></label><input type="hidden" name="SEC.MEETING.INFO_203" value="02/03/2015-05/15/2015 Discussion Section Wednesday 04:10PM - 05:05PM, Weyerhaeuser Hall, Room 304 (more)...">
+<div id="SEC_MEETING_INFO_184" class="">02/03/2015-05/15/2015 Regular Course Monday, Wednesday, Friday 09:05AM - 10:15AM, Weyerhaeuser Hall, Room 107<label class="hidden" for="SEC_MEETING_INFO_184"></label><input type="hidden" name="SEC.MEETING.INFO_184" value="02/03/2015-05/15/2015 Regular Course Monday, Wednesday, Friday 09:05AM - 10:15AM, Weyerhaeuser Hall, Room 107">
 </div>
 </td><td class=" SEC_FACULTY_INFO ms-alignleft dt-row">
 <div id="SEC_FACULTY_INFO_203" class="">Migliazzo A, Beebe K, Burns J, K. Finc (more)<label class="hidden" for="SEC_FACULTY_INFO_203"></label><input type="hidden" name="SEC.FACULTY.INFO_203" value="Migliazzo A, Beebe K, Burns J, K. Finc (more)">
@@ -8528,7 +8528,7 @@ WORLD LANGUAGES &amp; CULTURE">
 <div id="SEC_LOCATION_204" class="">Whitworth Campus<label class="hidden" for="SEC_LOCATION_204"></label><input type="hidden" name="SEC.LOCATION_204" value="Whitworth Campus">
 </div>
 </td><td class=" SEC_MEETING_INFO ms-alignleft dt-rowAlt">
-<div id="SEC_MEETING_INFO_204" class="">02/03/2015-05/15/2015 Discussion Section Tuesday 09:30AM - 10:10AM, Dixon Hall, Room 102 (more)...<label class="hidden" for="SEC_MEETING_INFO_204"></label><input type="hidden" name="SEC.MEETING.INFO_204" value="02/03/2015-05/15/2015 Discussion Section Tuesday 09:30AM - 10:10AM, Dixon Hall, Room 102 (more)...">
+<div id="SEC_MEETING_INFO_205" class="">02/03/2015-05/15/2015 Regular Course Monday, Wednesday, Friday 10:25AM - 11:35AM, Weyerhaeuser Hall, Room 107<label class="hidden" for="SEC_MEETING_INFO_205"></label><input type="hidden" name="SEC.MEETING.INFO_205" value="02/03/2015-05/15/2015 Regular Course Monday, Wednesday, Friday 10:25AM - 11:35AM, Weyerhaeuser Hall, Room 107">
 </div>
 </td><td class=" SEC_FACULTY_INFO ms-alignleft dt-rowAlt">
 <div id="SEC_FACULTY_INFO_204" class="">A. Stanfield, Storm Kathleen, Oakland  (more)<label class="hidden" for="SEC_FACULTY_INFO_204"></label><input type="hidden" name="SEC.FACULTY.INFO_204" value="A. Stanfield, Storm Kathleen, Oakland  (more)">
@@ -8568,7 +8568,7 @@ WORLD LANGUAGES &amp; CULTURE">
 <div id="SEC_LOCATION_205" class="">Whitworth Campus<label class="hidden" for="SEC_LOCATION_205"></label><input type="hidden" name="SEC.LOCATION_205" value="Whitworth Campus">
 </div>
 </td><td class=" SEC_MEETING_INFO ms-alignleft dt-row">
-<div id="SEC_MEETING_INFO_205" class="">02/03/2015-05/15/2015 Discussion Section Tuesday 10:10AM - 10:50AM, Dixon Hall, Room 102 (more)...<label class="hidden" for="SEC_MEETING_INFO_205"></label><input type="hidden" name="SEC.MEETING.INFO_205" value="02/03/2015-05/15/2015 Discussion Section Tuesday 10:10AM - 10:50AM, Dixon Hall, Room 102 (more)...">
+<div id="SEC_MEETING_INFO_205" class="">02/03/2015-05/15/2015 Regular Course Monday, Wednesday, Friday 10:25AM - 11:35AM, Weyerhaeuser Hall, Room 107<label class="hidden" for="SEC_MEETING_INFO_205"></label><input type="hidden" name="SEC.MEETING.INFO_205" value="02/03/2015-05/15/2015 Regular Course Monday, Wednesday, Friday 10:25AM - 11:35AM, Weyerhaeuser Hall, Room 107">
 </div>
 </td><td class=" SEC_FACULTY_INFO ms-alignleft dt-row">
 <div id="SEC_FACULTY_INFO_205" class="">A. Stanfield, Storm Kathleen, Oakland  (more)<label class="hidden" for="SEC_FACULTY_INFO_205"></label><input type="hidden" name="SEC.FACULTY.INFO_205" value="A. Stanfield, Storm Kathleen, Oakland  (more)">
@@ -8608,7 +8608,7 @@ WORLD LANGUAGES &amp; CULTURE">
 <div id="SEC_LOCATION_206" class="">Whitworth Campus<label class="hidden" for="SEC_LOCATION_206"></label><input type="hidden" name="SEC.LOCATION_206" value="Whitworth Campus">
 </div>
 </td><td class=" SEC_MEETING_INFO ms-alignleft dt-rowAlt">
-<div id="SEC_MEETING_INFO_206" class="">02/03/2015-05/15/2015 Discussion Section Tuesday 09:30AM - 10:10AM, Weyerhaeuser Hall, Room 103 (more)...<label class="hidden" for="SEC_MEETING_INFO_206"></label><input type="hidden" name="SEC.MEETING.INFO_206" value="02/03/2015-05/15/2015 Discussion Section Tuesday 09:30AM - 10:10AM, Weyerhaeuser Hall, Room 103 (more)...">
+<div id="SEC_MEETING_INFO_205" class="">02/03/2015-05/15/2015 Regular Course Monday, Wednesday, Friday 10:25AM - 11:35AM, Weyerhaeuser Hall, Room 107<label class="hidden" for="SEC_MEETING_INFO_205"></label><input type="hidden" name="SEC.MEETING.INFO_205" value="02/03/2015-05/15/2015 Regular Course Monday, Wednesday, Friday 10:25AM - 11:35AM, Weyerhaeuser Hall, Room 107">
 </div>
 </td><td class=" SEC_FACULTY_INFO ms-alignleft dt-rowAlt">
 <div id="SEC_FACULTY_INFO_206" class="">Storm Kathleen, Baird F, Oakland L, M. Smith<label class="hidden" for="SEC_FACULTY_INFO_206"></label><input type="hidden" name="SEC.FACULTY.INFO_206" value="Storm Kathleen, Baird F, Oakland L, M. Smith">
@@ -8648,7 +8648,7 @@ WORLD LANGUAGES &amp; CULTURE">
 <div id="SEC_LOCATION_207" class="">Whitworth Campus<label class="hidden" for="SEC_LOCATION_207"></label><input type="hidden" name="SEC.LOCATION_207" value="Whitworth Campus">
 </div>
 </td><td class=" SEC_MEETING_INFO ms-alignleft dt-row">
-<div id="SEC_MEETING_INFO_207" class="">02/03/2015-05/15/2015 Discussion Section Tuesday 10:10AM - 10:50AM, Weyerhaeuser Hall, Room 103 (more)...<label class="hidden" for="SEC_MEETING_INFO_207"></label><input type="hidden" name="SEC.MEETING.INFO_207" value="02/03/2015-05/15/2015 Discussion Section Tuesday 10:10AM - 10:50AM, Weyerhaeuser Hall, Room 103 (more)...">
+<div id="SEC_MEETING_INFO_205" class="">02/03/2015-05/15/2015 Regular Course Monday, Wednesday, Friday 10:25AM - 11:35AM, Weyerhaeuser Hall, Room 107<label class="hidden" for="SEC_MEETING_INFO_205"></label><input type="hidden" name="SEC.MEETING.INFO_205" value="02/03/2015-05/15/2015 Regular Course Monday, Wednesday, Friday 10:25AM - 11:35AM, Weyerhaeuser Hall, Room 107">
 </div>
 </td><td class=" SEC_FACULTY_INFO ms-alignleft dt-row">
 <div id="SEC_FACULTY_INFO_207" class="">Storm Kathleen, Baird F, Oakland L, M. Smith<label class="hidden" for="SEC_FACULTY_INFO_207"></label><input type="hidden" name="SEC.FACULTY.INFO_207" value="Storm Kathleen, Baird F, Oakland L, M. Smith">
@@ -8688,7 +8688,7 @@ WORLD LANGUAGES &amp; CULTURE">
 <div id="SEC_LOCATION_208" class="">Whitworth Campus<label class="hidden" for="SEC_LOCATION_208"></label><input type="hidden" name="SEC.LOCATION_208" value="Whitworth Campus">
 </div>
 </td><td class=" SEC_MEETING_INFO ms-alignleft dt-rowAlt">
-<div id="SEC_MEETING_INFO_208" class="">02/03/2015-05/15/2015 Discussion Section Tuesday 12:50PM - 01:30PM, Weyerhaeuser Hall, Room 102 (more)...<label class="hidden" for="SEC_MEETING_INFO_208"></label><input type="hidden" name="SEC.MEETING.INFO_208" value="02/03/2015-05/15/2015 Discussion Section Tuesday 12:50PM - 01:30PM, Weyerhaeuser Hall, Room 102 (more)...">
+<div id="SEC_MEETING_INFO_205" class="">02/03/2015-05/15/2015 Regular Course Monday, Wednesday, Friday 10:25AM - 11:35AM, Weyerhaeuser Hall, Room 107<label class="hidden" for="SEC_MEETING_INFO_205"></label><input type="hidden" name="SEC.MEETING.INFO_205" value="02/03/2015-05/15/2015 Regular Course Monday, Wednesday, Friday 10:25AM - 11:35AM, Weyerhaeuser Hall, Room 107">
 </div>
 </td><td class=" SEC_FACULTY_INFO ms-alignleft dt-rowAlt">
 <div id="SEC_FACULTY_INFO_208" class="">B. Watts, Storm Kathleen, Baird F, M. Smith<label class="hidden" for="SEC_FACULTY_INFO_208"></label><input type="hidden" name="SEC.FACULTY.INFO_208" value="B. Watts, Storm Kathleen, Baird F, M. Smith">
@@ -8728,7 +8728,7 @@ WORLD LANGUAGES &amp; CULTURE">
 <div id="SEC_LOCATION_209" class="">Whitworth Campus<label class="hidden" for="SEC_LOCATION_209"></label><input type="hidden" name="SEC.LOCATION_209" value="Whitworth Campus">
 </div>
 </td><td class=" SEC_MEETING_INFO ms-alignleft dt-row">
-<div id="SEC_MEETING_INFO_209" class="">02/03/2015-05/15/2015 Discussion Section Tuesday 01:30PM - 02:10PM, Weyerhaeuser Hall, Room 102 (more)...<label class="hidden" for="SEC_MEETING_INFO_209"></label><input type="hidden" name="SEC.MEETING.INFO_209" value="02/03/2015-05/15/2015 Discussion Section Tuesday 01:30PM - 02:10PM, Weyerhaeuser Hall, Room 102 (more)...">
+<div id="SEC_MEETING_INFO_205" class="">02/03/2015-05/15/2015 Regular Course Monday, Wednesday, Friday 10:25AM - 11:35AM, Weyerhaeuser Hall, Room 107<label class="hidden" for="SEC_MEETING_INFO_205"></label><input type="hidden" name="SEC.MEETING.INFO_205" value="02/03/2015-05/15/2015 Regular Course Monday, Wednesday, Friday 10:25AM - 11:35AM, Weyerhaeuser Hall, Room 107">
 </div>
 </td><td class=" SEC_FACULTY_INFO ms-alignleft dt-row">
 <div id="SEC_FACULTY_INFO_209" class="">B. Watts, Storm Kathleen, Baird F, M. Smith<label class="hidden" for="SEC_FACULTY_INFO_209"></label><input type="hidden" name="SEC.FACULTY.INFO_209" value="B. Watts, Storm Kathleen, Baird F, M. Smith">
@@ -8768,7 +8768,7 @@ WORLD LANGUAGES &amp; CULTURE">
 <div id="SEC_LOCATION_210" class="">Whitworth Campus<label class="hidden" for="SEC_LOCATION_210"></label><input type="hidden" name="SEC.LOCATION_210" value="Whitworth Campus">
 </div>
 </td><td class=" SEC_MEETING_INFO ms-alignleft dt-rowAlt">
-<div id="SEC_MEETING_INFO_210" class="">02/03/2015-05/15/2015 Discussion Section Tuesday 12:50PM - 01:30PM, Dixon Hall, Room 105A (more)...<label class="hidden" for="SEC_MEETING_INFO_210"></label><input type="hidden" name="SEC.MEETING.INFO_210" value="02/03/2015-05/15/2015 Discussion Section Tuesday 12:50PM - 01:30PM, Dixon Hall, Room 105A (more)...">
+<div id="SEC_MEETING_INFO_205" class="">02/03/2015-05/15/2015 Regular Course Monday, Wednesday, Friday 10:25AM - 11:35AM, Weyerhaeuser Hall, Room 107<label class="hidden" for="SEC_MEETING_INFO_205"></label><input type="hidden" name="SEC.MEETING.INFO_205" value="02/03/2015-05/15/2015 Regular Course Monday, Wednesday, Friday 10:25AM - 11:35AM, Weyerhaeuser Hall, Room 107">
 </div>
 </td><td class=" SEC_FACULTY_INFO ms-alignleft dt-rowAlt">
 <div id="SEC_FACULTY_INFO_210" class="">Baird F, Storm Kathleen, Oakland L, B. (more)<label class="hidden" for="SEC_FACULTY_INFO_210"></label><input type="hidden" name="SEC.FACULTY.INFO_210" value="Baird F, Storm Kathleen, Oakland L, B. (more)">
@@ -8808,7 +8808,7 @@ WORLD LANGUAGES &amp; CULTURE">
 <div id="SEC_LOCATION_211" class="">Whitworth Campus<label class="hidden" for="SEC_LOCATION_211"></label><input type="hidden" name="SEC.LOCATION_211" value="Whitworth Campus">
 </div>
 </td><td class=" SEC_MEETING_INFO ms-alignleft dt-row">
-<div id="SEC_MEETING_INFO_211" class="">02/03/2015-05/15/2015 Discussion Section Tuesday 01:30PM - 02:10PM, Dixon Hall, Room 105A (more)...<label class="hidden" for="SEC_MEETING_INFO_211"></label><input type="hidden" name="SEC.MEETING.INFO_211" value="02/03/2015-05/15/2015 Discussion Section Tuesday 01:30PM - 02:10PM, Dixon Hall, Room 105A (more)...">
+<div id="SEC_MEETING_INFO_205" class="">02/03/2015-05/15/2015 Regular Course Monday, Wednesday, Friday 10:25AM - 11:35AM, Weyerhaeuser Hall, Room 107<label class="hidden" for="SEC_MEETING_INFO_205"></label><input type="hidden" name="SEC.MEETING.INFO_205" value="02/03/2015-05/15/2015 Regular Course Monday, Wednesday, Friday 10:25AM - 11:35AM, Weyerhaeuser Hall, Room 107">
 </div>
 </td><td class=" SEC_FACULTY_INFO ms-alignleft dt-row">
 <div id="SEC_FACULTY_INFO_211" class="">Baird F, Storm Kathleen, Oakland L, M. Smith<label class="hidden" for="SEC_FACULTY_INFO_211"></label><input type="hidden" name="SEC.FACULTY.INFO_211" value="Baird F, Storm Kathleen, Oakland L, M. Smith">
@@ -8848,7 +8848,7 @@ WORLD LANGUAGES &amp; CULTURE">
 <div id="SEC_LOCATION_212" class="">Whitworth Campus<label class="hidden" for="SEC_LOCATION_212"></label><input type="hidden" name="SEC.LOCATION_212" value="Whitworth Campus">
 </div>
 </td><td class=" SEC_MEETING_INFO ms-alignleft dt-rowAlt">
-<div id="SEC_MEETING_INFO_212" class="">02/03/2015-05/15/2015 Discussion Section Tuesday 02:20PM - 03:00PM, Dixon Hall, Room 105A (more)...<label class="hidden" for="SEC_MEETING_INFO_212"></label><input type="hidden" name="SEC.MEETING.INFO_212" value="02/03/2015-05/15/2015 Discussion Section Tuesday 02:20PM - 03:00PM, Dixon Hall, Room 105A (more)...">
+<div id="SEC_MEETING_INFO_205" class="">02/03/2015-05/15/2015 Regular Course Monday, Wednesday, Friday 10:25AM - 11:35AM, Weyerhaeuser Hall, Room 107<label class="hidden" for="SEC_MEETING_INFO_205"></label><input type="hidden" name="SEC.MEETING.INFO_205" value="02/03/2015-05/15/2015 Regular Course Monday, Wednesday, Friday 10:25AM - 11:35AM, Weyerhaeuser Hall, Room 107">
 </div>
 </td><td class=" SEC_FACULTY_INFO ms-alignleft dt-rowAlt">
 <div id="SEC_FACULTY_INFO_212" class="">Meredith Shimizu, Storm Kathleen, Oakl (more)<label class="hidden" for="SEC_FACULTY_INFO_212"></label><input type="hidden" name="SEC.FACULTY.INFO_212" value="Meredith Shimizu, Storm Kathleen, Oakl (more)">
@@ -8888,7 +8888,7 @@ WORLD LANGUAGES &amp; CULTURE">
 <div id="SEC_LOCATION_213" class="">Whitworth Campus<label class="hidden" for="SEC_LOCATION_213"></label><input type="hidden" name="SEC.LOCATION_213" value="Whitworth Campus">
 </div>
 </td><td class=" SEC_MEETING_INFO ms-alignleft dt-row">
-<div id="SEC_MEETING_INFO_213" class="">02/03/2015-05/15/2015 Discussion Section Tuesday 03:00PM - 03:40PM, Dixon Hall, Room 105A (more)...<label class="hidden" for="SEC_MEETING_INFO_213"></label><input type="hidden" name="SEC.MEETING.INFO_213" value="02/03/2015-05/15/2015 Discussion Section Tuesday 03:00PM - 03:40PM, Dixon Hall, Room 105A (more)...">
+<div id="SEC_MEETING_INFO_205" class="">02/03/2015-05/15/2015 Regular Course Monday, Wednesday, Friday 10:25AM - 11:35AM, Weyerhaeuser Hall, Room 107<label class="hidden" for="SEC_MEETING_INFO_205"></label><input type="hidden" name="SEC.MEETING.INFO_205" value="02/03/2015-05/15/2015 Regular Course Monday, Wednesday, Friday 10:25AM - 11:35AM, Weyerhaeuser Hall, Room 107">
 </div>
 </td><td class=" SEC_FACULTY_INFO ms-alignleft dt-row">
 <div id="SEC_FACULTY_INFO_213" class="">Meredith Shimizu, Storm Kathleen, Oakl (more)<label class="hidden" for="SEC_FACULTY_INFO_213"></label><input type="hidden" name="SEC.FACULTY.INFO_213" value="Meredith Shimizu, Storm Kathleen, Oakl (more)">
@@ -8928,7 +8928,7 @@ WORLD LANGUAGES &amp; CULTURE">
 <div id="SEC_LOCATION_214" class="">Whitworth Campus<label class="hidden" for="SEC_LOCATION_214"></label><input type="hidden" name="SEC.LOCATION_214" value="Whitworth Campus">
 </div>
 </td><td class=" SEC_MEETING_INFO ms-alignleft dt-rowAlt">
-<div id="SEC_MEETING_INFO_214" class="">02/03/2015-05/15/2015 Discussion Section Tuesday 03:50PM - 04:30PM, Dixon Hall, Room 204 (more)...<label class="hidden" for="SEC_MEETING_INFO_214"></label><input type="hidden" name="SEC.MEETING.INFO_214" value="02/03/2015-05/15/2015 Discussion Section Tuesday 03:50PM - 04:30PM, Dixon Hall, Room 204 (more)...">
+<div id="SEC_MEETING_INFO_205" class="">02/03/2015-05/15/2015 Regular Course Monday, Wednesday, Friday 10:25AM - 11:35AM, Weyerhaeuser Hall, Room 107<label class="hidden" for="SEC_MEETING_INFO_205"></label><input type="hidden" name="SEC.MEETING.INFO_205" value="02/03/2015-05/15/2015 Regular Course Monday, Wednesday, Friday 10:25AM - 11:35AM, Weyerhaeuser Hall, Room 107">
 </div>
 </td><td class=" SEC_FACULTY_INFO ms-alignleft dt-rowAlt">
 <div id="SEC_FACULTY_INFO_214" class="">A. Pyrc, Storm Kathleen, Oakland L, Ba (more)<label class="hidden" for="SEC_FACULTY_INFO_214"></label><input type="hidden" name="SEC.FACULTY.INFO_214" value="A. Pyrc, Storm Kathleen, Oakland L, Ba (more)">
@@ -8968,7 +8968,7 @@ WORLD LANGUAGES &amp; CULTURE">
 <div id="SEC_LOCATION_215" class="">Whitworth Campus<label class="hidden" for="SEC_LOCATION_215"></label><input type="hidden" name="SEC.LOCATION_215" value="Whitworth Campus">
 </div>
 </td><td class=" SEC_MEETING_INFO ms-alignleft dt-row">
-<div id="SEC_MEETING_INFO_215" class="">02/03/2015-05/15/2015 Discussion Section Tuesday 04:30PM - 05:10PM, Dixon Hall, Room 204 (more)...<label class="hidden" for="SEC_MEETING_INFO_215"></label><input type="hidden" name="SEC.MEETING.INFO_215" value="02/03/2015-05/15/2015 Discussion Section Tuesday 04:30PM - 05:10PM, Dixon Hall, Room 204 (more)...">
+<div id="SEC_MEETING_INFO_205" class="">02/03/2015-05/15/2015 Regular Course Monday, Wednesday, Friday 10:25AM - 11:35AM, Weyerhaeuser Hall, Room 107<label class="hidden" for="SEC_MEETING_INFO_205"></label><input type="hidden" name="SEC.MEETING.INFO_205" value="02/03/2015-05/15/2015 Regular Course Monday, Wednesday, Friday 10:25AM - 11:35AM, Weyerhaeuser Hall, Room 107">
 </div>
 </td><td class=" SEC_FACULTY_INFO ms-alignleft dt-row">
 <div id="SEC_FACULTY_INFO_215" class="">A. Pyrc, Storm Kathleen, Oakland L, Ba (more)<label class="hidden" for="SEC_FACULTY_INFO_215"></label><input type="hidden" name="SEC.FACULTY.INFO_215" value="A. Pyrc, Storm Kathleen, Oakland L, Ba (more)">
@@ -9008,7 +9008,7 @@ WORLD LANGUAGES &amp; CULTURE">
 <div id="SEC_LOCATION_216" class="">Whitworth Campus<label class="hidden" for="SEC_LOCATION_216"></label><input type="hidden" name="SEC.LOCATION_216" value="Whitworth Campus">
 </div>
 </td><td class=" SEC_MEETING_INFO ms-alignleft dt-rowAlt">
-<div id="SEC_MEETING_INFO_216" class="">02/03/2015-05/15/2015 Discussion Section Tuesday 04:00PM - 05:00PM, Westminster Hall, Room 125 (more)...<label class="hidden" for="SEC_MEETING_INFO_216"></label><input type="hidden" name="SEC.MEETING.INFO_216" value="02/03/2015-05/15/2015 Discussion Section Tuesday 04:00PM - 05:00PM, Westminster Hall, Room 125 (more)...">
+<div id="SEC_MEETING_INFO_205" class="">02/03/2015-05/15/2015 Regular Course Monday, Wednesday, Friday 10:25AM - 11:35AM, Weyerhaeuser Hall, Room 107<label class="hidden" for="SEC_MEETING_INFO_205"></label><input type="hidden" name="SEC.MEETING.INFO_205" value="02/03/2015-05/15/2015 Regular Course Monday, Wednesday, Friday 10:25AM - 11:35AM, Weyerhaeuser Hall, Room 107">
 </div>
 </td><td class=" SEC_FACULTY_INFO ms-alignleft dt-rowAlt">
 <div id="SEC_FACULTY_INFO_216" class="">Oakland L, Storm Kathleen<label class="hidden" for="SEC_FACULTY_INFO_216"></label><input type="hidden" name="SEC.FACULTY.INFO_216" value="Oakland L, Storm Kathleen">
@@ -9048,7 +9048,7 @@ WORLD LANGUAGES &amp; CULTURE">
 <div id="SEC_LOCATION_217" class="">Whitworth Campus<label class="hidden" for="SEC_LOCATION_217"></label><input type="hidden" name="SEC.LOCATION_217" value="Whitworth Campus">
 </div>
 </td><td class=" SEC_MEETING_INFO ms-alignleft dt-row">
-<div id="SEC_MEETING_INFO_217" class="">02/03/2015-05/15/2015 Discussion Section Wednesday 11:45AM - 12:40PM, Hawthorne Hall, Room 105 (more)...<label class="hidden" for="SEC_MEETING_INFO_217"></label><input type="hidden" name="SEC.MEETING.INFO_217" value="02/03/2015-05/15/2015 Discussion Section Wednesday 11:45AM - 12:40PM, Hawthorne Hall, Room 105 (more)...">
+<div id="SEC_MEETING_INFO_217" class="">02/03/2015-05/15/2015 Regular Course Tuesday, Thursday 12:50PM - 02:10PM, Weyerhaeuser Hall, Room 107<label class="hidden" for="SEC_MEETING_INFO_217"></label><input type="hidden" name="SEC.MEETING.INFO_217" value="02/03/2015-05/15/2015 Regular Course Tuesday, Thursday 12:50PM - 02:10PM, Weyerhaeuser Hall, Room 107">
 </div>
 </td><td class=" SEC_FACULTY_INFO ms-alignleft dt-row">
 <div id="SEC_FACULTY_INFO_217" class="">K. Wyma, K. Sankaran<label class="hidden" for="SEC_FACULTY_INFO_217"></label><input type="hidden" name="SEC.FACULTY.INFO_217" value="K. Wyma, K. Sankaran">
@@ -9088,7 +9088,7 @@ WORLD LANGUAGES &amp; CULTURE">
 <div id="SEC_LOCATION_218" class="">Whitworth Campus<label class="hidden" for="SEC_LOCATION_218"></label><input type="hidden" name="SEC.LOCATION_218" value="Whitworth Campus">
 </div>
 </td><td class=" SEC_MEETING_INFO ms-alignleft dt-rowAlt">
-<div id="SEC_MEETING_INFO_218" class="">02/03/2015-05/15/2015 Discussion Section Wednesday 10:25AM - 11:20AM, Hawthorne Hall, Room 103 (more)...<label class="hidden" for="SEC_MEETING_INFO_218"></label><input type="hidden" name="SEC.MEETING.INFO_218" value="02/03/2015-05/15/2015 Discussion Section Wednesday 10:25AM - 11:20AM, Hawthorne Hall, Room 103 (more)...">
+<div id="SEC_MEETING_INFO_217" class="">02/03/2015-05/15/2015 Regular Course Tuesday, Thursday 12:50PM - 02:10PM, Weyerhaeuser Hall, Room 107<label class="hidden" for="SEC_MEETING_INFO_217"></label><input type="hidden" name="SEC.MEETING.INFO_217" value="02/03/2015-05/15/2015 Regular Course Tuesday, Thursday 12:50PM - 02:10PM, Weyerhaeuser Hall, Room 107">
 </div>
 </td><td class=" SEC_FACULTY_INFO ms-alignleft dt-rowAlt">
 <div id="SEC_FACULTY_INFO_218" class="">R. Acevedo-Field, K. Sankaran<label class="hidden" for="SEC_FACULTY_INFO_218"></label><input type="hidden" name="SEC.FACULTY.INFO_218" value="R. Acevedo-Field, K. Sankaran">
@@ -9128,7 +9128,7 @@ WORLD LANGUAGES &amp; CULTURE">
 <div id="SEC_LOCATION_219" class="">Whitworth Campus<label class="hidden" for="SEC_LOCATION_219"></label><input type="hidden" name="SEC.LOCATION_219" value="Whitworth Campus">
 </div>
 </td><td class=" SEC_MEETING_INFO ms-alignleft dt-row">
-<div id="SEC_MEETING_INFO_219" class="">02/03/2015-05/15/2015 Discussion Section Wednesday 11:45AM - 12:40PM, Dixon Hall, Room 106 (more)...<label class="hidden" for="SEC_MEETING_INFO_219"></label><input type="hidden" name="SEC.MEETING.INFO_219" value="02/03/2015-05/15/2015 Discussion Section Wednesday 11:45AM - 12:40PM, Dixon Hall, Room 106 (more)...">
+<div id="SEC_MEETING_INFO_217" class="">02/03/2015-05/15/2015 Regular Course Tuesday, Thursday 12:50PM - 02:10PM, Weyerhaeuser Hall, Room 107<label class="hidden" for="SEC_MEETING_INFO_217"></label><input type="hidden" name="SEC.MEETING.INFO_217" value="02/03/2015-05/15/2015 Regular Course Tuesday, Thursday 12:50PM - 02:10PM, Weyerhaeuser Hall, Room 107">
 </div>
 </td><td class=" SEC_FACULTY_INFO ms-alignleft dt-row">
 <div id="SEC_FACULTY_INFO_219" class="">E. Campbell, K. Sankaran<label class="hidden" for="SEC_FACULTY_INFO_219"></label><input type="hidden" name="SEC.FACULTY.INFO_219" value="E. Campbell, K. Sankaran">
@@ -9168,7 +9168,7 @@ WORLD LANGUAGES &amp; CULTURE">
 <div id="SEC_LOCATION_220" class="">Whitworth Campus<label class="hidden" for="SEC_LOCATION_220"></label><input type="hidden" name="SEC.LOCATION_220" value="Whitworth Campus">
 </div>
 </td><td class=" SEC_MEETING_INFO ms-alignleft dt-rowAlt">
-<div id="SEC_MEETING_INFO_220" class="">02/03/2015-05/15/2015 Discussion Section Wednesday 01:55PM - 02:50PM, Hawthorne Hall, Room 101 (more)...<label class="hidden" for="SEC_MEETING_INFO_220"></label><input type="hidden" name="SEC.MEETING.INFO_220" value="02/03/2015-05/15/2015 Discussion Section Wednesday 01:55PM - 02:50PM, Hawthorne Hall, Room 101 (more)...">
+<div id="SEC_MEETING_INFO_217" class="">02/03/2015-05/15/2015 Regular Course Tuesday, Thursday 12:50PM - 02:10PM, Weyerhaeuser Hall, Room 107<label class="hidden" for="SEC_MEETING_INFO_217"></label><input type="hidden" name="SEC.MEETING.INFO_217" value="02/03/2015-05/15/2015 Regular Course Tuesday, Thursday 12:50PM - 02:10PM, Weyerhaeuser Hall, Room 107">
 </div>
 </td><td class=" SEC_FACULTY_INFO ms-alignleft dt-rowAlt">
 <div id="SEC_FACULTY_INFO_220" class="">G. Brekke, K. Sankaran<label class="hidden" for="SEC_FACULTY_INFO_220"></label><input type="hidden" name="SEC.FACULTY.INFO_220" value="G. Brekke, K. Sankaran">
@@ -9208,7 +9208,7 @@ WORLD LANGUAGES &amp; CULTURE">
 <div id="SEC_LOCATION_221" class="">Whitworth Campus<label class="hidden" for="SEC_LOCATION_221"></label><input type="hidden" name="SEC.LOCATION_221" value="Whitworth Campus">
 </div>
 </td><td class=" SEC_MEETING_INFO ms-alignleft dt-row">
-<div id="SEC_MEETING_INFO_221" class="">02/03/2015-05/15/2015 Discussion Section Wednesday 11:45AM - 12:40PM, Robinson Science Hall, Room 345 (more)...<label class="hidden" for="SEC_MEETING_INFO_221"></label><input type="hidden" name="SEC.MEETING.INFO_221" value="02/03/2015-05/15/2015 Discussion Section Wednesday 11:45AM - 12:40PM, Robinson Science Hall, Room 345 (more)...">
+<div id="SEC_MEETING_INFO_217" class="">02/03/2015-05/15/2015 Regular Course Tuesday, Thursday 12:50PM - 02:10PM, Weyerhaeuser Hall, Room 107<label class="hidden" for="SEC_MEETING_INFO_217"></label><input type="hidden" name="SEC.MEETING.INFO_217" value="02/03/2015-05/15/2015 Regular Course Tuesday, Thursday 12:50PM - 02:10PM, Weyerhaeuser Hall, Room 107">
 </div>
 </td><td class=" SEC_FACULTY_INFO ms-alignleft dt-row">
 <div id="SEC_FACULTY_INFO_221" class="">K. Breno, K. Sankaran<label class="hidden" for="SEC_FACULTY_INFO_221"></label><input type="hidden" name="SEC.FACULTY.INFO_221" value="K. Breno, K. Sankaran">
@@ -9248,7 +9248,7 @@ WORLD LANGUAGES &amp; CULTURE">
 <div id="SEC_LOCATION_222" class="">Whitworth Campus<label class="hidden" for="SEC_LOCATION_222"></label><input type="hidden" name="SEC.LOCATION_222" value="Whitworth Campus">
 </div>
 </td><td class=" SEC_MEETING_INFO ms-alignleft dt-rowAlt">
-<div id="SEC_MEETING_INFO_222" class="">02/03/2015-05/15/2015 Discussion Section Wednesday 11:45AM - 12:40PM, Weyerhaeuser Hall, Room 304 (more)...<label class="hidden" for="SEC_MEETING_INFO_222"></label><input type="hidden" name="SEC.MEETING.INFO_222" value="02/03/2015-05/15/2015 Discussion Section Wednesday 11:45AM - 12:40PM, Weyerhaeuser Hall, Room 304 (more)...">
+<div id="SEC_MEETING_INFO_217" class="">02/03/2015-05/15/2015 Regular Course Tuesday, Thursday 12:50PM - 02:10PM, Weyerhaeuser Hall, Room 107<label class="hidden" for="SEC_MEETING_INFO_217"></label><input type="hidden" name="SEC.MEETING.INFO_217" value="02/03/2015-05/15/2015 Regular Course Tuesday, Thursday 12:50PM - 02:10PM, Weyerhaeuser Hall, Room 107">
 </div>
 </td><td class=" SEC_FACULTY_INFO ms-alignleft dt-rowAlt">
 <div id="SEC_FACULTY_INFO_222" class="">D. Sloan, K. Sankaran<label class="hidden" for="SEC_FACULTY_INFO_222"></label><input type="hidden" name="SEC.FACULTY.INFO_222" value="D. Sloan, K. Sankaran">
@@ -9288,7 +9288,7 @@ WORLD LANGUAGES &amp; CULTURE">
 <div id="SEC_LOCATION_223" class="">Whitworth Campus<label class="hidden" for="SEC_LOCATION_223"></label><input type="hidden" name="SEC.LOCATION_223" value="Whitworth Campus">
 </div>
 </td><td class=" SEC_MEETING_INFO ms-alignleft dt-row">
-<div id="SEC_MEETING_INFO_223" class="">02/03/2015-05/15/2015 Discussion Section Wednesday 12:50PM - 01:45PM, Westminster Hall, Room 125 (more)...<label class="hidden" for="SEC_MEETING_INFO_223"></label><input type="hidden" name="SEC.MEETING.INFO_223" value="02/03/2015-05/15/2015 Discussion Section Wednesday 12:50PM - 01:45PM, Westminster Hall, Room 125 (more)...">
+<div id="SEC_MEETING_INFO_217" class="">02/03/2015-05/15/2015 Regular Course Tuesday, Thursday 12:50PM - 02:10PM, Weyerhaeuser Hall, Room 107<label class="hidden" for="SEC_MEETING_INFO_217"></label><input type="hidden" name="SEC.MEETING.INFO_217" value="02/03/2015-05/15/2015 Regular Course Tuesday, Thursday 12:50PM - 02:10PM, Weyerhaeuser Hall, Room 107">
 </div>
 </td><td class=" SEC_FACULTY_INFO ms-alignleft dt-row">
 <div id="SEC_FACULTY_INFO_223" class="">L. Scott, K. Sankaran<label class="hidden" for="SEC_FACULTY_INFO_223"></label><input type="hidden" name="SEC.FACULTY.INFO_223" value="L. Scott, K. Sankaran">
@@ -9328,7 +9328,7 @@ WORLD LANGUAGES &amp; CULTURE">
 <div id="SEC_LOCATION_224" class="">Whitworth Campus<label class="hidden" for="SEC_LOCATION_224"></label><input type="hidden" name="SEC.LOCATION_224" value="Whitworth Campus">
 </div>
 </td><td class=" SEC_MEETING_INFO ms-alignleft dt-rowAlt">
-<div id="SEC_MEETING_INFO_224" class="">02/03/2015-05/15/2015 Discussion Section Wednesday 12:50PM - 01:45PM, Hawthorne Hall, Room 104 (more)...<label class="hidden" for="SEC_MEETING_INFO_224"></label><input type="hidden" name="SEC.MEETING.INFO_224" value="02/03/2015-05/15/2015 Discussion Section Wednesday 12:50PM - 01:45PM, Hawthorne Hall, Room 104 (more)...">
+<div id="SEC_MEETING_INFO_217" class="">02/03/2015-05/15/2015 Regular Course Tuesday, Thursday 12:50PM - 02:10PM, Weyerhaeuser Hall, Room 107<label class="hidden" for="SEC_MEETING_INFO_217"></label><input type="hidden" name="SEC.MEETING.INFO_217" value="02/03/2015-05/15/2015 Regular Course Tuesday, Thursday 12:50PM - 02:10PM, Weyerhaeuser Hall, Room 107">
 </div>
 </td><td class=" SEC_FACULTY_INFO ms-alignleft dt-rowAlt">
 <div id="SEC_FACULTY_INFO_224" class="">E. Abbey, K. Sankaran<label class="hidden" for="SEC_FACULTY_INFO_224"></label><input type="hidden" name="SEC.FACULTY.INFO_224" value="E. Abbey, K. Sankaran">
@@ -9368,7 +9368,7 @@ WORLD LANGUAGES &amp; CULTURE">
 <div id="SEC_LOCATION_225" class="">Whitworth Campus<label class="hidden" for="SEC_LOCATION_225"></label><input type="hidden" name="SEC.LOCATION_225" value="Whitworth Campus">
 </div>
 </td><td class=" SEC_MEETING_INFO ms-alignleft dt-row">
-<div id="SEC_MEETING_INFO_225" class="">02/03/2015-05/15/2015 Discussion Section Wednesday 12:50PM - 01:45PM, Hawthorne Hall, Room 101 (more)...<label class="hidden" for="SEC_MEETING_INFO_225"></label><input type="hidden" name="SEC.MEETING.INFO_225" value="02/03/2015-05/15/2015 Discussion Section Wednesday 12:50PM - 01:45PM, Hawthorne Hall, Room 101 (more)...">
+<div id="SEC_MEETING_INFO_217" class="">02/03/2015-05/15/2015 Regular Course Tuesday, Thursday 12:50PM - 02:10PM, Weyerhaeuser Hall, Room 107<label class="hidden" for="SEC_MEETING_INFO_217"></label><input type="hidden" name="SEC.MEETING.INFO_217" value="02/03/2015-05/15/2015 Regular Course Tuesday, Thursday 12:50PM - 02:10PM, Weyerhaeuser Hall, Room 107">
 </div>
 </td><td class=" SEC_FACULTY_INFO ms-alignleft dt-row">
 <div id="SEC_FACULTY_INFO_225" class="">K. Sankaran<label class="hidden" for="SEC_FACULTY_INFO_225"></label><input type="hidden" name="SEC.FACULTY.INFO_225" value="K. Sankaran">
@@ -10842,7 +10842,7 @@ WORLD LANGUAGES &amp; CULTURE">
 </div>
 </td><td class=" SEC_SHORT_TITLE ms-alignleft dt-rowAlt">
 <div>
-<a class="left" id="SEC_SHORT_TITLE_262" href="javascript:webAdvisor.newTab(&quot;EDU-344-N (57623) Children's Literature & Soc St&quot;,&quot;?TYPE=P&PID=ST-XWESTS13C&CLONE=Y&CLONE_PROCESS=Y&SPAUKQ=215669950022822&CONSTITUENCY=WBDF&TOKENIDX=2598496565&quot;);">EDU-344-N (57623) Children's Literature &amp; Soc St</a>
+<a class="left" id="SEC_SHORT_TITLE_262" href="javascript:webAdvisor.newTab("EDU-344-N (57623) Children's Literature & Soc St","?TYPE=P&PID=ST-XWESTS13C&CLONE=Y&CLONE_PROCESS=Y&SPAUKQ=215669950022822&CONSTITUENCY=WBDF&TOKENIDX=2598496565");">EDU-344-N (57623) Children's Literature &amp; Soc St</a>
 </div>
 </td><td class=" SEC_LOCATION ms-alignleft dt-rowAlt">
 <div id="SEC_LOCATION_262" class="">Whitworth Campus<label class="hidden" for="SEC_LOCATION_262"></label><input type="hidden" name="SEC.LOCATION_262" value="Whitworth Campus">
@@ -20064,7 +20064,7 @@ MU-471-1">
 </div>
 </td><td class=" SEC_SHORT_TITLE ms-alignleft dt-rowAlt">
 <div>
-<a class="left" id="SEC_SHORT_TITLE_490" href="javascript:webAdvisor.newTab(&quot;MU-172-1 (58004) Women's Choir&quot;,&quot;?TYPE=P&PID=ST-XWESTS13C&CLONE=Y&CLONE_PROCESS=Y&SPAUKQ=812667058729526&CONSTITUENCY=WBDF&TOKENIDX=2598496565&quot;);">MU-172-1 (58004) Women's Choir</a>
+<a class="left" id="SEC_SHORT_TITLE_490" href="javascript:webAdvisor.newTab("MU-172-1 (58004) Women's Choir","?TYPE=P&PID=ST-XWESTS13C&CLONE=Y&CLONE_PROCESS=Y&SPAUKQ=812667058729526&CONSTITUENCY=WBDF&TOKENIDX=2598496565");">MU-172-1 (58004) Women's Choir</a>
 </div>
 </td><td class=" SEC_LOCATION ms-alignleft dt-rowAlt">
 <div id="SEC_LOCATION_490" class="">Whitworth Campus<label class="hidden" for="SEC_LOCATION_490"></label><input type="hidden" name="SEC.LOCATION_490" value="Whitworth Campus">
@@ -20284,7 +20284,7 @@ MU-475-1">
 </div>
 </td><td class=" SEC_SHORT_TITLE ms-alignleft dt-row">
 <div>
-<a class="left" id="SEC_SHORT_TITLE_495" href="javascript:webAdvisor.newTab(&quot;MU-177-1 (58009) Men's Chorus&quot;,&quot;?TYPE=P&PID=ST-XWESTS13C&CLONE=Y&CLONE_PROCESS=Y&SPAUKQ=014965659729025&CONSTITUENCY=WBDF&TOKENIDX=2598496565&quot;);">MU-177-1 (58009) Men's Chorus</a>
+<a class="left" id="SEC_SHORT_TITLE_495" href="javascript:webAdvisor.newTab("MU-177-1 (58009) Men's Chorus","?TYPE=P&PID=ST-XWESTS13C&CLONE=Y&CLONE_PROCESS=Y&SPAUKQ=014965659729025&CONSTITUENCY=WBDF&TOKENIDX=2598496565");">MU-177-1 (58009) Men's Chorus</a>
 </div>
 </td><td class=" SEC_LOCATION ms-alignleft dt-row">
 <div id="SEC_LOCATION_495" class="">Whitworth Campus<label class="hidden" for="SEC_LOCATION_495"></label><input type="hidden" name="SEC.LOCATION_495" value="Whitworth Campus">
@@ -21276,7 +21276,7 @@ MU-471-1">
 </div>
 </td><td class=" SEC_SHORT_TITLE ms-alignleft dt-rowAlt">
 <div>
-<a class="left" id="SEC_SHORT_TITLE_518" href="javascript:webAdvisor.newTab(&quot;MU-272-1 (58110) Women's Choir&quot;,&quot;?TYPE=P&PID=ST-XWESTS13C&CLONE=Y&CLONE_PROCESS=Y&SPAUKQ=012066057729224&CONSTITUENCY=WBDF&TOKENIDX=2598496565&quot;);">MU-272-1 (58110) Women's Choir</a>
+<a class="left" id="SEC_SHORT_TITLE_518" href="javascript:webAdvisor.newTab("MU-272-1 (58110) Women's Choir","?TYPE=P&PID=ST-XWESTS13C&CLONE=Y&CLONE_PROCESS=Y&SPAUKQ=012066057729224&CONSTITUENCY=WBDF&TOKENIDX=2598496565");">MU-272-1 (58110) Women's Choir</a>
 </div>
 </td><td class=" SEC_LOCATION ms-alignleft dt-rowAlt">
 <div id="SEC_LOCATION_518" class="">Whitworth Campus<label class="hidden" for="SEC_LOCATION_518"></label><input type="hidden" name="SEC.LOCATION_518" value="Whitworth Campus">
@@ -21496,7 +21496,7 @@ MU-475-1">
 </div>
 </td><td class=" SEC_SHORT_TITLE ms-alignleft dt-row">
 <div>
-<a class="left" id="SEC_SHORT_TITLE_523" href="javascript:webAdvisor.newTab(&quot;MU-277-1 (58115) Men's Chorus&quot;,&quot;?TYPE=P&PID=ST-XWESTS13C&CLONE=Y&CLONE_PROCESS=Y&SPAUKQ=718168852923723&CONSTITUENCY=WBDF&TOKENIDX=2598496565&quot;);">MU-277-1 (58115) Men's Chorus</a>
+<a class="left" id="SEC_SHORT_TITLE_523" href="javascript:webAdvisor.newTab("MU-277-1 (58115) Men's Chorus","?TYPE=P&PID=ST-XWESTS13C&CLONE=Y&CLONE_PROCESS=Y&SPAUKQ=718168852923723&CONSTITUENCY=WBDF&TOKENIDX=2598496565");">MU-277-1 (58115) Men's Chorus</a>
 </div>
 </td><td class=" SEC_LOCATION ms-alignleft dt-row">
 <div id="SEC_LOCATION_523" class="">Whitworth Campus<label class="hidden" for="SEC_LOCATION_523"></label><input type="hidden" name="SEC.LOCATION_523" value="Whitworth Campus">
@@ -22564,7 +22564,7 @@ MU-471-1">
 </div>
 </td><td class=" SEC_SHORT_TITLE ms-alignleft dt-rowAlt">
 <div>
-<a class="left" id="SEC_SHORT_TITLE_548" href="javascript:webAdvisor.newTab(&quot;MU-372-1 (58217) Women's Choir&quot;,&quot;?TYPE=P&PID=ST-XWESTS13C&CLONE=Y&CLONE_PROCESS=Y&SPAUKQ=715261553522727&CONSTITUENCY=WBDF&TOKENIDX=2598496565&quot;);">MU-372-1 (58217) Women's Choir</a>
+<a class="left" id="SEC_SHORT_TITLE_548" href="javascript:webAdvisor.newTab("MU-372-1 (58217) Women's Choir","?TYPE=P&PID=ST-XWESTS13C&CLONE=Y&CLONE_PROCESS=Y&SPAUKQ=715261553522727&CONSTITUENCY=WBDF&TOKENIDX=2598496565");">MU-372-1 (58217) Women's Choir</a>
 </div>
 </td><td class=" SEC_LOCATION ms-alignleft dt-rowAlt">
 <div id="SEC_LOCATION_548" class="">Whitworth Campus<label class="hidden" for="SEC_LOCATION_548"></label><input type="hidden" name="SEC.LOCATION_548" value="Whitworth Campus">
@@ -22784,7 +22784,7 @@ MU-475-1">
 </div>
 </td><td class=" SEC_SHORT_TITLE ms-alignleft dt-row">
 <div>
-<a class="left" id="SEC_SHORT_TITLE_553" href="javascript:webAdvisor.newTab(&quot;MU-377-1 (58222) Men's Chorus&quot;,&quot;?TYPE=P&PID=ST-XWESTS13C&CLONE=Y&CLONE_PROCESS=Y&SPAUKQ=313260254723922&CONSTITUENCY=WBDF&TOKENIDX=2598496565&quot;);">MU-377-1 (58222) Men's Chorus</a>
+<a class="left" id="SEC_SHORT_TITLE_553" href="javascript:webAdvisor.newTab("MU-377-1 (58222) Men's Chorus","?TYPE=P&PID=ST-XWESTS13C&CLONE=Y&CLONE_PROCESS=Y&SPAUKQ=313260254723922&CONSTITUENCY=WBDF&TOKENIDX=2598496565");">MU-377-1 (58222) Men's Chorus</a>
 </div>
 </td><td class=" SEC_LOCATION ms-alignleft dt-row">
 <div id="SEC_LOCATION_553" class="">Whitworth Campus<label class="hidden" for="SEC_LOCATION_553"></label><input type="hidden" name="SEC.LOCATION_553" value="Whitworth Campus">
@@ -23732,7 +23732,7 @@ MU-371-1">
 </div>
 </td><td class=" SEC_SHORT_TITLE ms-alignleft dt-row">
 <div>
-<a class="left" id="SEC_SHORT_TITLE_575" href="javascript:webAdvisor.newTab(&quot;MU-472-1 (58328) Women's Choir&quot;,&quot;?TYPE=P&PID=ST-XWESTS13C&CLONE=Y&CLONE_PROCESS=Y&SPAUKQ=615364753829723&CONSTITUENCY=WBDF&TOKENIDX=2598496565&quot;);">MU-472-1 (58328) Women's Choir</a>
+<a class="left" id="SEC_SHORT_TITLE_575" href="javascript:webAdvisor.newTab("MU-472-1 (58328) Women's Choir","?TYPE=P&PID=ST-XWESTS13C&CLONE=Y&CLONE_PROCESS=Y&SPAUKQ=615364753829723&CONSTITUENCY=WBDF&TOKENIDX=2598496565");">MU-472-1 (58328) Women's Choir</a>
 </div>
 </td><td class=" SEC_LOCATION ms-alignleft dt-row">
 <div id="SEC_LOCATION_575" class="">Whitworth Campus<label class="hidden" for="SEC_LOCATION_575"></label><input type="hidden" name="SEC.LOCATION_575" value="Whitworth Campus">
@@ -23952,7 +23952,7 @@ MU-375-1">
 </div>
 </td><td class=" SEC_SHORT_TITLE ms-alignleft dt-rowAlt">
 <div>
-<a class="left" id="SEC_SHORT_TITLE_580" href="javascript:webAdvisor.newTab(&quot;MU-477-1 (58333) Men's Chorus&quot;,&quot;?TYPE=P&PID=ST-XWESTS13C&CLONE=Y&CLONE_PROCESS=Y&SPAUKQ=710766559128120&CONSTITUENCY=WBDF&TOKENIDX=2598496565&quot;);">MU-477-1 (58333) Men's Chorus</a>
+<a class="left" id="SEC_SHORT_TITLE_580" href="javascript:webAdvisor.newTab("MU-477-1 (58333) Men's Chorus","?TYPE=P&PID=ST-XWESTS13C&CLONE=Y&CLONE_PROCESS=Y&SPAUKQ=710766559128120&CONSTITUENCY=WBDF&TOKENIDX=2598496565");">MU-477-1 (58333) Men's Chorus</a>
 </div>
 </td><td class=" SEC_LOCATION ms-alignleft dt-rowAlt">
 <div id="SEC_LOCATION_580" class="">Whitworth Campus<label class="hidden" for="SEC_LOCATION_580"></label><input type="hidden" name="SEC.LOCATION_580" value="Whitworth Campus">
@@ -32296,7 +32296,7 @@ HUMANITIES">
 </div>
 </td><td class=" SEC_SHORT_TITLE ms-alignleft dt-row">
 <div>
-<a class="left" id="SEC_SHORT_TITLE_787" href="javascript:webAdvisor.newTab(&quot;TH-449-1 (57396) Paul's Letters&quot;,&quot;?TYPE=P&PID=ST-XWESTS13C&CLONE=Y&CLONE_PROCESS=Y&SPAUKQ=515260051428625&CONSTITUENCY=WBDF&TOKENIDX=2598496565&quot;);">TH-449-1 (57396) Paul's Letters</a>
+<a class="left" id="SEC_SHORT_TITLE_787" href="javascript:webAdvisor.newTab("TH-449-1 (57396) Paul's Letters","?TYPE=P&PID=ST-XWESTS13C&CLONE=Y&CLONE_PROCESS=Y&SPAUKQ=515260051428625&CONSTITUENCY=WBDF&TOKENIDX=2598496565");">TH-449-1 (57396) Paul's Letters</a>
 </div>
 </td><td class=" SEC_LOCATION ms-alignleft dt-row">
 <div id="SEC_LOCATION_787" class="">Whitworth Campus<label class="hidden" for="SEC_LOCATION_787"></label><input type="hidden" name="SEC.LOCATION_787" value="Whitworth Campus">
@@ -32336,7 +32336,7 @@ HUMANITIES">
 </div>
 </td><td class=" SEC_SHORT_TITLE ms-alignleft dt-rowAlt">
 <div>
-<a class="left" id="SEC_SHORT_TITLE_788" href="javascript:webAdvisor.newTab(&quot;WGS-201-1 (57474) Intro Women's/Gender Studies&quot;,&quot;?TYPE=P&PID=ST-XWESTS13C&CLONE=Y&CLONE_PROCESS=Y&SPAUKQ=419361656829625&CONSTITUENCY=WBDF&TOKENIDX=2598496565&quot;);">WGS-201-1 (57474) Intro Women's/Gender Studies</a>
+<a class="left" id="SEC_SHORT_TITLE_788" href="javascript:webAdvisor.newTab("WGS-201-1 (57474) Intro Women's/Gender Studies","?TYPE=P&PID=ST-XWESTS13C&CLONE=Y&CLONE_PROCESS=Y&SPAUKQ=419361656829625&CONSTITUENCY=WBDF&TOKENIDX=2598496565");">WGS-201-1 (57474) Intro Women's/Gender Studies</a>
 </div>
 </td><td class=" SEC_LOCATION ms-alignleft dt-rowAlt">
 <div id="SEC_LOCATION_788" class="">Whitworth Campus<label class="hidden" for="SEC_LOCATION_788"></label><input type="hidden" name="SEC.LOCATION_788" value="Whitworth Campus">
