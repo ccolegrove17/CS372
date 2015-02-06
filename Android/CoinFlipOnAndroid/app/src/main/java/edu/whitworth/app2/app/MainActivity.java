@@ -49,7 +49,7 @@ public class MainActivity extends Activity {
         TextView f = (TextView)this.findViewById(R.id.txtHello);//gets the label
         String result = coin.flipCoin();//result of the coin flip
         f.setText(result);//updates the label with the result
-        if (result=="Heads!"){
+        if (result=="Heads!"){ //PT -- to my point in the other source, if this is a 1, it's easier to compare.
             ImageView g = (ImageView)this.findViewById(R.id.imageView);
             g.setVisibility(View.VISIBLE);
             g = (ImageView)this.findViewById(R.id.imageView2);
