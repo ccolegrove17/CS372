@@ -112,6 +112,7 @@ public class Interface extends javax.swing.JFrame {
         infoLabel = new javax.swing.JLabel();
 
         classTable.setModel(new javax.swing.table.DefaultTableModel(
+            //PT -- Yikes! There's got to be a better way to initialize this!
             new Object [][] {
                 {null, null, null, null, null, null},
                 {null, null, null, null, null, null},
