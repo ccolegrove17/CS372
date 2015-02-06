@@ -41,5 +41,5 @@ public class Restaurant {
         _note = note;
         _rating = rating; //PT -- really need to make sure rating is in [1,5]
     }
-
+//PT -- also need some get and set functions for these properties, I think. -5
 }
