@@ -39,7 +39,7 @@ public class Restaurant {
         _name = name;
         _address = address;
         _note = note;
-        _rating = rating;
+        _rating = rating; //PT -- really need to make sure rating is in [1,5]
     }
 
 }
